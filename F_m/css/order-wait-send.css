@@ -1,0 +1,91 @@
+#order-wait-send nav{
+  padding:1.5rem;
+
+}
+#order-wait-send nav ul{
+  border-bottom:1px #c5c5c5 solid;
+}
+#order-wait-send nav ul li{
+  float:left;
+  width:25%;
+  text-align:center;
+  padding-bottom:1rem;
+}
+#order-wait-send nav ul li a{
+  color:#333;
+}
+#order-wait-send nav ul .active{
+  border-bottom:4px #ed117f solid;
+  margin-bottom:-2px;
+}
+#order-wait-send nav ul .active a{
+  color:#ed117f;
+}
+#order-wait-send .order-wait-box{
+	padding:0 1.5rem;
+  margin:1.5rem auto;
+}
+#order-wait-send .order-wait-list{
+  border-radius:5px;
+  box-shadow: 0px 0px 20px #999;
+  padding:0 1rem;
+  margin-bottom:1.4rem;
+}
+#order-wait-send .order-wait-list a{
+  color:#333;
+  display:block;
+}
+#order-wait-send .order-wait-list ul li{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1rem 0;
+}
+#order-wait-send .order-wait-list ul li:last-child{
+  border-bottom:0;
+}
+#order-wait-send .order-wait-list ul .goods-num .list-left img{
+  width:49px;
+  vertical-align:middle;
+}
+#order-wait-send .order-wait-list ul li .list-right{
+  float:right;
+}
+#order-wait-send .order-wait-list ul .goods-num .list-right img{
+  width:9px;
+  vertical-align:middle;
+  padding:1rem 1rem 0 0;
+}
+#order-wait-send .order-wait-list ul .goods-allmoney .list-left{
+  width: 42%;
+  float: left;
+  word-break: break-all;
+  padding-top:3px;
+}
+#order-wait-send .order-wait-list ul .goods-allmoney .list-left b{
+  color:#ed117f;
+}
+#order-wait-send .order-wait-list ul .goods-allmoney .list-right a{
+  color:#666;
+  margin-right:0.4rem;
+  display:inline-block;
+}
+#order-wait-send .order-wait-list ul .goods-allmoney .list-right{
+  width: 58%;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+  margin-right:-0.8rem;
+}
+#order-wait-send .order-wait-list ul .goods-allmoney .list-right .order-btn{
+  background:#ed117f;
+  color:#fff;
+  border-radius:5px;
+  padding:5px 12px;
+  margin-right:20px;
+}
+
+
+
+
+/*2015-09-21*/
+#order-wait-send nav ul li{font-size:1.5rem;}
+#order-wait-send .order-wait-list ul li{font-size:1.4rem;}

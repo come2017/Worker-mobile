@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>510我的订单（待发货）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/integral-exchange.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="integral-exchange">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>积分兑换</h1>
+  </header>
+  <section class="integral-box">
+    <div class="integral-info">
+      <h4>中国移动话费</h4>
+      <p class="bill">10元</p>
+      <p class="bill-recharge">充值码：1231248193240183401934014</p>
+    </div>
+    <div class="recharge-ways">
+      <h3>充值方式：</h3>
+      <ul>
+        <li>1、10086热线：拨打10086-2-2进入充值卡充值流程。</li>
+        <li>2、短信营业厅：<br/>
+            （1）为自己充值：编辑短信内容“CZ+充值卡密码”发送至10086；<br/>
+            （2）为他人充值：编辑短信内容“CZ+充值卡密码+#+他人移动号
+              码”发送至10086。
+        </li>
+        <li>3、网上营业厅：进入充值卡充值页面完成充值。<br/>
+            （http://service.gx.10086.cn/fee/czjf2.jsp)
+        </li>
+      </ul>
+    </div>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

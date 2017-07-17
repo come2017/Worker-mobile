@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>首页（普通列表）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/goods-show.css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="goods-show">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>Fmall山东大苹果</h1>
+  </header>
+  <section class="figure">
+      <div id="slider" class="swipe" style="visibility: visible;">
+        <div class="swipe-wrap">
+          <figure>
+            <div class="wrap">
+              <a href=""><img src="../images/img6.jpg" /></a>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+             <a href=""><img src="../images/img6.jpg" /></a>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+              <a href=""><img src="../images/img6.jpg" /></a>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <nav>
+        <ul id="position">
+          <li class="on"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+  </section>
+  <section class="goods-info">
+    <p class="goods-name">烟台红富士大苹果</p>
+    <p class="goods-discount">最低团购价：￥5.00</p>
+    <p class="goods-original">原价 ￥15.00 <a href="">（市场价 ￥20.00）</a></p>
+  </section>
+  <section class="goods-profile">
+    <ul>
+      <li><a href="javascript:;"><span>500g</span>规格：</a></li>
+      <li><a href="http://baidu.com"><span><img src="../images/icons/arrow.png" /></span>商品简介：</a></li>
+    </ul>
+  </section>
+  <section class="goods-group-buy">
+    <p class="once-group">立即参团</p>
+    <p class="start-buy">发起我的团购<a href="">团购细则</a></p>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public/swipe.js"></script>
+<script src="../js/public/mask.js"></script>
+<script src="../js/public/dialog.js"></script>
+<script src="../js/goods-show.js"></script>
+</body>
+</html>

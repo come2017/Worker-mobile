@@ -1,0 +1,1010 @@
+/****************首页******************/
+/*.idx_head h1{
+	margin-top: -8px;
+}*/
+.idx_head .back{
+	width: auto;
+	padding-left:1.2em;
+	background-image: url(../imgs/icon/map_icon.png);
+	background-size: 1em;
+}
+
+.idx_head .list{
+	background-image: url(../imgs/icon/idx_ListIcon.png);
+}
+.idx_nav {
+	padding:30px 0 15px 5%;
+}
+.idx_nav li{
+	width: 18%;
+	text-align: center;
+	margin-right: 8%;
+	margin-bottom: 15px;
+}
+.idx_nav li:nth-child(4n){
+	margin-right: 0;
+}
+.idx_nav li img{
+	width: 100%;
+	display: block;
+}
+.idx_nav li span{
+	display: block;
+	line-height: 34px;
+}
+.idx_tc01{
+	background: #e2feff;
+	color: #60c9cd;
+	padding: 10px 5% 10px 7%;
+	line-height: 60px;
+}
+.idx_tc02{
+	color: #ff8f18;
+	background: #fff0d1;
+}
+.idx_tc03{
+	color: #ff583d;
+	background: #ffe6e2;
+}
+.idx_tc01 img {
+	width: 60px;
+}
+.tc_txt{
+	margin-right: 2%;
+}
+.tit i{
+	border-left: 3px solid #FF4E00;
+	padding-left: 8px;
+	line-height: 17px;
+}
+.idx_Gz img,.idx_Sjs img { width: 100%; }
+.idx_Mt .cut{
+	color: #ff9600;
+	border-bottom: 3px solid #ff9600;
+}
+.Mt_list_txt{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	color: #FFFFFF;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	display: block;
+	padding-left: 10px;
+}
+/********************个人中心-房屋信息************************/
+.Dq_txt{
+	padding-top: 10px;
+}
+.gR_ipt{
+	width: 100%;
+	background: #FFFFFF;
+	font-size: 1.4rem;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #eff3f3;
+}
+.gR_ipt02{
+	text-align: right;
+}
+.gR_btn{
+	background: #ff640e;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.4rem;
+	border-radius: 10px;
+	color: #FFFFFF;
+	margin: 20px 0 30px;
+}
+/********************个人中心-个人资料************************/
+
+.Gr_a01 {
+	background:#FFFFFF url(../imgs/icon/arr_R.png) no-repeat 97% center;
+	background-size: 1rem;
+	padding: 10px 3%;
+	line-height: 60px;
+}
+.Gr_a01 img{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 8%;
+}
+.Gr_a02{
+	background:#FFFFFF url(../imgs/icon/arr_R.png) no-repeat 97% center;
+	background-size: 1rem;
+}
+.Gr_a02 .fr{
+	margin-right: 8%;
+}
+/*生日*/
+.Gr_a02 .lie .bgf{
+	height: 47px;
+	line-height: 47px;
+}
+.page {display: none;position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;overflow: hidden;}
+#form, #reg {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#form .input{
+	display: block;
+	line-height:49px;
+	font-size:1.6rem;
+	height:49px;
+	color:#838383;
+	width:75%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #FFFFFF;
+}
+/**个人资料-性别**/
+.gR_sex .fr{
+	width: 2.5rem;
+	height: 2.5rem;
+	background: #FFFFFF;
+	border: 2px solid #c9c9c9;
+	border-radius: 50%;
+	margin-top: 12px;
+}
+.gR_cut .fr{
+	background: url(../imgs/icon/Check_icon.png) no-repeat;
+	background-size: cover;
+	border: none;
+}
+/************个人中心-手机认证**********/
+.Rz_ipt{
+	width: 88%;
+	padding:10px 3%;
+	height: 20px;
+	margin: 45px auto 0;
+	background: #FFFFFF;
+	border-radius: 5px;
+	
+}
+.Rz_box .Rz_ipt{
+	width: 54%;
+	border: 5px 0 0 5px;
+	margin-top: 0;
+}
+.Rz_box i{
+	
+}
+/*****************个人中心-首页******************/
+.gR_idxNav{
+	height: 50px;
+	line-height: 50px;
+	background: url(../imgs/icon/gR_icon04.png) no-repeat 10px center;
+	background-size: 2.8rem;
+	padding-left: 6rem;
+}
+.gR_idxNav02{
+	background-image: url(../imgs/icon/gR_icon05.png);
+}
+.gR_idxNav03{
+	background-image: url(../imgs/icon/gR_icon06.png);
+}
+.gR_idxNav04{
+	background-image: url(../imgs/icon/gR_icon07.png);
+}
+.gR_idxNav05{
+	background-image: url(../imgs/icon/gR_icon08.png);
+}
+
+/************修改密码************/
+.Rz_ipt01{
+	margin-top: 60px;
+}
+.Rz_ipt02{
+	margin-top: 10px;
+}
+/************我的预约*************/
+.gR_table thead {
+	background: #ffb230;
+}
+.gR_table thead td:nth-child(-n+2){border-right: 1px solid #ffc86a;}
+.gR_table td{
+	padding: 10px 0;
+}
+.gR_table tbody tr:nth-child(2n+1){
+	background: #FFFFFF;
+} 
+
+/**************我的订单******************/
+.gR_Dd {
+	border-top: 1px solid #c6c5c5;
+	border-bottom: 1px solid #c6c5c5;
+}
+.gR_Dd li{
+	height: 45px;
+	line-height: 45px;
+	
+}
+.gR_Dd .cut a{
+	display: block;
+	height: 45px;
+	border-bottom: 3px solid #ff9600;
+	color: #ff9600;
+}
+.gR_Dd_list{
+	border: 1px solid #d5d5d5;
+}
+.Dd_title{
+	padding-left: 10px;
+	height: 45px;
+	line-height: 45px;
+}
+/***************个人中心-我的评论***************/
+.gR_pL{
+	padding: 8px 3%;
+}
+.gR_pL i{
+	padding: 7px 17px;
+}
+.container li{
+	width:2.5rem;
+	height:2.5rem;
+	background-image:url(../imgs/star01.png);
+	background-size: 2.5rem;
+	float:left;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-right:15px;
+}
+.container .on {
+	background-image: url(../imgs/star02.png);
+}
+/*************头像************/
+.gR_head_ipt{
+	position: absolute;
+	top: 60px;
+	height: 86px;
+	opacity: 0;
+}
+.gR_head_box{
+	position: absolute;
+	top: 60px;
+}
+/******************************装修图库-列表****************************/
+.tK_list span{
+	padding: 5px;
+}
+.load_D i { height: 5px; border-top: 1px solid #adadad; display: inline-block; width: 40px; }
+.load_D span { padding:0 10px; display: inline-block; color:#ADADAD; }
+/*.tK_banner {
+	height: 60px;
+}*/
+.tK_banner img{
+	height: auto
+}
+.tK_list li:nth-child(2n){
+	float: right;
+}
+.tK_list li:nth-child(2n+1){
+	float: left;
+}
+
+/********************************装修图库-美图*********************************/
+.tk_mt_left ul{
+	padding-bottom:20px;
+}
+.tk_mt_left li{
+	padding: 20px 5px;
+	border-bottom: 1px solid #e5e5e7;
+}
+.tk_mt_left .cut a{
+	color: #ff9600;
+}
+.tk_mt_right{
+	width: 76%;
+}
+.tk_mt_right .mt_title{
+	display: block;
+	width: 100%;
+	background: #f5f5f9;
+	padding: 10px;
+	color: #8B8B8B;
+}
+.tk_mt_right li{
+	width: 30%;
+	margin-right: 3%;
+	margin-bottom: 10px;
+	/*padding: 0px 5px;*/
+	box-sizing: border-box;
+	
+}
+.tk_mt_right img{
+	margin-top: 12px;
+}
+.tk_mt_right li span{
+	color: #6A6A6A;
+	margin-top:5px;
+}
+/*************************装修图库-美图列表详情*****************************/
+#swiper-container2 .swiper-slide{
+}
+#swiper-container2 .active-nav{
+border: 2px solid #ffb000; !important;
+}
+
+ .swiper-slide{
+	text-align:center;
+}
+ .pink-slide{
+ 	background:#973e76;
+}
+.tk_listIn img,.gL_banner img{
+	height: auto;
+	width: 100%;
+}
+.tk_mt_text{
+	padding: 20px 3%;
+}
+.tk_mt_text i{
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #E7E7E7;
+	border-radius: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.meiTu_num{
+	padding-bottom: 10px;
+}
+.meiTu_num i{
+	display: inline-block;
+	text-align: center;
+	background-color: #ff9600;
+	transform: skew(-20deg);
+	color: #FFFFFF;
+	padding: 2px 6px;
+	font-size: 1.3rem;
+}
+.meiTu_num .num02{
+	background-color: #82817f;
+}
+.num01bg{
+	display: inline-block;
+	background-color: #ff9600;
+	padding:0px 0px 0px 7px;
+	margin-right:-10px;
+}
+.num02bg{
+	display: inline-block;
+	background-color: #82817f;
+	padding: 0px 7px;
+	/*border-radius:100px 0px 0px 0px;*/
+}
+/************************装修攻略****************************/
+.gL_banner span{
+	bottom: 0;
+	left: 0;
+	padding: 7px 10px;
+	background: rgba(0,0,0,0.7);
+	color: #FFFFFF;
+	
+}
+.gL_banner02 span{
+	background: none;
+}
+.gl_nav{
+	border-top: 1px solid #dedede;
+}
+.gl_nav li{
+	padding: 15px 10px 20px;
+	box-sizing: border-box;
+	
+}
+.gl_nav li img{
+	width: 40%;
+}
+/**********************攻略详情***********************/
+.gl_listIn{
+	padding:15px 5% 25px ;
+}
+.gl_listIn .gl_title{
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fef0ea;
+}
+/*************************攻略***************************/
+.gl_list li{
+	padding: 15px 3%;
+}
+.gl_list li img{
+	width: 22%;
+}
+.gl_list_right {
+	width: 75%;
+}
+.gl_list_right h2{
+	width: 99%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.gl_list_right span{
+	width: 99%;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.gl_list_right i{
+	width: 99%;
+	display: block;
+}
+/********************登录***********************/
+.login_ipt input{
+	width: 100%;
+	padding: 15px 3% 15px 5rem;
+	box-sizing: border-box;
+	background: #FFFFFF url(../imgs/icon/login_icon01.png) no-repeat 15px center;
+	background-size: 2rem;
+	margin-bottom: 10px;
+}
+.login_ipt .login_ipt02{
+	background-image: url(../imgs/icon/login_icon02.png);
+}
+.login_btn a{
+	width: 15%;
+	display: inline-block;
+	margin-right: 10%;
+	margin-top: 15px;
+}
+.login_btn a:last-child{
+	margin-right: 0;
+}
+/***********************注册************************/
+.register_head img{
+	width: 20%;
+	border-radius: 50%;
+}
+.register_ipt {
+	margin-top: 10px;
+}
+/***********************设计师团队-首页*************************/
+.design_header img{
+	width: 18%;
+}
+.design_header a{
+	padding: 10px 0;
+}
+.design_header .design_header_R{
+	width: 80%;
+}
+.design_header_R h2{
+	background: url(../imgs/icon/arr_R.png) no-repeat right center; 
+	background-size: 1rem;
+}
+.w_design_header_R h2{
+	background:none;
+}
+.call{
+	background: url(../imgs/icon/design_icon01.png) no-repeat left center;
+	background-size: 1.6rem;
+	padding-left: 3rem;
+}
+.caseList li{
+	width: 33.3%;
+	padding-left: 2%;
+}
+.caseList .txt01{
+	padding: 5px 3px 5px 5px;
+	right: 0;
+	bottom: 0;
+}
+.caseList .txt02{
+	width: 100%;
+	background: #3a353c;
+	padding: 5px 7px;
+}
+.dP_list .dP_header{
+	width: 8%;
+	border-radius: 50%;
+}
+.dP_list_in{
+	padding: 15px 3%;
+}
+.dP_con{
+	width: 90%;
+}
+.dP_con .dP_i01{
+	border-radius: 22px;
+	padding: 2px 10px 1px;
+}
+.dP_star{
+	width: 32%;
+	margin-right: 1%;
+}
+.dP_star:last-child{
+	margin-right: 0;
+}
+.dP_star i{
+	padding: 0rem 0.7rem;
+	background: url(../imgs/star02.png) no-repeat center center;
+	background-size: 1.5rem;
+}
+
+.dP_star .dP_star_K{
+	background-image:url(../imgs/star01.png) ;
+}
+/***********************设计团队-个人简介************************/
+.design_gR_header h2{
+	background-image: none;
+}
+.design_gR_header img{
+	width: 24%;
+}
+.design_gR_header .design_header_R{
+	width: 74%;
+}
+/*************************设计团队************************/
+.address .address_top{
+	display: block;
+	width: 100%;
+	padding:15px 0 15px 2.5rem;
+	background: url(../imgs/icon/nav_icon04.png) no-repeat left center/1.8rem auto,url(../imgs/icon/arr_D.png) no-repeat right center/1.5rem auto;
+}
+.address ul{
+	width: 100%;
+	padding: 10px 1.5rem 10px 1.8rem;
+	background: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.address li{
+	float: left;
+	padding: 2px 5px;
+	border: 1px solid #DEDEDE;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	color: #666;
+	font-size: 1.1rem;
+	border-radius: 2px;
+}
+/*.address ul .cut{}*/
+.team_header a{
+	padding: 10px 3%;
+	background: #FFFFFF;
+}
+/****************************明星工长*****************************/
+.gZ_list li:nth-child(2n+1){
+	float: left;
+}
+.gZ_list li:nth-child(2n){
+	float: right;
+}
+.gZ_list img{
+	width: 100%;
+}
+/************************明星工长-店铺介绍****************************/
+.gZ_header img {
+	width: 28%;
+}
+.gZ_header .design_header_R{
+	width: 68%;
+}
+.gZ_shop{
+	padding: 15px 0 15px 3%;
+	background: #FFFFFF;
+}
+.gZ_shop span{
+	width: 93%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 0;
+}
+.gZ_shop .active-nav{
+	border: none!important;
+}
+.gZ_shop .swiper-slide{
+	padding-right: 3%;
+}
+/****************************明星工长-店铺介绍-店铺首页***************************/
+.gz_table td{
+	padding: 5px 0;
+}
+.gz_table thead {
+	background: #d4d4dc;
+}
+.gz_table tbody tr{
+	border-bottom: 1px dashed #e1e1e1;
+}
+.gz_table tbody td{
+	color: #757575;
+}
+.gz_table tbody tr td:nth-child(3){
+	color: #ff6600;
+}
+.gZ_rj_text{
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	left: 0;
+	bottom: 0;
+	padding:0 3% 10px;
+}
+	
+/****************************明星工长-口碑点评******************************/
+.dP_star_gZ{
+	width: 100%;
+}
+.dP_star_gZ i {
+	margin-left: 5px;
+}
+.gZ_pL{
+	border-top: 2px solid #e7e7e7;
+}
+.gZ_pL_a{
+	display: block;
+	width: 100%;
+	padding: 10px 2rem 10px 3rem;
+	background:url(../imgs/icon/pL_icon.png) no-repeat left center/2.5rem auto,
+			url(../imgs/icon/arr_R.png) no-repeat right center/1rem auto;
+}
+.gz_select{
+	border-bottom: 1px solid #C6C5C5;
+	border-top: 1px solid #C6C5C5;
+	padding: 5px 0;
+	background: #FFFFFF;
+}
+.gz_select li{
+	height: 40px;
+}
+.gz_select .S_select{
+	width: 100%;
+	float: none;
+	padding: 0px;
+	margin-bottom: 0;
+}
+.gz_select .S_select div.select-set{
+	padding: 0px;
+	padding-right: 10px;
+	color: #333;
+}
+.gz_select div.select-arrow{
+	background-size: 0.6em;
+}
+.gz_select div.select-arrow{
+	top: 17px;
+	right: 4px;
+	background-image: url(../imgs/icon/arr_R02.png);
+}
+.gz_select div.select-main{
+	border: none;
+}
+
+.gz_Sort span{
+	width: 47%;
+	background:#ebebeb;
+	color: #4b4b4b;
+	padding: 5px;
+	border-radius: 14px;
+	box-sizing: border-box;
+}
+.gz_Sort span i{
+	vertical-align:sub;
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background:url(../imgs/icon/down_thin.png) no-repeat center 2px/0.6rem auto;
+}
+.gz_caseList li{
+	width: 48%;
+	padding: 10px 2%;
+	margin-right: 2%;
+}
+.gz_caseList li:nth-child(2n){
+	margin-right: 0;
+}
+.gz_caseList .txt03 i{
+	padding: 3px 0;
+	background: #3a353c;
+	text-align: center;
+}
+.gz_caseList .txt03 i:nth-child(2){
+	background: #fc4027;
+}
+/*********************明星工长-装修案例-详情************************/
+.gz_caseIn i{
+	background: url(../imgs/icon/pL_icon.png) no-repeat left center/2rem auto;
+	color: #999;
+	padding: 5px 1rem 5px 2rem;
+}
+.gz_caseIn .icon02{
+	background-image: url(../imgs/icon/pL_icon02.png);
+	background-size: 1.6rem;
+}
+.gz_caseIn_box{
+	border: 1px dashed #bcbbbb;
+	border-radius: 3px;
+	padding: 10px 2px 10px 5px;
+}
+.gz_caseIn_box li{
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.gz_caseIn_box ul:nth-child(2) li{
+	background: #f9ebe4;
+	border-radius: 9px;
+	padding: 2px 7px;
+}
+/***********************明星工长-工长日记***********************/
+.gz_rJ {
+	border-bottom: 1px solid #C6C5C5;
+	border-top: 1px solid #C6C5C5;
+}
+.rJ_list li
+.rJ_list_pic {
+	width: 11%;
+} 
+.rJ_list_con{
+	width: 85%;
+}
+/**********************日记详情************************/
+.rJ_head img{
+	width: 10%;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.rj_icon{
+	/*margin-top:5px;*/
+}
+.rj_icon a{
+	display:inline-block;
+	width:60px;
+	text-align:center;
+	height:28px;
+	border-radius:28px;
+	border:1px solid #eaeaea;
+}
+.rj_icon01{
+	background:url(../imgs/rJ_pic01.png) no-repeat center;
+	background-size:1.4em;
+}
+.rj_icon03{
+	background:url(../imgs/rJ_pic02.png) no-repeat center;
+	background-size:1.4em;
+}
+.rj_icon04{
+	background:url(../imgs/rJ_pic03.png) no-repeat center;
+	background-size:1.4em;
+	margin-left:10px;
+}
+.rj_icon03_h{
+	background:url(../imgs/rJ_pic02_h.png) no-repeat center;
+	background-size:1.4em;
+}
+.rj_icon04_h{
+	background:url(../imgs/rJ_pic03_h.png) no-repeat center;
+	background-size:1.4em;
+	margin-left:10px;
+}
+/*******************明星工长-点评详情*********************/
+.gz_dP{
+	padding-left: 8%;
+}
+.gz_dP li{
+	float: left;
+	box-sizing: border-box;
+	width: 33.3%;
+	background: url(../imgs/icon/gz_pJicon02.png) no-repeat left center/2rem auto;
+	padding: 10px 0 10px 2.5rem;
+}
+.gz_dP .cut{
+	background-image: url(../imgs/icon/gz_pJicon01.png);
+	color: #FF9600;
+}
+/**********************明星工长-施工动态详情***********************/
+.gz_sG a{
+	width: 48%;
+	color: #FFFFFF;
+	padding: 2px;
+	border-radius: 5px;
+	background: #fc4027;
+}
+.gz_sG a:nth-child(2){
+	background: #f39800;
+}
+.gz_sG_in{
+	background: url(../imgs/icon/speed_line.png) repeat-x left 1rem;
+	margin: 10px 0 15px 0;
+}
+.gz_sG_in li{
+	width: 14.2%;
+	float: left;
+}
+.gz_sG_in li i{
+	width: 100%;
+	height: 2rem;
+	background: url(../imgs/icon/seed_icon01.png) no-repeat center center/1.8rem auto;
+}
+.gz_sG_in li .orange{
+	background-image: url(../imgs/icon/seed_icon02.png);
+}
+.gz_sG_in li .hui{
+	background-image: url(../imgs/icon/seed_icon03.png);
+}
+.gz_sG_in li span{
+	padding-top: 8px;
+	display: block;
+	width: 100%;
+	color: #8d8c8c;
+}
+/*****************************施工动态***************************/
+.gz_sG_wrap{
+	float: left;
+	width: 65%;
+	background: url(../imgs/icon/speed_line.png) repeat-x left 1rem;
+}
+.gz_sG_wrap li{
+	float: left;
+	width: 14.2%;
+	height: 2rem;
+	background: url(../imgs/icon/seed_icon01.png) no-repeat center center/1.2rem auto;
+}
+.gz_sG_wrap .orange{
+	background-image: url(../imgs/icon/seed_icon02.png);
+	background-size: 1.3rem;
+}
+.gz_sG_wrap .hui{
+	background-image: url(../imgs/icon/seed_icon03.png);
+}
+.gz_sG_s{
+	width: 32%;
+}
+/**********************预约量房***********************/
+.yY_box .gR_ipt{
+	border: none;
+}
+.yY_box .S_select{
+	width: 100%;
+}
+.yY_box02 li{
+	margin-right: 13px;
+}
+/***************************实体店铺**************************/
+.shop_sct .S_select{
+	width: 30%;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+.shop_sct div.select-main{
+	border: 1px solid #e5e5e5;
+}
+.shop_sct div.select-set{
+	font-size: 1.3rem;
+	color: #5c5c5c;
+	padding: 0px 4px 0px 6px;
+	height: 30px;
+	line-height: 30px;
+}
+.shop_sct li.select-items{
+	font-size: 1.3rem;
+}
+.shop_sct div.select-main{
+	height: 30px;
+}
+.shop_sct div.select-arrow{
+	top: 3px;
+	right: 6px;
+	height: 24px;
+	width: 19px;
+	border-left:1px solid #E7E7E7;
+	background-image: url(../imgs/icon/arr_D03.png);
+	background-position: right center;
+}
+.shop_sct div.select-block{
+	top: 29px;
+}
+.shop_ipt{
+	height: 30px;
+	line-height: 30px;
+	background: #FC4027;
+	padding: 0 3%;
+	color: #fed9d4;
+	float: right;
+}
+.shop_list .team_header a{
+	padding-right: 1%;
+}
+.sG_nav .swiper-slide{
+	padding-right: 0;
+}
+.sG_nav {
+	border-top: 1px solid #c6c5c5;
+	border-bottom: 1px solid #c6c5c5;
+}
+.sG_nav .swiper-container{
+	margin-top: 0;
+}
+.sG_nav .gZ_shop{
+	padding: 15px 0;
+}
+
+/********右侧弹出层********/
+.bg{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:rgba(0,0,0,0.5);
+	z-index:1000;
+}
+.shu_list{
+	display:none;
+	width:50%;
+	background-color:#181717;
+	height:100%;position:fixed;
+	right:0;top:0;
+	z-index:1001;
+}
+.shu_list ul{padding-top:10px;}
+.shu_list li{width:100%;}
+.shu_list li a{
+	font-size:1.5rem;
+	display:inline-block;
+	width:100%;
+	color:#fff;
+	padding:10px 0px 10px 30%;
+	border-bottom:1px dotted #313030;
+}
+.shu_one{
+	background:url(../imgs/icon/list01.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_two{
+	background:url(../imgs/icon/list02.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_three{
+	background:url(../imgs/icon/list03.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_four{
+	background:url(../imgs/icon/list04.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_five{
+	background:url(../imgs/icon/list05.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_six{
+	background:url(../imgs/icon/list06.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_seven{
+	background:url(../imgs/icon/list07.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_eight{
+	background:url(../imgs/icon/list08.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_nine{
+	background:url(../imgs/icon/list09.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_ten{
+	background:url(../imgs/icon/list10.png) no-repeat 10% center;
+	background-size:1.2em;
+}
+.shu_eleven{
+	background:url(../imgs/icon/list11.png) no-repeat 10% center;
+	background-size:1.2em;
+}

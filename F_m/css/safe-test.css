@@ -1,0 +1,51 @@
+#safe-test .safe-box{
+  padding:1.8rem;
+}
+#safe-test .safe-box .safe-text{
+  overflow:hidden;
+}
+#safe-test .safe-box input{
+  height:40px;
+  outline:none;
+  border:none;
+  margin-top:1.6rem;
+  border-bottom:1px #e7e6e6 solid;
+  width:100%;
+}
+#safe-test .safe-box .text{
+	font-size:1.4rem;
+  width:46%;
+  padding-left:2%;
+  float:left;
+}
+#safe-test .safe-box .btn{
+	font-size:1.4rem;
+  float:right;
+  background:#ed117f;
+  color:#fff;
+  border-radius:5px;
+  width:40%;
+  margin-left:10%;
+}
+#safe-test .safe-box .gray{
+  background:#dcdcdc;
+}
+#safe-test .footer{
+  width: 100%;
+  padding: 1.6rem 0;
+  background: #ed117f;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  line-height: 24px;
+}
+
+
+
+
+/*2015-09-21*/
+#safe-test .footer{font-size:1.6rem;}
+#safe-test .safe-box .safe-text{font-size:1.3rem;}
+.text02{color:#666;line-height:22px;}

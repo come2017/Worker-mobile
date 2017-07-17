@@ -1,0 +1,13 @@
+#about-we .about-box{
+  text-align:center;
+  padding-top:50%;
+}
+#about-we .about-box .about-basic{
+  display: inline-block;
+  text-align: right;
+  font-size:1.2rem;
+  color:#797979;
+}
+#about-we .about-box .about-basic img{
+  width:124px;
+}

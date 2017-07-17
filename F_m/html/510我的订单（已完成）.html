@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>510我的订单（待发货）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/order-wait-send.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="order-wait-send">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>我的订单</h1>
+  </header>
+  <nav>
+    <ul class="clearfix">
+      <li><a href="javascript:;">待付款</a></li>
+      <li><a href="javascript:;">待发货</a></li>
+      <li><a href="javascript:;">待收货</a></li>
+      <li class="active"><a href="javascript:;">已完成</a></li>
+    </ul>
+  </nav>
+  <section class="order-wait-box">
+    <div class="order-wait-list">
+      <ul>
+        <li><span class="list-left">订单号:12345678</span><span class="list-right">已完成</span></li>
+        <li class="goods-num">
+          <a href="">
+            <span class="list-left"><img src="../images/img7.jpg" /><img src="../images/img7.jpg" />共2件商品</span>
+            <span class="list-right"><img src="../images/icons/arrow.png" /></span>
+          </a>
+        </li>
+        <li class="clearfix goods-allmoney">
+          <span class="list-left">总价:<b>￥ 699.00</b></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="order-wait-box">
+    <div class="order-wait-list">
+      <ul>
+        <li><span class="list-left">订单号:12345678</span><span class="list-right">已完成</span></li>
+        <li class="goods-num">
+          <a href="">
+            <span class="list-left"><img src="../images/img7.jpg" /><img src="../images/img7.jpg" />共2件商品</span>
+            <span class="list-right"><img src="../images/icons/arrow.png" /></span>
+          </a>
+        </li>
+        <li class="clearfix goods-allmoney">
+          <span class="list-left">总价:<b>￥ 699.00</b></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/order-wait-send.js"></script>
+</body>
+</html>

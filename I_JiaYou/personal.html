@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+	<link rel="stylesheet" href="css/normalize3.0.2.min.css" />
+	<link href="css/mobiscroll.css" rel="stylesheet" />
+	<link href="css/mobiscroll_date.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+
+	</script>
+	</head>
+	<body class="plr3">
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="javascript:;" target="_blank"></a>
+			<h1 class="cf lh_px45 fs8">我的资料</h1>
+		</header>
+		<section class="person-tou mt_px55">
+			<div class="tou_pic-big br">
+				<img src="imgs/per-tou.png">
+			</div>
+			<p class="c5e fs3 mt_px5 tec">E-AUTO LIFE</p>
+		</section>
+		<section class="per-con mt_px15 br5 bgf plr3">
+			<a class="db fs5 car_add ptb_px15 per-bot" href="mine_password_guli_site.html" target="_blank">
+				<span class="c2f3 di w100 fs8 per-suo">支付密码管理</span>
+			</a>
+			<a class="db fs5 ptb_px15 per-bot" href="javascript:;" target="_blank">
+				<span class="c2f3 di w100 fs8 per-nv">性别</span>
+				<div class="wrap fr">
+					<i class="c98 vas">男</i>
+					<input type="checkbox" id="checkbox_d2" class="chk_4" checked />
+					<label for="checkbox_d2"></label>
+					<i class="c98 vas">女</i>
+				</div>
+			</a>
+			 <section id="form">
+				    <form action="">
+				    <a class="db fs5 ptb_px15 car_add" href="javascript:;" target="_blank">
+				    	<span class="c2f3 di w100 fs8 per-shengri">生日</span>
+				      	<input type="text" name="USER_AGE" readonly class="input" id="USER_AGE" placeholder="1988-08-08" />
+				    </a>
+				    </form>
+  			</section>
+				<script src="js/jquery.min.js"></script> 
+				<script src="js/mobiscroll_date.js" charset="gb2312"></script> 
+				<script src="js/mobiscroll.js"></script> 
+				<script type="text/javascript">
+				$(function () {
+					var currYear = (new Date()).getFullYear();	
+					var opt={};
+					opt.date = {preset : 'date'};
+					opt.datetime = {preset : 'datetime'};
+					opt.time = {preset : 'time'};
+					opt.default = {
+						theme: 'android-ics light', //皮肤样式
+						display: 'modal', //显示方式 
+						mode: 'scroller', //日期选择模式
+						dateFormat: 'yyyy-mm-dd',
+						lang: 'zh',
+						showNow: true,
+						nowText: "今天",
+						startYear: currYear - 50, //开始年份
+						endYear: currYear //结束年份
+					};
+				
+					$("#USER_AGE").mobiscroll($.extend(opt['date'], opt['default']));
+				
+				});
+				</script>
+		</section>
+		<section class="person-tan tec w100">
+			<p class="fs4">资料完整度75%完善资料<i class="cff">100%</i>送红包</p>
+		</section>
+		<section class="bg00 w90 tac br5 youka-chongzhi h_px45 lh_px45">
+			<a class="w100 cf fs8" href="javascript:;" target="_blank">保存</a>
+		</section>
+		
+	</body>
+</html>

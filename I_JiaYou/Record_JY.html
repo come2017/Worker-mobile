@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			var oHeight = $(window).height()-45;
+			$('.bag_ling').css({'height':oHeight+'px'});
+			
+			//箭头切换
+			$('.arrow_btn').click(function() {
+                if ($(this).hasClass('arrow_btn02')) {
+                    $(this).removeClass('arrow_btn02');
+                    $(this).siblings('.Record_JY_box02').slideDown();
+                } else {
+                    $(this).addClass('arrow_btn02');
+                    $(this).siblings('.Record_JY_box02').slideUp();
+                }
+            })
+		})
+
+	</script>
+	</head>
+	<body class="plr3">
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="Record.html" target="_blank"></a>
+			<h1 class="cf lh_px45">i 加油</h1>
+		</header>
+		<section class="jy_clock bgf br5 mt_px55 tac Record_JY mb_px10">
+			<section class="w100 Record_JY_BD">
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">加油时间</span>
+					<span class="fr c9">2015-03-21 17:25:51</span>
+				</section>
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">油站</span>
+					<span class="fr c9">北京加油站</span>
+				</section>
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">实付金额</span>
+					<span class="fr cf4">181.14元<i>优惠25.01元</i></span>
+				</section>
+			</section>
+				<section class="fs4 tal c9 Record_JY_box02">
+				订单：4567 5913 5978 1459<br />
+				油品：92<i class="fs08 vas">#</i>（11号枪）<br />
+				油量：35 L<br />
+				单价：5.89元/L<br />
+				金额：206.15元<br />
+				付款方式：加油卡<br />
+				使用红包抵扣<i class="cf4">9</i>元<br />
+				使用代金券抵扣<i class="cf4">9</i>元<br />
+				发票抬头：个人
+			</section>
+			<section class="arrow_btn w100"></section>
+		</section>
+	
+		<section class="jy_clock bgf br5 tac Record_JY mb_px10">
+			<section class="w100 Record_JY_BD">
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">加油时间</span>
+					<span class="fr c9">2015-03-21 17:25:51</span>
+				</section>
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">油站</span>
+					<span class="fr c9">北京加油站</span>
+				</section>
+				<section class="Record_JY_box01 oh fs5">
+					<span class="fl c6">实付金额</span>
+					<span class="fr cf4">181.14元<i>优惠25.01元</i></span>
+				</section>
+			</section>
+				<section class="fs4 tal c9 Record_JY_box02">
+				订单：4567 5913 5978 1459<br />
+				油品：92<i class="fs08 vas">#</i>（11号枪）<br />
+				油量：35 L<br />
+				单价：5.89元/L<br />
+				金额：206.15元<br />
+				付款方式：加油卡<br />
+				使用红包抵扣<i class="cf4">9</i>元<br />
+				使用代金券抵扣<i class="cf4">9</i>元<br />
+				发票抬头：个人
+			</section>
+			<section class="arrow_btn w100"></section>
+		</section>
+	
+	</body>
+</html>

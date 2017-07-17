@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>抢红包</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/infinite.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.fx_btn').on('click',function(){
+					$('.qhb_foot').show();
+				});
+				$('.close_btn').on('click',function(){
+					$('.qhb_foot').hide();
+				});
+				
+				//下拉加载更多
+				 $('#load-more').inifinitescroll({
+			 		finish:function(data){
+			 			console.log("加载完成");
+				 		//$("#container").append($("#container").html());
+				 		if(data==null||data.length==0){
+				 			this.$el.hide();
+				 		}
+			 		}
+				 });
+			})
+		</script>
+	</head>
+	<body>
+		<header class="w100 h_px45 oh plr5 bs">
+			<a href="javascript:;" class="close di fl"></a>
+		</header>
+		<section class="w100 fa_pic">
+			<img src="imgs/fa_picbg.jpg" width="750" height="480"/>
+		</section>
+		<section class="w100 plr3 bs qiang_hong">
+			<section class="bgf hongcon">
+				<section class="prv ad_title2 bgf">
+					<a href="javascript:;" class="ad_title fs6 plr5 bs">阿芙·精油行业领导品牌</a>
+				</section>
+				<section class="bgff2 qiang_red fix">
+					<p class="fl tal">
+						<b class="cf fs4 db">恭喜您，抢到</b>
+						<i>￥25.00</i>
+					</p>
+					<p class="fr tar">
+						<b class="fs4 db">查看抢红包规则</b>
+						<i class="cf fs7">实收红包 <span class="">21.25</span>元</i>
+					</p>
+				</section>
+				<section class="line"></section>
+				<!--两个圆圈-->
+				<section class="quan fix">
+					<span class="fl"></span>
+					<span class="fr"></span>
+				</section>
+				<section class="qiang_text">
+					<p class="fs4 c3">您属于通过第<span class="fs6 cff2 fw700">二级分享链接</span>抢红包，将有<span class="fs6 cff2 fw700">15%</span>的红包，<span class="fs6 cff2 fw700">3.75元</span>归属分享人</p>
+					<section class="toupic tac">
+						<span class="di">
+							<i class="toupic01">
+								<img src="imgs/head_pic.png"/>
+							</i>
+							<b class="fs1 c80 db">直接分享者</b>
+						</span>
+						<i class="toupic02 toupicY"></i>
+						<i class="toupic03 toupicY"></i>
+						<i class="toupic04 toupicY"></i>
+						<i class="toupic03 toupicY"></i>
+						<i class="toupic02 toupicY"></i>
+						<span class="di">
+							<i class="toupic01">
+								<img src="imgs/neiye/qing_tou01.png"/>
+							</i>
+							<b class="fs1 c80 db">间接分享者</b>
+						</span>
+					</section>
+					<p class="fs4 c80 tac">分享好友越多你的红包就越大</p>
+					<a href="javascript:;" class="fs6 cf db tac fx_btn">立即分享</a>
+				</section>
+			</section>
+			<section class="fs4 c9 tac fix jixu">
+				<i class="fl"></i>
+				<i class="fr"></i>
+				继续拖动，查看红包中奖记录
+			</section>
+		</section>
+		<section class="fs3 cb2 mt15 plr5 bs">
+			100/100个红包，20分钟被抢光
+		</section>
+		<section class="w100 bgf mt10 plr5 bs" style="padding-bottom: 10px;">
+			<ul class="mb15" id="container" >
+				<li class="q_example qiang_hong_ex">
+					<a href="javascript:;" class="fix">
+						<span class="fl q_exampleL"><img src="imgs/neiye/qing_tou01.png"/></span>
+						<p class="fl">
+							<b>seven</b>
+							<i>2015-9-11  19:13</i>
+						</p>
+						<span class="fr q_exampleR">10.25元</span>
+					</a>
+				</li>
+				<li class="q_example qiang_hong_ex">
+					<a href="javascript:;" class="fix">
+						<span class="fl q_exampleL"><img src="imgs/neiye/qing_tou01.png"/></span>
+						<p class="fl">
+							<b>seven</b>
+							<i>2015-9-11  19:13</i>
+						</p>
+						<span class="fr q_exampleR">10.25元</span>
+					</a>
+				</li>
+				<li class="q_example qiang_hong_ex">
+					<a href="javascript:;" class="fix">
+						<span class="fl q_exampleL"><img src="imgs/neiye/qing_tou01.png"/></span>
+						<p class="fl">
+							<b>seven</b>
+							<i>2015-9-11  19:13</i>
+						</p>
+						<span class="fr q_exampleR">10.25元</span>
+					</a>
+				</li>
+				<li class="q_example qiang_hong_ex">
+					<a href="javascript:;" class="fix">
+						<span class="fl q_exampleL"><img src="imgs/neiye/qing_tou01.png"/></span>
+						<p class="fl">
+							<b>seven</b>
+							<i>2015-9-11  19:13</i>
+						</p>
+						<span class="fr q_exampleR">10.25元</span>
+					</a>
+				</li>
+				<li class="q_example qiang_hong_ex">
+					<a href="javascript:;" class="fix">
+						<span class="fl q_exampleL"><img src="imgs/neiye/qing_tou01.png"/></span>
+						<p class="fl">
+							<b>seven</b>
+							<i>2015-9-11  19:13</i>
+						</p>
+						<span class="fr q_exampleR">10.25元</span>
+					</a>
+				</li>
+			</ul>
+			<a href="202qiangbaoin2.html" class="db w100 tac fs4 lh_px24 mb15" id="load-more" data-offset="3" data-contaienr="#container">下拉加载更多</a>
+			<section class="loading" id="loadingSpan"></section>
+		</section>
+		<section class="qhb_foot" >
+			<ul class=" fix tac">
+				<li>
+					<a href="javascript:;">
+						<img src="imgs/neiye/fx_pic01.png"/>
+						<i>微信</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="imgs/neiye/fx_pic02.png"/>
+						<i>朋友圈</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="imgs/neiye/fx_pic03.png"/>
+						<i>QQ</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="imgs/neiye/fx_pic04.png"/>
+						<i>微博</i>
+					</a>
+				</li>
+			</ul>
+			<span class="close_btn">取消</span>
+		</section>
+		
+	</body>
+</html>

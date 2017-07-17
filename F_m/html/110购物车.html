@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>首页（普通列表）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/shopping-car.css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="shopping-car">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>购物车</h1>
+  </header>
+  <section class="fruits-list">
+    <div class="clearfix list-box">
+      <div class="list-check">
+        <input type="checkbox" data-id="1" class="checkboxlist">
+      </div>
+      <div class="list-left">
+        <a href="">
+          <img src="../images/img5.png" />
+        </a>
+      </div>
+      <div class="list-right">
+        <h2>烟台红富士苹果</h2>
+        <h3><span>价格：</span>￥<b class="fruits-price">10.50</b><span>/2个</span></h3>
+        <div class="select-box">
+          <p class="fruits-discount">3件直降7元!</p>
+          <p class="fruits-select">
+            <span class="icon-num reduction"><img src="../images/icons/del.png" /></span>
+            <span class="num">1</span>
+            <span class="icon-num add"><img src="../images/icons/add.png" /></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix list-box">
+      <div class="list-check">
+        <input type="checkbox"  data-id="2"  class="checkboxlist">
+      </div>
+      <div class="list-left">
+        <a href="">
+          <img src="../images/img5.png" />
+        </a>
+      </div>
+      <div class="list-right">
+        <h2>烟台红富士苹果</h2>
+        <h3><span>价格：</span>￥<b class="fruits-price">10.50</b><span>/2个</span></h3>
+        <div class="select-box">
+          <p class="fruits-discount">3件直降7元!</p>
+          <p class="fruits-select">
+            <span class="icon-num reduction"><img src="../images/icons/del.png" /></span>
+            <span class="num">1</span>
+            <span class="icon-num add"><img src="../images/icons/add.png" /></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix list-box">
+      <div class="list-check">
+        <input type="checkbox" data-id="3" class="checkboxlist">
+      </div>
+      <div class="list-left">
+        <a href="">
+          <img src="../images/img5.png" />
+        </a>
+      </div>
+      <div class="list-right">
+        <h2>烟台红富士苹果</h2>
+        <h3><span>价格：</span>￥<b class="fruits-price">10.50</b><span>/2个</span></h3>
+        <div class="select-box">
+          <p class="fruits-discount">3件直降7元!</p>
+          <p class="fruits-select">
+            <span class="icon-num reduction"><img src="../images/icons/del.png" /></span>
+            <span class="num">1</span>
+            <span class="icon-num add"><img src="../images/icons/add.png" /></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-left">
+      <input type="checkbox" class="allcheckbox">已选（<span class="select-all-num">1</span>）
+      <span class="select-all-money">￥<span class="car-money">669.00</span></span>
+    </div>
+    <div class="footer-right gray">结算</div>
+  </footer>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/shopping-car.js"></script>
+</body>
+</html>

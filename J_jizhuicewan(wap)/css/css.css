@@ -1,0 +1,160 @@
+/*导航*/
+.idx_nav {
+	padding:15px 0 5px 5%;
+	border-bottom: 1px solid #ebebef;
+}
+.idx_nav li{
+	width: 18%;
+	text-align: center;
+	margin-right: 8%;
+	margin-bottom: 10px;
+}
+.idx_nav li:nth-child(4n){
+	margin-right: 0;
+}
+.idx_nav li img{
+	width: 100%;
+	display: block;
+}
+.idx_nav li span{
+	display: block;
+	line-height: 34px;
+}
+
+/*两个图*/
+.two_img{
+	border: 1px solid #ebebef;
+	padding: 4% 3%;
+}
+.two_img ul li img{
+	width: 100%;
+	height: auto;
+}
+
+/*专家团队*/
+.idx_team_more{
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background-color: #00b1ff;
+	margin-left: 3px;
+}
+/*康复案例*/
+.idxKF_big{
+	padding: 4% 0;
+}
+.idxKF_img{
+	width: 30%;
+}
+.idxKF_img img{
+	width: 100%;
+}
+.idxKF_txt{
+	width: 65%;
+}
+.idx_clock i{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: url(../imgs/icon/Clock.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+/*联系我们*/
+.cont_con{
+	padding: 0 10%;
+}
+.cont_con{
+	padding-top: 26px;
+}
+
+.bus_img{
+	width: 42px;
+	margin-right: 10px;
+}
+.bus_big li{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.bus_txt{
+	margin-top: 8px;
+}
+
+/*专家团队详细页*/
+.TDban_img{
+	width: 70px;
+	border: 3px solid #bad2f0;
+	border-radius: 50%;
+	margin-right: 5%;
+}
+.TDban_img img{
+    border-radius: 50%;
+}
+.TD_banner{
+	background-color: #75a4e0;
+	padding: 16px 0 16px 5%;
+}
+.TDban_txt{
+	margin-top: 4%;
+}
+.TD_but{
+	padding-bottom: 30px;
+}
+.TD_but a{
+	display:inline-block;
+	width: 117px;
+	height:32px;
+	line-height: 32px;
+	background-color: #24d7c4;
+	font-size: 1.5rem;
+}
+.TD_but .TD_zixun i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background:url(../imgs/neiye/td_02.png) 0 0 no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+.TD_but .TD_yuyue{
+	background-color: #24a0d7;
+}
+.TD_but .TD_yuyue i{
+	width: 16px;
+	height: 16px;
+	background:url(../imgs/neiye/td_03.png) 0 0 no-repeat;
+	background-size: contain;
+}
+
+/*有问必答*/
+.answ_01{
+	margin-top: 10px;
+}
+.answ_big{
+	padding: 5%;
+}
+.answ_Q,.answ_A{
+	padding: 10px 3%;
+}
+.answ_Q span{
+	
+}
+.answ_Q i{
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	left: -7px;
+	bottom:31%;
+}
+.answ_A{
+	background-color: #ddc07a;
+}
+.answ_A i{
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	right: -7px;
+	bottom:31%;
+}
+
+

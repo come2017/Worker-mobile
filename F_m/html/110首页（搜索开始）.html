@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>搜索开始</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/swipe.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="index">
+  <header class="header header-search">
+    <span class="search go"><img src="../images/icons/search.png" /></span>
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="搜索" />
+    </div>
+    <span class="back">取消</span>
+  </header>
+  <nav class="nav">
+    <div class="nav-box">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide active"><a href="javascript:;">低价团</a></div>
+              <div class="swiper-slide"><a href="javascript:;">周热卖</a></div>
+              <div class="swiper-slide"><a href="javascript:;">花果山</a></div>
+              <div class="swiper-slide"><a href="javascript:;">好吃嘴</a></div>
+              <div class="swiper-slide"><a href="javascript:;">玩物志</a></div>
+              <div class="swiper-slide"><a href="javascript:;">美食住1</a></div>
+              <div class="swiper-slide"><a href="javascript:;">美食住2</a></div>
+              <div class="swiper-slide"><a href="javascript:;">美食住3</a></div>
+              <div class="swiper-slide"><a href="javascript:;">美食住4</a></div>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 广告区域 -->
+  <section class="figure">
+      <div id="slider" class="swipe" style="visibility: visible;">
+        <div class="swipe-wrap">
+          <figure>
+            <div class="wrap">
+              <a href=""><img src="../images/banner1.jpg" /></a>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+             <a href=""><img src="../images/banner2.jpg" /></a>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+            <a href=""><img src="../images/banner3.jpg" /></a>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <nav>
+        <ul id="position">
+          <li class="on"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+  </section>
+  <section class="fruits-list">
+    <div class="clearfix list-box">
+      <div class="list-left">
+        <a href="">
+          <img src="../images/img1.jpg" />
+        </a>
+      </div>
+      <div class="list-right">
+        <h2>烟台红富士苹果<span>500g</span></h2>
+        <dl>
+          <dt><h3>团购价:<span class="fruits-price">10</span></h3><h4>原价:25</h4></dt>
+          <dd>
+            <span class="icon-num reduction"><img src="../images/icons/del.png" /></span>
+            <span class="num">0</span>
+            <span class="icon-num add"><img src="../images/icons/add.png" /></span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="clearfix list-box">
+      <div class="list-left">
+        <a href="">
+          <img src="../images/img2.jpg" />
+        </a>
+      </div>
+      <div class="list-right">
+        <h2>烟台红富士苹果<span>500g</span></h2>
+        <dl>
+          <dt><h3>团购价:<span class="fruits-price">20</span></h3><h4>原价:25</h4></dt>
+          <dd>
+            <span class="icon-num reduction"><img src="../images/icons/del.png" /></span>
+            <span class="num">0</span>
+            <span class="icon-num add"><img src="../images/icons/add.png" /></span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-left">总价：￥<span class="car-money">0</span></div>
+    <div class="footer-right"><a href=""><img src="../images/icons/car.png" /><em class="fruits-num">0</em></a></div>
+  </footer>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public/swipe.js"></script>
+<script src="../js/public/swiper.js"></script>
+<script src="../js/search-input.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

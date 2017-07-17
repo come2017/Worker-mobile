@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>唐亮工长</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/meau.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			var myscroll;
+			function loaded(){
+				setTimeout(function(){
+					myscroll = new iScroll('wrapper',{
+						//弹性
+						bounce:true,
+						fixedScrollbar:true,//禁止滚动条超出scroller的可见区域
+						momentum:true//惯性打开
+					});
+					myscroll_aa = new iScroll('wrapper_aa',{
+						bounce:true,//弹性
+						fixedScrollbar:true,//禁止滚动条超出scroller的可见区域
+						momentum:true//惯性打开
+					});
+				},100);
+			}
+			window.addEventListener("load",loaded,false);
+			//禁止iscroll以外屏幕滑动
+			document.addEventListener('touchmove',function(e){
+				e.preventDefault();
+			},false);
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="w100 h_px45 lh_px45 tac oh fs7 plr5 bs bgf">
+			<a href="javascript:;" class="back fl di"></a>
+			<a href="javascript:;" class="list di fr h_px45"></a>
+			装修美图
+		</header>
+		<!--banner-->
+		<section class="tK_banner tac mt45">
+			<img class="w100" src="imgs/tK_banner.jpg"/>
+		</section>
+		<!--列表区-->
+		<section class="w100 tk_mt fix">
+			<!--左列表-->
+			<section class="w20 fl tk_mt_left" id="wrapper">
+				<ul class="w100 tac fs4">
+					<li class="cut"><a href="#item1">空间</a></li>
+					<li><a href="#item2">风格</a></li>
+					<li><a href="#item3">户型</a></li>
+					<li><a href="#item4">局部</a></li>
+					<li><a href="#item5">色系</a></li>
+				</ul>
+			</section>
+			<!--右列表-->
+			<section class="fr tk_mt_right">
+				<i class="mt_title w100 fs4">空间</i>
+				<section class="" id="wrapper_aa">
+					<section id="scroller">
+						<ul class="fix item" id="item1">
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic01.jpg"/>
+									<span class="db tac fs3 tac">卧室</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic02.jpg"/>
+									<span class="db tac fs3 tac">客厅</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic03.jpg"/>
+									<span class="db tac fs3 tac">卫生间</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic01.jpg"/>
+									<span class="db tac fs3 tac">厨房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic02.jpg"/>
+									<span class="db tac fs3 tac">玄关</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic03.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic01.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic02.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic03.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic01.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic02.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic03.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="fix item" id="item2">
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">典雅</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">风格</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic06.jpg"/>
+									<span class="db tac fs3 tac">薰衣草</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">意大利</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">古典</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">法式</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic10.jpg"/>
+									<span class="db tac fs3 tac">意式</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic11.jpg"/>
+									<span class="db tac fs3 tac">德式</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic12.jpg"/>
+									<span class="db tac fs3 tac">欧式</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic12.jpg"/>
+									<span class="db tac fs3 tac">清新</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="fix item" id="item3">
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">卧室</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">客厅</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">卫生间</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">厨房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">玄关</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic07.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="fix item" id="item4">
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">卧室</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">客厅</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">卫生间</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">厨房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">玄关</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic08.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="fix item" id="item5">
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">卧室</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">客厅</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">卫生间</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">厨房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">玄关</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+							<li class="fl bgf">
+								<a href="tuKu_meiTu_list.html">
+									<img src="imgs/tK_mtPic09.jpg"/>
+									<span class="db tac fs3 tac">书房</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<script type="text/javascript">
+					//固定图片宽高  5:8
+					var aLi_width = $('.tk_mt_right li').width()/5*6+'px';
+					$('.tk_mt_right li').height(aLi_width);
+					var pic_Width = $('.tk_mt_right img').width()/8*5+'px';
+					$('.tk_mt_right img').height(pic_Width);
+					//菜单点击效果
+					$('.tk_mt_left li').click(function(){
+						$(this).addClass('cut').siblings().removeClass('cut');
+						var aLi_text = $(this).text();
+						$('.tk_mt_right i').text(aLi_text);
+						
+						myscroll_aa.scrollToElement(document.querySelector('#item' + ($(this).index() + 1)), 1200, null, null)
+						return false;
+					})
+					
+				</script>
+			</section>
+		</section>
+		<!--返回顶部-->
+		<section class="toTop">
+			<a href="geRen_index.html">个人中心</a>
+			<!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+		</section>
+				
+		<!--间距-->
+		<section class="kong"></section>
+		<!--尾部-->
+		<footer class="bgf con02">
+			<a class="di fl" href="Javascipt:;">
+				<dl>
+					<dt class="one di one02"></dt>
+					<dd class="fs3 cff9">返回首页</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="two di"></dt>
+					<dd class="fs3 cb2">在线咨询</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="three di"></dt>
+					<dd class="fs3 cb2">拨打电话</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="four di"></dt>
+					<dd class="fs3 cb2">查看地址</dd>
+				</dl>
+			</a>
+		</footer>
+		<!--右侧弹出层-->
+		<section class="bg"></section>
+		<section class="shu_list">
+			<ul>
+				<li><a href="yuYue.html" class="shu_one">预约量房</a></li>
+				<li><a href="gongZhang.html" class="shu_two">明星工长</a></li>
+				<li><a href="designTeam.html" class="shu_three">设计团队</a></li>
+				<li><a href="javascript:;" class="shu_four">标准工艺</a></li>
+				<li><a href="tuKu_meiTu.html" class="shu_five">装修美图</a></li>
+				<li><a href="gongLue.html" class="shu_six">装修攻略</a></li>
+				<li><a href="shop.html" class="shu_seven">实体店铺</a></li>
+				<li><a href="javascript:;" class="shu_eight">地图导航</a></li>
+			</ul>
+		</section>
+	</body>
+</html>

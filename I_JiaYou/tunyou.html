@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			$('.c_current ul li').click(function(){
+				$(this).addClass('current').siblings().removeClass('current');
+			})
+		})
+
+	</script>
+	</head>
+	<body class="plr3">
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="javascript:;" target="_blank"></a>
+			<h1 class="cf lh_px45">i 囤油</h1>
+		</header>
+		<section class="jiayou_example bds bgf br5 mt_px10 mt_px55 Tun_example bds">
+			<a href="javascript:;" class="tun-a db oh">
+				<h2 class="fl ml1 fs6">我的余油（升）</h2>
+				<i class="fr mr9 fs5 c2f3">合计：<em class="cff">8888.00L</em></i>
+			</a>
+			<ul class="of w100">
+				<li>
+					<p class="fs5">0<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">100 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">92<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">500 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">95<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">300 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">97<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">70 L</span>
+					</p>
+				</li>
+			</ul>
+		</section>
+		<section class="w100 mt_px10">
+			<section class="bg00 lh_px35 oh brtop">
+				<h3 class="fl fs7 cf ml1">请选择购油种类及升数</h3>
+				<select name="" class="fr C_sct" >
+					<option value="">北京</option>
+					<option value="">上海</option>
+					<option value="">广州</option>
+					<option value="">深圳</option>
+				</select>
+			</section>
+			<section class="jiayou_example bds bgf Tun_example brbottom c_current">
+			<ul class="of w100 Tun-borbot Tun_example-co">
+				<li>
+					<p class="fs5">0<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">5.95元/L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">92<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">6.06元/L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">95<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">6.58元/L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">97<i class="fs08 vas">#</i><br />
+						<span class="fs5 db">7.28元/L</span>
+					</p>
+				</li>
+			</ul>
+			<ul class="of w100">
+				<li>
+					<p class="fs5">
+						<span class="fs5 db">100 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">
+						<span class="fs5 db">500 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">
+						<span class="fs5 db">300 L</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">
+						<span class="fs5 db">70 L</span>
+					</p>
+				</li>
+			</ul>
+		</section>
+		</section>
+		<a class="mt_px10 db br5 bgf fs5 bds of" href="javascript:;" target="_blank">
+			<span class="c2f3 w50 ptb_px15 fl fs6">已选择购油种类</span>
+			<em class="cda di of fl w40 mr9">
+				<span class="di ptb_px15 fs6">92<i class="fs08 vas">#</i></span>
+				<i class="fr ptb_px15 fs6">1000升</i>
+			</em>
+		</a>
+		<section class="plr3 bgf fs6 ca1 bds oh lh_px45 br5 mt_px10">
+			<input type="text" name="" id="" placeholder="支付金额（元）" class="fl inputs br5 tec">
+		</section>
+		<section class="bg00 w60 tac br5 youka-chongzhi h_px45 lh_px45">
+			<a class="w100 cf fs8" href="javascript:;" target="_blank">充值</a>
+		</section>
+	</body>
+</html>

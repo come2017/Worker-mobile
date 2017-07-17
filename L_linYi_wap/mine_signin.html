@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>临沂商城</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/SS.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+//			var oHeight = $(window).height()-45;
+//			$('.login-bg').css({'height':oHeight+'px'});
+		})
+
+	</script>
+	</head>
+	<body>
+	<!----------------------注册--------------------------->
+	<header class="bge8 w100 h_px45 lh_px45 tac of fs6 plr3 bs ti_p18">
+		<a href="javascript:;" class="back di cf fl">返回</a>
+		<h1 class="cf h_px45 lh_px45 ti_p52">注册</h1>
+	</header>
+	<section class="login-bg mt_px45 prv">	
+		<section class="signin-login fs4 fr">
+			<a href="javascript:;">登录>></a>
+		</section>
+		<section class="main_single w100 oh">
+			<i class="login-i1"></i>
+			<input type="text" placeholder="邮箱/手机号" class="fs6">
+		</section>
+		<section class="main_single w100 mt_px10">
+			<i class="login-i2"></i>
+			<input type="password" name="password" placeholder="密码" class="fs6">
+		</section>
+		<section class="main_single w100 mt_px10">
+			<i class="login-i2"></i>
+			<input type="password" name="password" placeholder="确认密码" class="fs6">
+		</section>
+		<section class="w100 oh">
+			<section class="main_single w70 mt_px10 fl">
+				<i class="login-i3"></i>
+				<input type="text" placeholder="验证码" class="fs6 w70">
+			</section>
+			<section class="singin-yan fr w30 mt_px10">
+				<a href="javascript:;" class="fs6 cf w100 tac di">获取验证码</a>
+			</section>
+		</section>
+		<section class="fs3 signin-zi c80 mt_px20">
+			点击注册表示同意<span class="fs3">《临沂商城用户协议》</span>
+		</section>
+		<section class="login-bottom w100 tac oh mt_px45">
+			<a class="w100 cf fs8" href="javascript:;" target="_blank">注　册</a>
+		</section>
+		
+	</section>
+	</body>
+</html>

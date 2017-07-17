@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+		})
+
+	</script>
+	</head>
+	<body class="p3_20">
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="jiayou_sou.html" target="_blank"></a>
+			<h1 class="cf lh_px45">搜索加油站</h1>
+		</header>
+		<section class="mt_px55 w100 bgf br5 bds">
+			<label for="address"></label>
+			<input type="text" name="address" id="address" placeholder="北京市朝阳区" class="w100 br5 fs5 c9 input-address" />
+		</section>
+		<section class="mt_px10 w100 bgf br5 bds ding_address">
+			<p class="br5 fs5 c6">北京市朝阳区珠江罗马家园64号</p>
+		</section>
+		<section class="bgf jia_example of mt_px10 br5">
+			<section class="fl ml1">
+				<section class="jia_pic">
+					<img src="imgs/jia_pic01.png"/>
+				</section>
+				<span class="di open"></span>
+			</section>
+			<section class="fl ml1">
+				<h2 class="fs6">中石化燕府通加油站</h2>
+				<p class="fs3 cff">92# / ￥ 5.89元</p>
+			</section>
+			<section class="fr tar mr2">
+				<p class="fs3 c9">距您 <em class="cff">351.0M</em></p>
+				<a class="cf br5 bgblue tac di fs5" href="jiayou_fujin_juli.html">导航</a>
+			</section>
+			<p class="time cf tac fs3">00:00至07:00不排队</p>
+		</section>
+		<section class="bgf jia_example of mt_px10 br5">
+			<section class="fl ml1">
+				<section class="jia_pic">
+					<img src="imgs/jia_pic01.png"/>
+				</section>
+				<span class="di open"></span>
+			</section>
+			<section class="fl ml1">
+				<h2 class="fs6">中石化燕府通加油站</h2>
+				<p class="fs3 cff">92# / ￥ 5.89元</p>
+			</section>
+			<section class="fr tar mr2">
+				<p class="fs3 c9">距您 <em class="cff">351.0M</em></p>
+				<a class="cf br5 bgblue tac di fs5" href="jiayou_fujin_juli.html">导航</a>
+			</section>
+			<p class="time cf tac fs3">00:00至07:00不排队</p>
+		</section>
+		<section class="bgf jia_example of mt_px10 br5">
+			<section class="fl ml1">
+				<section class="jia_pic">
+					<img src="imgs/jia_pic01.png"/>
+				</section>
+				<span class="di close"></span>
+			</section>
+			<section class="fl ml1">
+				<h2 class="fs6">中石化燕府通加油站</h2>
+				<p class="fs3 cff">92# / ￥ 5.89元</p>
+			</section>
+			<section class="fr tar mr2">
+				<p class="fs3 c9">距您 <em class="cff">351.0M</em></p>
+				<a class="cf br5 bgblue tac di fs5" href="jiayou_fujin_juli.html">导航</a>
+			</section>
+			<p class="time cf tac fs3">00:00至07:00不排队</p>
+		</section>
+	</body>
+</html>

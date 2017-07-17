@@ -1,0 +1,10 @@
+#group-rule .rule-box{
+  line-height:24px;
+  padding:1.4rem;
+  color:#666666;
+  font-size:1.4rem;
+  padding-bottom:5rem;
+}
+#group-rule .rule-box ul li{
+  padding-bottom:.4rem;
+}

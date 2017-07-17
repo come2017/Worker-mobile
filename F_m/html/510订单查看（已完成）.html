@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>510订单查看（待发货）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/wait-send.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="wait-send">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>订单详情</h1>
+  </header>
+  <section class="order-box">
+    <div class="clearfix order-each">
+      <h3>王心焕<span class="mobile">18510162204</span></h3>
+      <p class="address">北京市朝阳区望京soho塔1c座 1705</p>
+    </div>
+    <p class="order-num">
+      <span class="each-left">订单号：1234568923747387</span>
+      <span class="each-right">状态：已完成</span>
+    </p>
+    <div class="clearfix order-each">
+      <dl class="clearfix goods-details">
+        <dt><img src="../images/img5.png"/></dt>
+        <dd>
+          <h3 class="clearfix">
+            <span class="fruits-name">Fmall山东烟台苹果</span>
+            <span class="fruits-price">￥<em>14.90</em></span>
+          </h3>
+          <p>x1</p>
+        </dd>
+      </dl>
+    </div>
+    <div class="clearfix order-each">
+      <span class="each-left">运费</span>
+      <span class="each-right">￥ 0.00</span>
+    </div>
+    <div class="clearfix order-each message">
+      <h4>给Fmall留言：</h4>
+      <p>一定要给我发快点发货哦亲！～～～</p>
+    </div>
+    <div class="clearfix order-each item">
+      <span class="each-left">优惠</span>
+    </div>
+    <p class="discount-kinds select-result">
+      新用户注册优惠劵<span>￥30.00</span>
+    </p>
+    <div class="clearfix order-each order-pay">
+      <span class="each-left">支付</span>
+      <span class="each-right">￥ 179</span>
+    </div>
+    <p class="pay-kinds">
+      <span class="each-left">支付方式</span>
+      <span class="each-right">微信支付</span>
+    </p>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/wait-send.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>团购页-分享提示</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/specific-group.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="specific-group">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>小铁锤发起的团购</h1>
+  </header>
+  <section class="group-fruits-details">
+    <dl class="clearfix">
+      <dt><img src="../images/img5.png" /></dt>
+      <dd>
+        <h3>【团】山东烟台  红富士苹果x2</h3>
+        <p>最低团购价：￥5.00元</p>
+      </dd>
+    </dl>
+    <div class="discount-time">
+      <p class="discount">原价 ￥15.00 <a href="javascript:;">（市场价 ￥20.00）</a></p>
+      <p class="time">截止 2015-07-24  14：50：23</p>
+    </div>
+  </section>
+  <section class="group-num">
+    <h3>参团人：</h3>
+    <ul class="clearfix">
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+      <li>
+        <img src="../images/person.jpg" />
+        <p>小铁锤</p>
+      </li>
+    </ul>
+  </section>
+  <section class="start-group-discount">
+    <h6>每人可返现:</h6>
+    <p class="discount-money">
+      ￥5.00元
+    </p>
+    <p class="apply-discount">
+      (再增加一人，返现7.5元！)
+    </p>
+  </section>
+  <section class="group-btn">
+    <p data-selector="invite-friends">邀请好友参团</p>
+    <p data-selector="send-goods">发货开团</p>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public/mask.js"></script>
+<script src="../js/public/dialog.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/specific-group.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>关于我们</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/about-we.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="about-we">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>关于我们</h1>
+  </header>
+  <section class="about-box">
+    <div class="about-basic">
+      <img src="../images/logo.png" />
+      <p>北京抚摸网络科技有限公司</p>
+      <p>www.fmall.me</p>
+    </div>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

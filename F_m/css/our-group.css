@@ -1,0 +1,76 @@
+#our-group nav{
+  padding:1.5rem;
+}
+#our-group nav ul{
+  border-bottom:1px #c5c5c5 solid;
+}
+#our-group nav ul li{
+	font-size:1.5rem;
+  float:left;
+  width:50%;
+  text-align:center;
+  padding-bottom:1rem;
+}
+#our-group nav ul li a{
+  color:#333;
+}
+#our-group nav ul .active{
+  border-bottom:4px #ed117f solid;
+  margin-bottom:-2px;
+}
+#our-group nav ul .active a{
+  color:#ed117f;
+}
+#our-group .group-box{
+  padding:1.5rem;
+  padding-top:0;
+}
+#our-group .group-list{
+  padding:1.5rem 0;
+  border-bottom:1px #e7e6e6 solid;
+}
+#our-group .group-list .list-left{
+  width:14%;
+  float:left;
+}
+#our-group .group-list .list-left img{
+  width:100%;
+  border-radius:50%;
+  padding-top:.8rem;
+}
+#our-group .group-list .list-center{
+  width:64%;
+  padding:0 4%;
+  float:left;
+}
+#our-group .group-list .list-center .group-progress{
+  background:#ffaa24;
+  width:100%;
+  height:8px;
+  margin:.9rem 0;
+}
+#our-group .group-list .list-center .group-basic .group-num{
+  float:right;
+}
+#our-group .group-list .list-right{
+  float:right;
+  width:14%;
+  padding-top:1rem;
+}
+#our-group .group-list .list-right a{
+  display:inline-block;
+  width:100%;
+  border-radius:5px;
+  background:#ed117f;
+  color:#fff;
+  text-align:center;
+  padding:.4rem 0;
+}
+
+
+
+
+/*2015-09-21*/
+#our-group nav ul li{font-size:1.5rem;}
+#our-group .group-list .list-center{font-size:1.4rem;}
+#our-group .group-list .list-right a{font-size:1.2rem;}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>商品展示（订单确认）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/order-confirm.css" />
+  <link rel="stylesheet" type="text/css" href="../css/jquery.spinner.css"/>
+   <script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.spinner.js"></script>
+
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="order-confirm">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>订单确认</h1>
+  </header>
+  <section class="order-box">
+    <div class="clearfix order-each" data-address="false">
+    <a href="##" title="">
+      <span class="each-left">添加收货地址</span>
+      <span class="each-right"><img src="../images/icons/arrow.png"/></span>
+      <div class="clear"></div>
+    </a>
+    </div>
+    <div class="clearfix order-each">
+      <dl class="clearfix goods-details">
+        <dt><img src="../images/img5.png"/></dt>
+        <dd>
+          <h3 class="clearfix fruits-bot">
+            <span class="fruits-name">Fmall山东烟台苹果</span>
+            <span class="fruits-price ">￥<em>14.90</em></span>
+          </h3>
+        </dd>
+        <dd>
+       <div class="new-add">
+						<input type="text" class="spinnerExample"/>
+			</div>
+        </dd>
+      </dl>
+    </div>
+    <script type="text/javascript">
+    		$('.spinnerExample').spinner({});
+		</script>
+    <div class="clearfix order-each">
+      <span class="each-left">运费</span>
+      <span class="each-right">￥ 0.00</span>
+    </div>
+    <div class="clearfix order-each message">
+      <h4>给Fmall留言：</h4>
+      <textarea  placeholder="一定要给我发快点发货哦亲！～～～"></textarea>
+    </div>
+    <div class="clearfix order-each item">
+      <span class="each-left">选择优惠方式</span>
+      <span class="each-right link"><img src="../images/icons/arrow.png"/></span>
+      <select  name="discount" class="util-select">
+        <option value=""></option>
+        <option value="1">新用户注册优惠劵|￥20.00</option>
+        <option value="2" selected="selected">积分红包|￥20.00</option>
+        <option value="3">新用户注册优惠劵|￥30.00</option>
+      </select>
+    </div>
+    <p class="discount-kinds select-result">
+      积分红包<span>￥20.00</span>
+    </p>
+    <div class="clearfix order-each order-pay">
+      <span class="each-left">支付</span>
+      <span class="each-right" data-allmoney="179.00">￥ <em>179.00</em></span>
+    </div>
+  </section>
+  <footer class="footer" data-selector="wechat-pay">
+    <img src="../images/icons/wechat.png"/>微信支付
+  </footer>
+
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public/mask.js"></script>
+<script src="../js/public/dialog.js"></script>
+<script src="../js/public/select.js"></script>
+<script src="../js/public/errorTip.js"></script>
+<script src="../js/order-confirm.js"></script>
+
+</body>
+</html>

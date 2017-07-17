@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>510我的订单（待发货）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/grant-discount.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="grant-discount">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>积分兑换</h1>
+  </header>
+  <section class="grant-box">
+    <div class="discount-info">
+      <h3 class="discount-title">iFenmo新会员20元优惠劵</h3>
+      <p class="discount-sum"><span>￥</span>20.00元</p>
+      <ul>
+        <li><em>有效日期：</em>2015.07.23：00：00 至 2015.07.23：00：00：00</li>
+        <li><em>使用限制：</em>订单满50元</li>
+        <li class="use-explain"><em>使用说明：</em>
+            <p>1、优惠劵仅限iFenmo商城使用</p>
+            <p>2、优惠劵可参与任何一款产品使用，但是订单金额需要满50元</p>
+            <p>3、优惠劵的最终解释权归iFenmo科技公司所有</p>
+        </li>
+      </ul>
+    </div>
+    <p class="once-use"><a href="javascript:;">立即使用</a></p>
+    <footer class="footer">
+      <a href="javascript:;">查看我的优惠券</a>
+    </footer>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

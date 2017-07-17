@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>团购细则</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/group-rule.css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="group-rule">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>团购细则</h1>
+  </header>
+  <section class="rule-box">
+  <ul>
+    <li>1.团购需在Fmall商城发起（搜索微信公众号：Fmall商城）</li>
+    <li>2.点击“发起我的团购”开始组团，发起时，默认只购买一件商品，可在团购页，参团再次购买</li>
+    <li>3.点击“立即参团”即可参加好友发起的团购</li>
+    <li>4.发起团购及参团时按照售价支付，组团结束，按照总购买个数，系统自动返现，数量越多，返现越多，每个团员可以获得等价格的积分，团购发起者获得总购买个数倍价格积分</li>
+    <li>5.发起团购后，跳转到付款页面，支付成功，即发起团购成功，可以分享给好友</li>
+    <li>6.每个团最多，可购买5件，到达购买上限后，就不能加入，需要重新开团</li>
+    <li>7.每个团的时间限制为4小时，时间一到就自动结束，每人每团可重复参团，但总数不可超过5件</li>
+    <li>8.团购包邮，订单成交即刻发货</li>
+    <li>9.因微信支付系统原因，成团时提示“交易未成功，转入退款流程”，实际交易已
+    成功，并把售价与团购价的差额返还用户的微信账户</li>
+  </ul>
+    <!-- <p></p> 如果由后台录入数据，团购规则直接放到p标签里面 -->
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

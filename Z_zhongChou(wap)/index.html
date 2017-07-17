@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>金猴宝众筹</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//导航切换
+				$('.navTop,.navCon li').click(function(){
+					$('.navCon').stop().animate({'height':'45px'},500).addClass('navCon_sigle');
+					$('.navTop').stop().slideUp(300);
+					$('.navDown').show();
+				});
+				$('.navCon li').click(function(){
+					$(this).addClass('cut').siblings().removeClass('cut');
+					//alert($(this).html());
+				})
+				$('.navDown').click(function(){
+					var oHeight = $('.navCon ul').height();
+					$('.navDown').hide();
+					$('.navTop').stop().slideDown(300);
+					$('.navCon').stop().animate({'height':oHeight + 'px'},500).removeClass('navCon_sigle');
+				})
+				
+				//菜单下拉
+				$('.navMenu_con li').click(function(){
+					$(this).addClass('cut').siblings().removeClass('cut');
+					var num = $(this).index();
+					$('.menuList').eq(num).stop().slideDown(500).siblings('.menuList').hide();
+				});
+				$('.menuList li').click(function(){
+					$(this).addClass('cut').siblings().removeClass('cut');
+					var oNum = $(this).parent('.menuList').index();
+					var oTxt = $(this).text();
+					$('.navMenu_con li').eq(oNum-1).children('i').text(oTxt).css('color','#00ccff');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="w100 plr3 ma h_px45 lh_px45 fix tac bbt bgf">
+			<a class="user" href="javascript:;"></a>
+			<h1 class="tac di fs6">金猴宝众筹</h1>
+			<a class="search" href="javascript:;"></a>
+		</header>
+		<!--banner-->
+		<section class="prv oh mt45">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="imgs/banner01.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="imgs/banner01.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="imgs/banner01.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="imgs/banner01.jpg" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--轮播JS-->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 30,
+					centeredSlides: true,
+					autoplay: 3000,
+					autoplayDisableOnInteraction: false
+				});
+			</script>			
+		</section>
+		<!--导航-->
+		<section class="w100 fs4 bgf">
+			<section class="navTop h_px45 lh_px45 bbt dn">切换</section>
+			<section class="navCon bbt prv navCon_sigle">
+				<i class="navDown"></i>
+				<ul class="fix">
+					<li class="cut">热门推荐</li>
+					<li>数码产品</li>
+					<li>家用电器</li>
+					<li>精品服饰</li>
+					<li>珠宝</li>
+					<li>美食个护</li>
+					<li>健康保健</li>
+					<li>美丽彩妆</li>
+					<li>数码科技</li>
+				</ul>
+			</section>
+			<!--下拉选项-->
+			<section class="navMenu fs4 tac">
+				<ul class="w100 bbt navMenu_con fix">
+					<li class="fl">
+						<span class="db">项目进程</span>
+						<i class="fs1 c9">全部</i>
+					</li>
+					<li class="fl">
+						<span class="db">默认排序</span>
+						<i class="fs1 c9">目标金额</i>
+					</li>
+				</ul>
+				<ul class="menuList dn">
+					<li class="cut">全部</li>
+					<li>众筹中</li>
+					<li>将要结束</li>
+					<li>成功结束</li>
+				</ul>
+				<ul class="menuList dn">
+					<li>5000</li>
+					<li>10000</li>
+					<li>15000</li>
+				</ul>
+			</section>
+		</section>
+		<!--产品列表-->
+		<section class="product_Title">
+			<h1 class="fs8 tac">热门推荐</h1>
+			<i class="db"></i>
+		</section>
+		<section class="product_List">
+			<h2 class="fs3 fw700">阳光照明慧眼系列智能台灯</h2>
+			<img src="imgs/pic01.jpg"/>
+			<span class="price db w100 h_px45 lh_px45 fs2 bbt">集筹金额￥<i class="fs6">600</i>元/<i class="fs6">2000</i>元</span>
+			<ul class="fix tac fs3">
+				<li class="fl">支持人数<i class="c0cf db">233</i></li>
+				<li class="fl">项目进度<i class="c0cf db">40%</i></li>
+				<li class="fl">剩余天数<i class="c0cf db">15</i></li>
+			</ul>
+			<section class="progressbar">
+				<img src="imgs/progressbar.png"/>
+			</section>
+			<span class="productTxt db w100 fs4">记录生活点滴，智能掌控全家；享听高品音乐，拒绝快餐音符娱乐融入工作，品质缔造生活</span>
+		</section>
+		<section class="product_List">
+			<h2 class="fs3 fw700">阳光照明慧眼系列智能台灯</h2>
+			<img src="imgs/pic02.jpg"/>
+			<span class="price db w100 h_px45 lh_px45 fs2 bbt">集筹金额￥<i class="fs6">600</i>元/<i class="fs6">2000</i>元</span>
+			<ul class="fix tac fs3">
+				<li class="fl">支持人数<i class="c0cf db">233</i></li>
+				<li class="fl">项目进度<i class="c0cf db">40%</i></li>
+				<li class="fl">剩余天数<i class="c0cf db">15</i></li>
+			</ul>
+			<section class="progressbar">
+				<img src="imgs/progressbar.png"/>
+			</section>
+			<span class="productTxt db w100 fs4">记录生活点滴，智能掌控全家；享听高品音乐，拒绝快餐音符娱乐融入工作，品质缔造生活</span>
+		</section>
+		<section class="product_List">
+			<h2 class="fs3 fw700">阳光照明慧眼系列智能台灯</h2>
+			<img src="imgs/pic01.jpg"/>
+			<span class="price db w100 h_px45 lh_px45 fs2 bbt">集筹金额￥<i class="fs6">600</i>元/<i class="fs6">2000</i>元</span>
+			<ul class="fix tac fs3">
+				<li class="fl">支持人数<i class="c0cf db">233</i></li>
+				<li class="fl">项目进度<i class="c0cf db">40%</i></li>
+				<li class="fl">剩余天数<i class="c0cf db">15</i></li>
+			</ul>
+			<section class="progressbar">
+				<img src="imgs/progressbar.png"/>
+			</section>
+			<span class="productTxt db w100 fs4">记录生活点滴，智能掌控全家；享听高品音乐，拒绝快餐音符娱乐融入工作，品质缔造生活</span>
+		</section>
+		<section class="product_List">
+			<h2 class="fs3 fw700">阳光照明慧眼系列智能台灯</h2>
+			<img src="imgs/pic03.jpg"/>
+			<span class="price db w100 h_px45 lh_px45 fs2 bbt">集筹金额￥<i class="fs6">600</i>元/<i class="fs6">2000</i>元</span>
+			<ul class="fix tac fs3">
+				<li class="fl">支持人数<i class="c0cf db">233</i></li>
+				<li class="fl">项目进度<i class="c0cf db">40%</i></li>
+				<li class="fl">剩余天数<i class="c0cf db">15</i></li>
+			</ul>
+			<section class="progressbar">
+				<img src="imgs/progressbar.png"/>
+			</section>
+			<span class="productTxt db w100 fs4">记录生活点滴，智能掌控全家；享听高品音乐，拒绝快餐音符娱乐融入工作，品质缔造生活</span>
+		</section>
+		<section class="product_List">
+			<h2 class="fs3 fw700">阳光照明慧眼系列智能台灯</h2>
+			<img src="imgs/pic04.jpg"/>
+			<span class="price db w100 h_px45 lh_px45 fs2 bbt">集筹金额￥<i class="fs6">600</i>元/<i class="fs6">2000</i>元</span>
+			<ul class="fix tac fs3">
+				<li class="fl">支持人数<i class="c0cf db">233</i></li>
+				<li class="fl">项目进度<i class="c0cf db">40%</i></li>
+				<li class="fl">剩余天数<i class="c0cf db">15</i></li>
+			</ul>
+			<section class="progressbar">
+				<img src="imgs/progressbar.png"/>
+			</section>
+			<span class="productTxt db w100 fs4">记录生活点滴，智能掌控全家；享听高品音乐，拒绝快餐音符娱乐融入工作，品质缔造生活</span>
+		</section>
+	</body>
+</html>

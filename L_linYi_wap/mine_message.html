@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>临沂商城</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/select-widget-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.select.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+//				function select(){
+//					$(".ui-select").selectWidget({
+//						change       : function (changes) {
+//							return changes;
+//						},
+//						effect       : "slide",
+//						keyControl   : true,
+//						speed        : 200,
+//						scrollHeight : 200
+//					});
+//				}
+				$('.sex01').click(function(){
+
+					$('.sex').css('display','block');
+
+				})
+				
+				$('.birthday01').click(function(){
+					$('.data').css('display','block');
+
+					
+				})
+				$('.address01').click(function(){
+					$('.address00').css('display','block');
+
+					
+				})
+				$('.cha').click(function(){
+					$('.bg').css('display','none');
+			})
+		})
+
+	</script>
+	</head>
+	<body>
+		<header class="bge8 w100 h_px45 lh_px45 tac of fs6 plr3 bs ti_p18">
+			<a href="javascript:;" class="back di cf fl">返回</a>
+			<a href="javascript:;" class="seach di fr h_px45"></a>
+			<h1 class="cf h_px45 lh_px45">基本信息</h1>
+		</header>
+		<section class="message w100 bgf mt_px55">
+			<ul class="plr3">
+				<li>
+					<label for="username">昵称</label>
+					<input type="text" name="usernaem" id="username" placeholder="请输入昵称">
+				</li>
+				<li class="back_hui sex01">
+					<label for="usersex">性别</label>
+					<input type="text" name="usersex" id="usersex" placeholder="请输入您的性别">
+				</li>
+				<li class="back_hui birthday01">
+					<label for="birthday">生日</label>
+					<input type="text" name="birthday" id="birthday" placeholder="请输入您的生日">
+				</li>
+				<li>
+					<label for="name">真实姓名</label>
+					<input type="text" name="name" id="name" placeholder="请输入您的姓名">
+				</li>
+				<li class="back_hui address01">
+					<label for="address">所在地</label>
+					<input type="text" name="address" id="address" placeholder="请输入您的所在地">
+				</li>
+			</ul>
+		</section>
+		<!--性别弹出层-->
+		<section class="bg sex">
+			<section class="sex_con bgf br5 plr5 sex_con01">
+				<h2 class="c3 fs7 bdde">选择性别</h2>
+				<ul>
+					<li class="ma">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>女</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>女</li>
+							 	<li>男</li>
+							 </ul>
+						</div>
+					</li>
+				</ul>
+				<a href="javascript:;" class="bge8 tac db cf br5 fs6 true">确认</a>
+				<a href="javascript:;" class="cha">
+					<img src="images/iocn/close_btn.png"/>
+				</a>
+			</section>
+		</section>
+		<!--日期弹出层-->
+		<section class="bg data">
+			<section class="sex_con bgf br5 plr5 data_con">
+				<h2 class="c3 fs7 bdde">选择日期</h2>
+				<ul>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>年份</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>2015</li>
+							 	<li>2014</li>
+							 	<li>2013</li>
+							 	<li>2012</li>
+							 </ul>
+						</div>
+					</li>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>月</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>1</li>
+							 	<li>2</li>
+							 	<li>3</li>
+							 	<li>4</li>
+							 </ul>
+						</div>
+					</li>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>日</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>1</li>
+							 	<li>2</li>
+							 	<li>3</li>
+							 	<li>4</li>
+							 </ul>
+						</div>
+					</li>
+				</ul>
+				<a href="javascript:;" class="bge8 tac db cf br5 fs6 true">确认</a>
+				<a href="javascript:;" class="cha">
+					<img src="images/iocn/close_btn.png"/>
+				</a>
+			</section>
+		</section>
+		<!--所在地弹出层-->
+		<section class="bg address00">
+			<section class="sex_con bgf br5 data_con address00_con">
+				<h2 class="c3 fs7 bdde">选择所在地</h2>
+				<ul>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>请选择</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>北京</li>
+							 	<li>上海</li>
+							 	<li>广州</li>
+							 	<li>大大</li>
+							 </ul>
+						</div>
+					</li>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>请选择</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>北京</li>
+							 	<li>上海</li>
+							 	<li>广州</li>
+							 	<li>大大</li>
+							 </ul>
+						</div>
+					</li>
+					<li class="fl m_px6">
+						<div class='diy_select'>
+							 <input type='hidden' name='' class='diy_select_input'/>
+							 <div class='diy_select_txt di'>请选择</div>
+							 <div class='diy_select_btn'></div>
+							 <ul class='diy_select_list'>
+							 	<li>北京</li>
+							 	<li>上海</li>
+							 	<li>广州</li>
+							 	<li>大大</li>
+							 </ul>
+						</div>
+					</li>
+				</ul>
+					
+				<a href="javascript:;" class="bge8 tac db cf br5 fs6 true">确认</a>
+				<a href="javascript:;" class="cha">
+					<img src="images/iocn/close_btn.png"/>
+				</a>
+			</section>
+		</section>
+	<script>
+//		$('.sex01').click(function(){
+//			$('.sex').css('opacity','block');
+//		})
+//		$('.birthday01').click(function(){
+//			$('.data').css('display','block');
+//		})
+//		$('.address01').click(function(){
+//			$('.address00').css('display','block');
+//		})
+//		$('.cha').click(function(){
+//			$('.bg').css('display','none');
+//		})
+	</script>
+	</body>
+</html>

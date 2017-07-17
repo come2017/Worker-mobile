@@ -1,0 +1,39 @@
+#add-address .address-box{
+  padding:0 1.5rem;
+  margin-bottom:82px;
+}
+#add-address .order-each{
+  border-bottom:1px #e7e6e6 solid;
+  padding:10px 0;
+}
+#add-address .area select{
+  margin-top:1rem;
+}
+#add-address .order-each input{
+  height:45px;
+  border:none;
+  outline:none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-user-modify:read-write-plaintext-only;
+  padding-left:10px;
+  font-size:2rem;
+}
+#add-address .footer{
+  width:100%;
+  padding:1.6rem 0;
+  background:#ed117f;
+  color:#fff;
+  text-align:center;
+  position:fixed;
+  left:0;
+  bottom:0;
+  line-height:24px;
+  font-size:1.6rem;
+}
+
+
+
+
+/*2015-09-21*/
+#add-address .order-each{font-size:1.4rem;}

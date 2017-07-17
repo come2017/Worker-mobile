@@ -1,0 +1,63 @@
+#apply-return .apply-box{
+  padding:0 1.5rem;
+  margin-bottom:82px;
+}
+#apply-return .order-each{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1.4rem 0;
+}
+#apply-return .order-each ul li{
+  padding-bottom:1rem;
+}
+#apply-return .order-each ul .each-left{
+  width:30%;
+  color:#666;
+}
+#apply-return .order-each ul .each-right{
+  width:60%;
+  text-align:right;
+}
+#apply-return .order-each .each-left{
+  float:left;
+}
+#apply-return .order-each .each-right{
+  float:right;
+  padding-right:.2rem;
+}
+#apply-return .order-each .each-left input{
+  height:30px;
+  border:none;
+  outline:none;
+}
+#apply-return .order-each .each-left b{
+  font-weight:normal;
+  font-size:1.2rem;
+  color:#666;
+}
+#apply-return .order-each .each-right img{
+  width:10px;
+  vertical-align:middle;
+}
+#apply-return .message textarea{
+  width:90%;
+  height:40px;
+  margin-top:1rem;
+  border:none;
+  outline:none;
+}
+#apply-return .footer{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #ed117f;
+  color: #fff;
+  padding: 1.4rem 0;
+  font-size: 1.6rem;
+}
+
+
+
+/*2015-09-21*/
+#apply-return .order-each{font-size:1.3rem;}

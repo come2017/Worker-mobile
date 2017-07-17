@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/site.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var touchY = 0;
+				$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+				$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			})
+	
+		</script>
+	</head>
+	<body>
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="index.html" target="_blank"></a>
+			<h1 class="cf lh_px45">一键救援</h1>
+		</header>
+		<section class="Rescue_s01 mt_px45 tac">
+			<p class="cf fs8 lh3">24小时全国免费道路救援</p>
+			<img src="imgs/icon/icon18.png"/>
+			<p class="cf lh2 fs7">救援</p>
+		</section>
+		<img src="imgs/icon/icon17.png" class="Rescue_img01" />
+		<p class="c3d fs5 lh_px30 tac mt_px55">救援电话</p>
+		<p class="cOrg fs8 lh_px30 tac">400-6244-007转2</p>
+		<p class="c3d fs20 lh_px30 tac">中国延保救援集团</p>
+		<p class="cOrg fs5 lh_px30 tac">校对时间：<i class="cb3">2014-12-30</i></p>
+		<section class="mt_px30 bgf bds br5 w_94 ma tac Rescue_p mb_px20">
+			<p class="fs8 c3d bd_B lh25">救援条件</p>
+			<p class="c80 fs6 tal">针对全国，偏远地区不救援，有送油服务</p>
+		</section>
+		<section class="bgf bds br5 w_94 ma tac Rescue_p02 mb_px20 pb_px20">
+			<p class="fs8 c3d bd_B lh25">价格</p>
+			<p class="c80 fs6 tal"><i class="cOrg">会员：</i><i class="c80">免收救援费，一年365天，每天限一次救援</i></p>
+			<p class="c80 fs6 tal"><i class="cOrg">非会员：</i>救援费用要和救援人员协商，汽油价格按当
+	s时市值收取</p>
+		</section>
+	</body>
+</html>

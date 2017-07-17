@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>天雅地毯</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="bgf w100 h_px60 lh_px60 tac of fs6 plr3 bs">
+			<a href="javascript:;" class="logo fl di"><img src="images/logo.png"/></a>
+			<a href="javascript:;" class="phone fr di c80 fs6 h_px60 lh_px60">170-123-3366</a>
+		</header>
+		<!--轮播图-->
+
+			<div class="banner prv of mt_px60">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/banner01.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="images/banner01.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="images/banner01.jpg" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<!--轮播图JS-->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 30,
+					centeredSlides: true,
+					autoplay: 3000,
+					autoplayDisableOnInteraction: false
+				});
+			</script>
+			<!--导航-->
+			<section class="w100 bgf nav_con">
+				<ul>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav01.png"/>
+							<i>新闻中心</i>
+						</a>
+					</li>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav02.png"/>
+							<i>产品中心</i>
+						</a>
+					</li>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav03.png"/>
+							<i>工程案例</i>
+						</a>
+					</li>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav04.png"/>
+							<i>售后服务</i>
+						</a>
+					</li>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav05.png"/>
+							<i>人才招聘</i>
+						</a>
+					</li>
+					<li>
+						<a class="in01 tac" href="javascript:;">
+							<img src="images/icon/nav06.png"/>
+							<i>联系我们</i>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--产品中心-->
+			<section class="w_product bgf plr3">
+				<section class="w_product_title">
+					<h2 class="fl fs6 cea"><i></i><em class="fs6 cea vam">产品中心</em></h2>
+					<a class="fr fs6 cea" href="product_show.html">MORE</a>
+				</section>
+				<ul>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show01.jpg"/></dt>
+								<dd class="fs4">手工地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show02.jpg"/></dt>
+								<dd class="fs4">餐饮地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show03.jpg"/></dt>
+								<dd class="fs4">宾馆地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show04.jpg"/></dt>
+								<dd class="fs4">办公地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show05.jpg"/></dt>
+								<dd class="fs4">尼龙印</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show06.jpg"/></dt>
+								<dd class="fs4">羊毛地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show01.jpg"/></dt>
+								<dd class="fs4">走廊地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show02.jpg"/></dt>
+								<dd class="fs4">KTV地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show03.jpg"/></dt>
+								<dd class="fs4">工艺地毯</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show04.jpg"/></dt>
+								<dd class="fs4">电梯地毯</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--工程案例-->
+			<section class="w_product bgf plr3">
+				<section class="w_product_title">
+					<h2 class="fl fs6 cea"><i></i><em class="fs6 cea vam">工程案例</em></h2>
+					<a class="fr fs6 cea" href="product_show.html">MORE</a>
+				</section>
+				<ul>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show01.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show02.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show03.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show04.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show05.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="product_show_list.html">
+							<dl>
+								<dt><img src="images/show06.jpg"/></dt>
+								<dd class="fs4">手工地毯系列3</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--新闻中心-->
+			<section class="w_product bgf plr3 w_new idx_new">
+				<section class="w_product_title">
+					<h2 class="fl fs6 cea"><i></i><em class="fs6 cea vam">新闻中心</em></h2>
+					<a class="fr fs6 cea" href="news.html">MORE</a>
+				</section>
+				<ul class="fs4">
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+					<li>
+						<a class="of di w100 fix" href="news_details.html">
+							<i>酒店客房地毯的选择技巧</i>
+							<i>2014-9-15</i>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--电脑、触屏切换-->
+			<section class="tac bgf pc_phone">
+				<a href="javascript:;" class="fs5 cea">触屏版</a>
+				<i class="fs5 shuline">|</i>
+				<a href="javascript:;" class="fs5">电脑版</a>
+				<p class="c9d fs09">京ICP备11048675号-1 Copyright © 2004-2013 www.hongyedt.com ALL Rights Reserved</p>
+			</section>
+			<section class="h_px10"></section>
+		<footer class="bgf con02">
+			<a class="di fl" href="index.html">
+				<dl>
+					<dt class="one di one02"></dt>
+					<dd class="fs3 cea">首页</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="two di"></dt>
+					<dd class="fs3 cb2">电话</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="three di"></dt>
+					<dd class="fs3 cb2">咨询</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="four di"></dt>
+					<dd class="fs3 cb2">关注</dd>
+				</dl>
+			</a>
+		</footer>
+		<!--返回顶部-->
+		<a href="javascript:;" class="di toTop"></a>
+		
+	</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>龙泉商城</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cui.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery.spinner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			$(function(){
+				var iH01 = $(window).height()-45-55;
+				$('#wrapper').height(iH01);
+			})
+		</script>-->
+		<script>
+			$(function(){
+				//密码支付
+				$(".pay_line input").keyup(function(e){
+					if(e.keyCode==8){
+						$(this).val("");
+						return;
+					};
+					if($(this).val().length >= 6){
+						$(this).blur();
+						$(this).val($(this).val().substring(0,6));
+					};
+				});
+				//提交订单
+				$('.D_submit').click(function(){
+					$('.pay_bg').show();
+					var oIpt = $('.pay_line').width()/6 + 'px';
+					$('.pay_line,.pay_line input').css({'height':oIpt,'lineHeight':oIpt});
+				})
+				//取消支付
+				$('.pay_bg .false').click(function(){
+					$('.pay_bg').hide();
+				})
+				//确认支付
+				$('.pay_bg .true').click(function(){
+					alert('确认');
+					$('.pay_bg').hide();
+				})
+			})
+		</script>
+		
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="bgff2 w100 lh_px45 h_px45 tac cf oh fs7 ti_34 plr3 bs">
+			<a href="javascript:;" class="back fl di"></a>
+			填写订单
+		</header>
+		
+		<!--中间内容开始-->
+		<section id="wrapper" class="mt45 mb70">
+			<section id="scroller">
+				<a href="234choose_address.html" class="db ptb_px10 w100 plr3 Gr_a02">
+					<i class="c9 db fs4 mb5">张小丽&nbsp;&nbsp;&nbsp;&nbsp;13623681259</i>
+					<i class="fs5">地址：北京朝阳区浙江大厦711室</i>
+				</a>
+				<a href="210chanin.html" class="db ptb_px10 w100 plr3 Gr_a02 mt15 Dd_cp fs4 fix">
+					<img src="imgs/neiye/car_pic01.jpg"/>
+					<span class="fr sp01">
+						<i class="db">吉林辽源名酒 龙泉春 龙抬头 600ml 52°浓香型</i>
+						<span class="fs2 cff7 db mt10">￥<i class="fs4">398.00&nbsp;</i><i class="c9">×1</i></span>
+					</span>
+				</a>
+				<a href="231peisong.html" class="fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02 fs4 mt15">
+					<i class="fl">配送方式</i>
+					<i class="fr c9">工作日配送</i>
+					<i class="fr cff7">快递</i>
+				</a>
+				<a href="232fapiao.html" class="fix db w100 plr3 bgf h_px50 Gr_a02 fs5 mt15">
+					<i class="fl lh_px50">发票信息</i>
+					<span class="fr">
+						<i class="db cff7 mt5">普通发票  公司</i>
+						<i class="c9">北京珈禾宏业科技有限公司</i>
+					</span>
+				</a>
+				<section class="fix db w100 plr3 bgf h_px50 lh_px50 fs5 mt15">
+					<span class="">可用<i class="cff7">95</i>龙泉币抵<i class="cff7">0.95</i>元</span>
+					<div class="wrap fr">
+						<input type="checkbox" id="checkbox_d1" class="chk_4"/>
+						<label for="checkbox_d1"></label>
+					</div>
+				</section>
+				<section class="fix db w100 plr3 bgf h_px50 lh_px50 fs5 mt15">
+					<span class="">可用<i class="cff7">50元</i>红包抵<i class="cff7">70</i>元</span>
+					<div class="wrap fr">
+						<input type="checkbox" id="checkbox_d2" class="chk_4" checked="checked"/>
+						<label for="checkbox_d2"></label>
+					</div>
+				</section>
+				<i class="cff7 fs4 ptb_px10 plr3 db">提示：红包抵钱用</i>
+				<a href="236choose_quan.html" class="fix db w100 plr3 bgf h_px50 Gr_a02 fs5 mt5 prv lh_px50">
+					<i class="fl">优惠券</i>
+					<i class="fr c9">未使用</i>
+					<i class="Tickte fs2 cf">1张可用</i>
+				</a>
+				<section class="fix db w100 plr3 bgf h_px24 lh_px24 fs4 mt15">
+					<i class="fl">商品金额</i>
+					<span class="fr cff7">￥<i class="">398</i></span>
+				</section>
+				<section class="fix db w100 plr3 bgf h_px24 lh_px24 fs4 cff2">
+					<i class="fl">红包抵扣</i>
+					<span class="fr">-￥<i class="">70</i></span>
+				</section>
+				<section class="fix db w100 plr3 bgf h_px24 lh_px24 fs4">
+					<i class="fl">商品优惠</i>
+					<span class="fr cff7">-￥<i class="">50</i></span>
+				</section>
+				<section class="fix db w100 plr3 bgf h_px24 lh_px24 fs4">
+					<i class="fl">运费</i>
+					<span class="fr cff7">￥<i class="">0</i></span>
+				</section>
+			</section>
+		</section>
+		<!--弹出支付-->
+		<section class="pay_bg">
+			<section class="pay_con bgf br10 tac plr3">
+				<h3 class="fs6 h_px45 lh_px45">请输入手机支付密码</h3>
+				<div class="pay_line">
+					<input type="password" maxlength="6" name="" id="in01" value="" pattern="[0-9]*"/>
+				</div>
+				<span class="fs4 cff7 db w100 ptb_px10 tal">密码输入错误，还有<i>4</i>次机会</span>
+				<section class="fs6 fix">
+					<a href="230zhiFu.html" id="pay_t" class="fl cf true">确认</a>
+					<a href="javascript:;" id="pay_f" class="fr cf false">取消</a>
+				</section>
+			</section>
+		</section>
+		<!--中间内容结束-->
+		<footer class="car_foot bgf fix">
+			<span class="fl tar mr10 fs4 plr3 lh_px45">
+				实付款：<i class="cff7">￥</i><i class="cff7">398.00</i><i class="c9">（含运费）</i>
+			</span>
+			<a href="javascript:;" class="fr jieS fs4 db tac cf D_submit">提交订单</a>
+		</footer>
+	</body>
+</html>

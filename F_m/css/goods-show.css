@@ -1,0 +1,143 @@
+#goods-show .figure {
+  margin-top:20px;
+  overflow: hidden;
+  position: relative;
+}
+#goods-show .swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+#goods-show .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+#goods-show .swipe-wrap > figure {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#goods-show .wrap {
+  display: block;
+  width: 90%;
+  margin:0 auto;
+  text-align: center;
+}
+#goods-show .wrap img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+#goods-show .figure{
+  position:relative;
+}
+#goods-show .figure #position{
+    position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  margin-left: -40px;
+}
+#goods-show .figure #position li{
+  width: 10px;
+  height: 10px;
+  border:1px #c6c6c6 solid;
+  background: #f3f3f3;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+#goods-show .figure #position .on{
+  position:relative;
+}
+#goods-show .figure #position .on::before{
+  position:absolute;
+  left:1px;
+  top:1px;
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  background:#ed117f;
+  border-radius:50%;
+}
+#goods-show .goods-info{
+  text-align:center;
+  font-size:1.2rem;
+}
+#goods-show .goods-info .goods-name{
+  padding-top:8px;
+}
+#goods-show .goods-info .goods-discount{
+  background:#ffaa24;
+  font-size:1.4rem;
+   
+  width:90%;
+  margin:12px auto;
+  padding:1rem 0;
+}
+#goods-show .goods-info .goods-original a{
+  font-size:1rem;
+  color:#666;
+  text-decoration:line-through;
+}
+#goods-show .goods-profile ul{
+  padding:1rem;
+}
+#goods-show .goods-profile ul li{
+  border-bottom:1px #e6e5e5 solid;
+  padding:1rem .5rem;
+}
+#goods-show .goods-profile ul li:last-child{
+  border-bottom:0;
+}
+#goods-show .goods-profile ul li a{
+  color:#666666;
+  display:block;
+
+}
+#goods-show .goods-profile ul li a span{
+  float:right;
+}
+#goods-show .goods-profile ul li a span img{
+  width:9px;
+}
+#goods-show .goods-group-buy{
+  padding-bottom:4rem;
+}
+#goods-show .goods-group-buy p{
+  width:70%;
+  background:#ed117f;
+  color:#fff;
+  margin:0 auto;
+  margin-top:1rem;
+  padding:1rem 0;
+  text-align:center;
+  position:relative;
+  border-radius:5px;
+}
+#goods-show .goods-group-buy p a{
+  display:inline-block;
+  position:absolute;
+  right:0px;
+  top:0px;
+  background:#bd1a6b;
+  padding:1.4rem .6rem;;
+  color:#fff;
+  font-size:1rem;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+
+
+
+/*2015-09-21*/
+#goods-show .goods-info .goods-name{font-size:1.4rem;}
+#goods-show .goods-profile ul li a{font-size:1.3rem;}
+#goods-show .goods-group-buy p{font-size:1.6rem;}
+#goods-show .goods-group-buy p a{font-size:0.85rem;}
+
+
+
+/*2015-09-22*/
+#goods-show .wrap img{width:100%;}

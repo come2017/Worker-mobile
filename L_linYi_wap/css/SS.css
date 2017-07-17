@@ -1,0 +1,198 @@
+/**登录**/
+.login-bg{
+	width: 100%;
+	height:auto;
+	background:url(../images/bg_login.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 28% 5% 70px 5%;
+}
+
+.main_single{
+	background-color: #fff;
+    opacity: 0.9;
+}
+.main_single .login-i1{
+	background:url(../images/iocn/icon01.png) no-repeat 18px center;
+    background-size: 1em;
+    width: 45px;
+    height: 45px;
+    float: left;
+    
+}
+.main_single .login-i2{
+	background:url(../images/iocn/icon02.png) no-repeat 18px center;
+    background-size: 1em;
+    width: 45px;
+    height: 45px;
+    float: left;   
+}
+.main_single .login-i3{
+	background:url(../images/iocn/icon03.png) no-repeat 18px center;
+    background-size: 1.3em;
+    width: 45px;
+    height: 45px;
+    float: left;   
+}
+.main_single input{
+    box-sizing: border-box;
+	padding:0 0 0 13px;
+    border-left: 1px #b3b3b3 solid;
+    border-radius: 0;
+    margin: 12px 0;
+}
+.login-zi{
+	margin: 24px 0 35px 0;
+}
+.login-zi a{
+	color:#1075bd;
+}
+.login-bottom{
+	line-height: 45px;
+	background-color:#d93021;
+}
+.login-san{	
+   text-align: center;
+   margin-top: 50px;
+}
+.login-san hr{	
+   width: 34%;
+   display: inline-block;
+   border-left: 0;
+   border-right: 0;
+
+}
+.login-san span {	
+    padding: 0px 10px;
+}
+.login-share{
+	background-color:#f9f9f9;
+	padding: 5%;
+}
+.login-share a{
+	width: 50px;
+	height: 50px;
+	margin: 0px 16px;
+	display: inline-block;
+}
+/**注册**/
+.singin-yan a{
+	background-color: #d93021;
+	line-height: 45px;
+}
+.signin-zi span{
+	color: #1075bd;
+}
+
+.signin-login{
+	margin-bottom: 20px;
+}
+.signin-login a{
+	color: #1075bd;
+}
+/**转租转让--我的发布**/
+.fabu-nav ul {
+    display: inline-block;
+    width: 100%;
+}
+.fabu-nav ul li, .fabu-nav-02 li {
+    float: left;
+    width: 50%;
+    padding: 10px 0px;
+}
+.fabu-nav ul li a, .fabu-nav-02 ul li a {
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #b3b3b3;
+}
+.fabu-nav ul .zu-cur, .fabu-nav-02 ul .zu-cur {
+	border-bottom:4px #d93021 solid;
+    margin-bottom: -3px;
+}
+.fabu-nav ul .zu-cur a, .fabu-nav-02 ul .zu-cur a{
+    color: #d93021;
+}
+.fabu-nav ul li:first-child a, .fabu-nav-02 ul li:first-child a {
+    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
+}
+.zhuanzu li{
+	overflow:hidden;
+	border-bottom:1px solid #dedede;
+}
+.zhuanzu li:last-child{border:none;}
+.zhuanzu label{
+	width:80px;
+	float:left;
+	padding:15px 0px;
+	font-size:1.6rem;
+	color:#333;
+	margin-right:5%;
+}
+.zhuanzu input{
+	float:left;
+	padding:15px 0px;
+	font-size:1.5rem;
+	color:#b2b2b2;
+}
+.check-input {
+	float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background: url(../images/iocn/false.png);
+    background-size: 100%;
+}
+.check-input_in {
+    background:url(../images/iocn/true.png);
+    background-size: 100%;
+}
+.Zorder_con02 dl{
+    padding: 15px 0px;	
+}
+.Zorder_con02 dl dt{
+	float: left;
+	cursor: pointer;
+	margin-right: 5%;
+   
+}
+.Zorder_con02 dl dt span{
+	float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.5rem;
+}
+.zhuanzu-no{
+	padding: 15px 0;
+    display: inline-block;
+}
+.zhuanzu-a{
+    height: 40px;
+    line-height: 40px;
+    width: 94%;
+    margin: 15px auto;
+}
+
+/****转租转让 -我的发布*****/
+.c116f{
+	color:#116fb8;
+}
+.bor-bot{
+	border-bottom:1px #dedede solid;
+	line-height: 35px;
+}
+
+.zhuanzu-My .My-p{
+	padding: 5% 0;
+}
+.zhuanzu-My ul{
+	margin-bottom: 40px;
+}
+
+
+
+
+
+

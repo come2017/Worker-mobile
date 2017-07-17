@@ -1,0 +1,422 @@
+
+/********************返回顶部********************/
+.toTop{
+	width: 12%;
+	position: fixed;
+	right: 3%;
+	bottom: 100px;
+}
+/******************230支付成功*****************/
+.zf_con01{
+	padding: 20px 3%;
+}
+.zf_con01 img{
+	width: 15%;
+	margin-right: 3%;
+}
+.zf_con01 .cff7{padding-top: 3px;}
+.zf_list li{
+	padding: 12px 0;
+}
+
+/**********************200产品***********************/
+.search{
+	position:relative;
+}
+.search_In{
+	font-size: 1.4rem;
+	padding: 10px 0 10px 15px;
+	background:#ebebeb;
+	width:100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.search_Btn{
+	display: inline-block;
+	position:absolute;
+	right:3%;
+	width: 10%;
+	height: 36px;
+	line-height: 36px;
+	background: #ebebeb url(../imgs/icon/search.png) no-repeat left center/1.8rem auto;
+	border-radius: 0 5px 5px 0;
+}
+.cp_nav li{
+	padding-bottom: 5px;
+	text-align: center;
+}
+.cp_nav a{
+	display: block;
+	background: #FFFFFF;
+	width: 100%;
+	color: #666666;
+	padding: 10px 0;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.cp_nav{
+	border-top: 1px solid #dedede;
+}
+
+.cp_nav .active-nav{
+	color: #FFFFFF;
+	background:url(../imgs/nav_bg.png) no-repeat center bottom;
+}
+.cp_nav .active-nav a{
+	display: block;
+	width: 100%;
+	background:#ff210d;
+	color: #FFFFFF;
+	border-bottom: none;
+}
+.cp_list li{
+	width: 48%;
+	background: #FFFFFF;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+.cp_list li:nth-child(2n+1){
+	float:left;
+}
+.cp_list li:nth-child(2n){
+	float: right;
+}
+.cp_list img{
+	width: 100%;
+}
+.cp_list span{
+	padding:5px 5px 0;
+}
+.cp_list .cc,.cp_list .cff7{
+	padding-top: 16px;
+	display: inline-block;
+}
+.cp_list .cc{
+	text-decoration: line-through;
+	margin-left: 8px;
+}
+.cp_list .car{
+	display: inline-block;
+	width: 30%;
+	background: url(../imgs/neiye/car.png) no-repeat center center/4.2rem auto;
+}
+/**************************102产品搜索列表（无）***************************/
+.search_no{
+	width: 30%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+/************************************220购物车***************************/
+.delete{
+	background-image: url(../imgs/icon/delete.png);
+	background-size: 2rem;
+	padding-left: 2.5rem;
+	width: auto;
+}
+.check{
+	margin-top: 20px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #999999;
+	border-radius: 50%;
+}
+.c_cut{
+	border: none;
+	background:url(../imgs/icon/checked.png) no-repeat;
+	background-size: contain;
+}
+.car_list img{
+	width: 65px;
+	height: 65px;
+	margin: 0 10px;
+}
+.carList_con{
+	width:72%;
+}
+.car_s{padding-top: 5px;}
+.carList_con .price{padding-top: 12px; display: inline-block}
+/*购物数量加减样式*/
+.spinner {
+	border: 1px solid #DEDEDE;
+	float: right;
+	height: 35px;
+	width: auto;
+	overflow: hidden;
+*zoom:1;
+}
+.spinner button, .spinner .value {
+	text-align: center;
+	display: block;
+	float: left;
+	height: 100%;
+	margin: 0
+}
+.spinner button {
+	background: #F2F2F2;
+	border: none;
+	width: 35px;
+	color: #999;
+	font: 2.4rem Arial;
+	padding: 0;
+	outline: none
+}
+.spinner .decrease[disabled] {
+	font-size: 3.2rem;
+	line-height: 0;
+}
+.spinner .value {
+	width: 35px;
+	height: 35px;
+	border: none;
+	font-family: Arial;
+	background: #FFFFFF;
+	padding: 0px;
+	font-size: 1.7rem;
+	border-right: 1px solid #DEDEDE;
+	border-left: 1px solid #DEDEDE;
+	border-radius: 0px;
+	color:#333;
+}
+.spinner .value.passive {
+	background-position: 0 -25px;
+	/*color: #919191*/
+}
+.spinner .error, .spinner .invalid {
+	background: #aa0000
+}
+.Shop{
+	padding:15px 0px;
+}
+.Shop .spinner{
+	float:left;
+}
+.car_foot .check{
+	vertical-align: middle;
+	margin-left: 3%;
+	margin-right: 10px;
+	margin-top: 0;
+}
+.chooseAll{
+	height: 43px;
+	line-height: 43px;
+}
+.jieS{
+	padding: 12px 20px;
+	background: #ff210d;
+}
+.car_foot .cf_txt{
+	padding: 3px 0;
+}
+/*************************340我的收藏**********************/
+.mine_foot span{
+	float: left;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	background: #999999;
+}
+.mine_foot .mf_sc{
+	background: #ff210d;
+}
+
+/**********************300个人中心-信息**********************/
+
+.Gr_a01 {
+	background:#FFFFFF url(../imgs/icon/arr_R.png) no-repeat 97% center;
+	background-size: 0.8rem;
+	padding: 10px 3%;
+	line-height: 60px;
+}
+.Gr_a01 img{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 8%;
+}
+.Gr_a02{
+	background:#FFFFFF url(../imgs/icon/arr_R.png) no-repeat 97% center;
+	background-size: 0.8rem;
+}
+.Gr_a02 .fr{
+	margin-right: 8%;
+}
+.gR_head_box{
+	position: absolute;
+	top: 45px;
+	background-image:none ;
+}
+.gR_head_box img{
+	margin-right:3%;
+}
+.gR_head_ipt{
+	position: absolute;
+	top: 45px;
+	height: 86px;
+	opacity: 0;
+}
+
+/*生日*/
+.birthday{
+	left: 3%;
+	top: 50px;
+	height: 24px;
+	line-height: 24px;
+}
+.Gr_a02 .lie .bgf{
+	height: 47px;
+	line-height: 47px;
+}
+.page {display: none;position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;overflow: hidden;}
+#form, #reg {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#form .input{
+	display: block;
+	line-height:49px;
+	font-size:1.6rem;
+	height:49px;
+	color:#838383;
+	width:75%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #FFFFFF;
+}
+.birthday_box{
+	height: 100px;
+}
+/*************************300-个人中心*************************/
+.gR_header{
+	padding: 20px 0;
+	background: url(../imgs/neiye/gR_centerPic01.jpg) no-repeat left top/cover;
+}
+.gR_header img{
+	width: 20%;
+	border-radius: 50%;
+	border:2px solid #FFFFFF;
+	margin-bottom: 5px;
+}
+.gR_table a{
+	display: block;
+	padding-top: 5px;
+}
+.gR_navList li {
+	background: #ffffff;
+	padding: 0 3%;
+}
+.gR_navList li a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+}
+.gR_navList li img{
+	width: 8%;
+	margin-right: 10px;
+}
+
+.gR_name_in input{
+	padding: 10px 3%;
+}
+.sex_Box{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.sex_c{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+}
+.sex_c .sex_true{
+	color: #4d4d4d;
+}
+.sex_c span{
+	padding: 10px 0;
+}
+.sex_list li{
+	width: 100%;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+}
+.sex_list li:first-child{
+	border-bottom: 1px solid #DEDEDE;
+}
+.sex_list .cut{
+	background: #F2F2F2;
+}
+
+
+/*********************************230填写订单********************************/
+.Dd_cp img{
+	display: inline-block;
+	width: 20%;
+	margin-right: 2%;
+}
+.Dd_cp .sp01{
+	width: 70%;
+}
+/*****按钮*****/
+.chk_4 {
+	display: none;
+}
+.chk_4 + label {
+	border: 1px solid #d9d9da;
+	background-color: #f2f2f2;
+	padding: 11px 9px;
+	border-radius: 20px;
+	display: inline-block;
+	position: relative;
+	width: 62px;
+	height: 34px;
+	margin-top: 8px;
+}
+.chk_4 + label:after {
+	border: 1px solid #c6c6c6;
+	content: '';
+	position: absolute;
+	background: #ffffff;
+	top: -1px;
+	z-index: 99;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	border-radius:50%;
+	box-shadow:0px 0px 2px 2px rgba(100,100,100,0.2);
+	
+}
+.chk_4:checked + label {
+	background-color: #ff210d;
+}
+.chk_4:checked + label:after {  /*选中后样式*/
+	content: '';
+	position: absolute;
+	z-index: 99;
+	left: 29px;
+}
+#checkbox_d2 + label:before, #checkbox_d2 + label:after, #checkbox label {	/*按钮滑动效果*/
+	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+
+/*.input {
+    width: 30%;
+    padding: 0px 0px;
+    float: right;
+    margin-right:2em;
+}*/
+.Tickte{
+	position: absolute;
+	top: 6px;
+	left: 60px;
+	border-radius: 2px;
+	background: #FF210D;
+	padding:1px;
+	line-height: 14px;
+}

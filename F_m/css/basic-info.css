@@ -1,0 +1,29 @@
+#basic-info .info-box{
+  padding:1.5rem;
+}
+#basic-info .info-box .info-title{
+  text-align:right;
+  padding-top:0;
+}
+#basic-info .info-box ul li{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1.2rem .4rem;
+}
+#basic-info .info-box ul li a{
+  display:block;
+  color:#333;
+}
+#basic-info .info-box .info-title img{
+  width:48px;
+}
+#basic-info .info-box ul .info-right{
+  float:right;
+}
+#basic-info .info-box ul .info-right img{
+  width:10px;
+  vertical-align:middle;
+}
+#basic-info .info-box ul .mobile .info-right{
+  color:#ed117f;
+}
+#basic-info .info-box ul li{font-size:1.4rem;}

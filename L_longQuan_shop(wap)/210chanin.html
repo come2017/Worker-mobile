@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>龙泉商城</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.spinner.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+//				var iH01 = $(window).height()-45-55;
+//				$('#wrapper').height(iH01);
+				
+				//产品加减
+				$('.spinnerExample').spinner({});
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="bgff2 w100 h_px45 lh_px45 tac oh fs7 plr3 bs cf">
+			<a href="javascript:;" class="back fl di"></a>
+			<a href="javascript:;" class="Mess di fr cff2 fs1">
+				<span>1</span>
+			</a>
+			商品详情
+		</header>
+		
+		<!--中间内容开始-->
+		<section id="wrapper" class="mt45">
+			<section id="scroller">
+				<!--轮播图-->
+				<div class="banner prv oh mt45">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="imgs/neiye/chanpic01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="imgs/neiye/chanpic01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="imgs/neiye/chanpic01.jpg" />
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<!--轮播图JS-->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						spaceBetween: 30,
+						centeredSlides: true,
+						autoplay: 3000,
+						autoplayDisableOnInteraction: false
+					});
+				</script>
+				<section class="plr3 bs bgf">
+					<section class="Ccon01 oh">
+						<p class="fl">
+							<b class="fs6 c3 db">吉林辽源名酒 龙泉春 龙抬头 600ml 52°浓香型</b>
+							<span class="fs4 cff7 db">
+								<i class="fs2">￥</i>
+								<i class="fs8">398.</i>
+								00
+							</span>
+						</p>
+						<dl class="collect fr tac">
+							<dt><img src="imgs/icon/collect.png"/></dt>
+							<dd>收藏</dd>
+						</dl>
+					</section>
+					<section>
+						<span class="fs4 c9 Ccon02">包装</span>
+						<ul class="tab01 oh di">
+							<li>1瓶</li>
+							<li class="dang">6瓶/箱</li>
+						</ul>
+					</section>
+					<section>
+						<span class="fs4 c9 Ccon02">度数</span>
+						<ul class="tab01 oh di">
+							<li>39度</li>
+							<li class="dang">52度</li>
+						</ul>
+					</section>
+					<section class="oh Shop">
+						<span class="fs4 c9 Ccon02 fl">数量</span>
+						<input type="text" class="spinnerExample" pattern="[0-9]*"/>
+					</section>
+				</section>
+				<a href="211shop_value.html" class="fs6 c3 oh Ccon03 bgf db w100 bs mt15">
+					商品评价<span class="fs4 c9 fr"><i class="cff7">1636</i>人评价</span>
+				</a>
+				<section class="Ccon04 bgf mt15">
+					<h2 class="plr3 bs c3 fs6">商品详情</h2>
+					<img src="imgs/neiye/chanpic02.png"/>
+				</section>
+				<section class="h_px45"></section>
+			</section>
+		</section>
+		<!--中间内容结束-->
+		<section class="toTop">
+			<img src="imgs/icon/toTop.png"/>
+		</section>
+		<!--尾部-->
+		<footer class="bgf shopF oh">
+			<a href="javascript:;" class="shopF01 fl">
+				<dl class="tac">
+					<dt></dt>
+					<dd>分享</dd>
+				</dl>
+			</a>
+			<a href="javascript:;" class="shopF02 fl">
+				<dl class="tac">
+					<dt></dt>
+					<dd>购物车</dd>
+				</dl>
+				<i>1</i>
+			</a>
+			<a href="230dingDan.html" class="cf fs6 shopF04 tac di fr">
+				立即购买
+			</a>
+			<a href="220car.html" class="cf fs6 shopF03 tac di fr">
+				加入购物车
+			</a>
+		</footer>
+	</body>
+</html>

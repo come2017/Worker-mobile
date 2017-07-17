@@ -1,0 +1,78 @@
+#grant-discount .discount-info{
+  background:#f2f2f2;
+  width:90%;
+  margin:2.5rem auto 4.5rem auto;
+  border-radius:5px;
+}
+#grant-discount .discount-info .discount-title,
+#grant-discount .discount-info .discount-sum{
+  border-bottom:1px #c6c6c6 solid;
+  text-align:center;
+  margin: 0 .6rem;
+}
+#grant-discount .discount-info .discount-title{
+  padding:1.8rem 0 1.2rem 0;
+}
+#grant-discount .discount-info .discount-sum{
+  font-size:3rem;
+  padding:3.5rem 0;
+  color:#ed117f;
+}
+#grant-discount .discount-info .discount-sum span{
+  font-size:1.8rem;
+}
+#grant-discount .discount-info ul {
+  padding:2.8rem 0;
+}
+#grant-discount .discount-info ul li{
+  color:#666;
+  font-size:1.2rem;
+  padding:0 1rem;
+  line-height:24px;
+  word-break: break-all;
+}
+#grant-discount .discount-info ul li em{
+  color:#333;
+}
+#grant-discount .discount-info ul .use-explain{
+  padding-top:1.4rem;
+}
+#grant-discount .discount-info ul .use-explain em{
+  display:block;
+}
+
+#grant-discount .once-use{
+  width:67%;
+  margin:0 auto;
+  padding:1rem 0;
+  text-align:center;
+  background:#ed117f;
+  border-radius:5px;
+  margin-bottom:9rem;
+}
+#grant-discount .once-use a{
+  color:#fff;
+}
+#grant-discount .footer{
+  border-top:2px #c8c8c8 solid;
+  padding:2rem 0;
+  text-align:center;
+  margin-top:3rem;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#fff;
+}
+#grant-discount .footer a{
+  text-decoration:underline;
+  color:#ed117f;
+}
+
+
+
+
+/*2015-09-21*/
+#grant-discount .discount-info .discount-title{font-size:1.4rem;}
+#grant-discount .once-use{font-size:1.6rem;}
+#grant-discount .footer{font-size:1.4rem;}

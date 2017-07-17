@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>510我的订单（待发货）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/our-group.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="our-group">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>我的团购</h1>
+  </header>
+  <nav>
+    <ul class="clearfix">
+      <li class="active"><a href="javascript:;">我发起的团购</a></li>
+      <li><a href="javascript:;">我参与的团购</a></li>
+    </ul>
+  </nav>
+  <section class="group-box">
+    <div class="clearfix group-list">
+      <div class="list-left"><img src="../images/group-img1.jpg" /></div>
+      <div class="list-center">
+        <h3>【团】烟台红富士大苹果</h3>
+        <p class="group-progress"></p>
+        <p class="group-basic">小铁锤<span class="group-num">已有5/5人加入</span></p>
+      </div>
+      <div class="list-right"><a href="javascript:;">详情</a></div>
+    </div>
+    <div class="clearfix group-list">
+      <div class="list-left"><img src="../images/img4.png" /></div>
+      <div class="list-center">
+        <h3>【团】烟台红富士大苹果</h3>
+        <p class="group-progress"></p>
+        <p class="group-basic">小铁锤<span class="group-num">已有5/5人加入</span></p>
+      </div>
+      <div class="list-right"><a href="javascript:;">详情</a></div>
+    </div>
+    <div class="clearfix group-list">
+      <div class="list-left"><img src="../images/group-img1.jpg" /></div>
+      <div class="list-center">
+        <h3>【团】烟台红富士大苹果</h3>
+        <p class="group-progress"></p>
+        <p class="group-basic">小铁锤<span class="group-num">已有5/5人加入</span></p>
+      </div>
+      <div class="list-right"><a href="javascript:;">详情</a></div>
+    </div>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/our-group.js"></script>
+</body>
+</html>

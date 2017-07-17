@@ -1,0 +1,35 @@
+#take-address .address-box{
+  padding:0 1.5rem;
+  margin-bottom:82px;
+}
+#take-address .order-each .mobile{
+  padding-left:3rem;
+}
+#take-address .order-each .address{
+  padding-top:1.4rem;
+}
+#take-address .order-each{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1.4rem 0;
+}
+#take-address .order-each .each-left{
+  float:left;
+}
+#take-address .order-each .each-right{
+  float:right;
+  padding-right:.2rem;
+}
+#take-address .add-address  a{
+  color:#ed117f;
+  display:block;
+}
+#take-address .add-address .each-right img{
+  width:10px;
+  vertical-align:middle;
+}
+
+
+
+
+/*2015-09-21*/
+#take-address .order-each{font-size:1.4rem;}

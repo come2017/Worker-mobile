@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏--> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏-->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//填写姓名
+				$('.gR_name').click(function(){
+					$('.gR_idx').hide();
+					$('.gR_name_in').show();
+				})
+				
+				//姓名确认跳转
+				$('.name_t').click(function(){
+					$('.gR_idx').show();
+					$('.gR_name_in').hide();
+					var name = $('.gR_name_in input').val();
+					$('.gR_name .fr').text(name);
+				})
+				
+				//性别选择
+				$('.sex_choose').click(function(){
+					$('.sex_c,.sex_Box').show();
+				})
+					//弹出样式
+				var win_height = $('html').height();
+				$('.sex_Box').height(win_height);
+				
+				$('.sex_list li').click(function(){
+					$(this).addClass('cut').siblings().removeClass('cut');
+				})
+					//关闭
+				$('.sex_close,.sex_Box').click(function(){
+					$('.sex_Box,.sex_c').hide();
+				})
+					//确认
+				$('.sex_true').click(function(){
+					var sex = $('.sex_list .cut').text();
+					$('.sex_Box,.sex_c').hide();
+					$('.sex_choose .fr').text(sex);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<section class="w100 gR_idx">
+			<!--头部-->
+			<header class="bgff2 w100 lh_px45 h_px45 tac cf oh fs7 ti_34 plr5 bs">
+				<a href="javascript:;" class="back fl di"></a>
+				个人中心
+			</header>
+			<!--头像-->
+			<a class="fix gR_header db w100 bgf Gr_a01">
+				<i class="fl fs6 c4c">头像</i>
+				<img class="fr" src="imgs/head_pic.png"/>
+			</a>
+			<input class="head_file" type="file" name="" id="" value="" />
+			<!--昵称-->
+			<a class="gR_nC fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02" >
+				<i class="fl fs6 c4c">昵称</i>
+				<i class="fr fs6 c4c">阿芙精油</i>
+			</a>
+			<!--列表1-->
+			<a class="gR_name fix db w100 plr3 bgf h_px50 lh_px50 bbt mt15 Gr_a02">
+				<i class="fl fs6 c4c">真实姓名</i>
+				<i class="fr fs6 c4c">张晓雅</i>
+			</a>
+			<a href="422change-phone.html"  class="fix db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02" >
+				<i class="fl fs6 c4c">手机号</i>
+				<i class="fr fs6 c4c">123456789@qq.com</i>
+			</a>
+			<a href="424-email.html" class="fix db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02" >
+				<i class="fl fs6 c4c">邮箱</i>
+				<i class="fr fs6 c4c">123456789@qq.com</i>
+			</a>
+			<a class="fix db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02 sex_choose" >
+				<i class="fl fs6 c4c">性别</i>
+				<i class="fr fs6 c4c">保密</i>
+			</a>
+			<a class="fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02">
+				<i class="fl fs6 c4c">修改密码</i>
+			</a>
+			<!--列表2-->
+			<a class="fix db w100 plr3 bgf h_px50 lh_px50 bbt mt15 Gr_a02" >
+				<i class="fl fs6 c4c">行业/方向</i>
+				<i class="fr fs6">化妆品/护肤</i>
+			</a>
+			<a class="fix db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02" >
+				<i class="fl fs6 c4c">公司</i>
+				<i class="fr fs6 c4c">北京茂思商贸有限公司</i>
+			</a>
+			<a href="421gs-text.html" class="fix db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02">
+				<i class="fl fs6 c4c">公司简介</i>
+			</a>
+			<a class="fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02 mb15" href="javascript:;">
+				<i class="fl fs6 c4c">详细地址</i>
+			</a>
+		</section>
+		<section class="gR_name_in w100 dn">
+			<!--头部1-->
+			<header class="bgff2 w100 h_px45 lh_px45 tac oh fs7 plr5 bs cf">
+				<a href="javascript:;" class="back fl di"></a>
+				<a href="javascript:;" class="true di fr cf name_t">确认</a>
+				真实姓名
+			</header>
+			<input class="w94 ma mt45 bgf fs4" type="text" name="" id="" value="" placeholder="请输入您的真实姓名" />
+		</section>
+		<section class="sex_Box dn"></section>
+		<section class="w100 sex_c plr3 bgf dn">
+			<span class="fix fs4 bbt db">
+				<i class="sex_close fl cb2">关闭</i>
+				<i class="sex_true fr">确认</i>
+			</span>
+			<ul class="w100 sex_list fs4">
+				<li class="cut">男</li>
+				<li>女</li>
+			</ul>
+		</section>
+	</body>
+</html>

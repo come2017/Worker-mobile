@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>新增地址</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/add-address.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="add-address">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>新增地址</h1>
+  </header>
+  <section class="address-box">
+    <ul>
+      <li class="clearfix order-each"><span>收货人姓名:</span><input name="name" type="text" ></li>
+      <li class="clearfix order-each"><span>收件人手机号:</span><input name="mobile" type="text" ></li>
+      <li class="clearfix order-each area">
+        <span>-选择地区-</span><br/>
+        <select id="seachprov" name="seachprov" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>&nbsp;&nbsp;
+        <select id="seachcity" name="homecity" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>&nbsp;&nbsp;
+        <span id="seachdistrict_div"><select id="seachdistrict" name="seachdistrict"></select></span>
+      </li>
+      <li class="clearfix order-each"><span>详细地址:</span><input type="text" name="detailed" ></li>
+      <li class="clearfix order-each"><span>邮政编码:</span><input type="text" name="post"></li>
+    </ul>
+  </section>
+  <footer class="footer" data-selector="submit">
+    提交
+  </footer>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public/Area.js" type="text/javascript"></script>
+<script src="../js/public/AreaData_min.js" type="text/javascript"></script>
+<script src="../js/public/errorTip.js"></script>
+<script src="../js/add-address.js"></script>
+</body>
+</html>

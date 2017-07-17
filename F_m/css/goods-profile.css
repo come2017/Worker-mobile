@@ -1,0 +1,38 @@
+#goods-profile .profile-box{
+  background:#f9f9f9;
+  width:92%;
+  margin:2rem auto;
+  border-radius:5px;
+  color:#666;
+}
+#goods-profile .profile-box ul{
+  padding:.6rem;
+}
+#goods-profile .profile-box ul li{
+  border-bottom:1px #e6e4e4 solid;
+  padding:1rem 0;
+}
+#goods-profile .profile-box ul li:last-child{
+  border-bottom:0;
+}
+#goods-profile .profile-box ul .profile-title{
+  color:#ed117f;
+  padding:1rem 0;
+  text-align:center;
+   
+}
+#goods-profile .profile-box ul li .profile-right{
+  float:right;
+  width:70%;
+  text-align: right;
+}
+#goods-profile .profile-box ul li .profile-left{
+  float:left;
+  width:30%;
+}
+
+
+
+/*2015-09-21*/
+#goods-profile .profile-box ul .profile-title{font-size:1.3rem;}
+#goods-profile .profile-box ul li{font-size:1.3rem;}

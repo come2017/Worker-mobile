@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+
+	</script>
+	</head>
+	<body>
+		<header class="bg00 w100 tac h_px45">
+			<h1 class="cf lh_px45">个人中心</h1>
+		</header>
+		<section class="w100 mt_px45 plr5">
+			<section class="tac of">
+				<a class="fl sao di" href="javascript:;" target="_blank"></a>
+				<a class="fr mess di prv" href="system_message.html" target="_blank">
+					<i class="pa cf di fs1">10</i>
+				</a>
+				<div class="tou_pic br">
+					<img src="imgs/touxi01.jpg"/>
+				</div>
+				<p class="c5e fs3 mt_px5">E-AUTO LIFE</p>
+				<h2 class="fs3 c3d"><span class="ceb fs5"> i </span>加油为您共节省 <em class="fs8 cb2">350</em> 元</h2>
+			</section>
+			<section class="bgf con02 mt_px5 of">
+				<a class="di fl" href="Record.html" target="_blank">
+					<dl class="bdrf1">
+						<dt class="one di"></dt>
+						<dd class="fs3">交易记录</dd>
+					</dl>
+				</a>
+				<a class="di fl" href="receipt_usual.html" target="_blank">
+					<dl class="bdrf1">
+						<dt class="two di"></dt>
+						<dd class="fs3">发票管理</dd>
+					</dl>
+				</a>
+				<a class="di fl" href="car_guli.html" target="_blank">
+					<dl class="bdrf1">
+						<dt class="three di"></dt>
+						<dd class="fs3">车辆管理</dd>
+					</dl>
+				</a>
+				<a class="di fl" href="help_Service.html" target="_blank">
+					<dl>
+						<dt class="four di"></dt>
+						<dd class="fs3">客服</dd>
+					</dl>
+				</a>
+			</section>
+			<section class="bgf mt_px10 br5 example">
+				<ul>
+					<li class="of">
+						<a class="di w50 fl of" href="bag_red.html" target="_blank">
+							<dl class="fl">
+								<dt class="icon05"></dt>
+								<dd class="fs3">i 油卡</dd>
+							</dl>
+							<span class="fs4 di fl tac">5000元</span>
+						</a>
+						<a class="di w50 fl" href="">
+							<p class="of">
+								<em class="fs4">红包</em>
+								<i class="fr bs cf db">5</i>
+							</p>
+						</a>
+					</li>
+					<li class="of">
+						<a class="di w50 fl of" href="bag_daijin.html" target="_blank">
+							<dl class="fl">
+								<dt class="icon06"></dt>
+								<dd class="fs3">i 囤油</dd>
+							</dl>
+							<span class="fs4 di fl tac">500升</span>
+						</a>
+						<a class="di w50 fl" href="">
+							<p class="of">
+								<em class="fs4">代金券</em>
+								<i class="fr bs cf db">5</i>
+							</p>
+						</a>
+					</li>
+					<li class="of">
+						<a class="di w50 fl of" href="bag_ticket.html" target="_blank">
+							<dl class="fl">
+								<dt class="icon07"></dt>
+								<dd class="fs3">积分</dd>
+							</dl>
+							<span class="fs4 di fl tac">750分</span>
+						</a>
+						<a class="di w50 fl" href="">
+							<p class="of">
+								<em class="fs4">洗车券</em>
+								<i class="fr bs cf db">10</i>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<a class="bgblue db sos cf fs6" href="Rescue.html" target="_blank">
+				<i class="di fl"></i>
+				一键救援
+			</a>
+			<section class="tac inpic">
+				<img src="imgs/icon/img01.png"/>
+			</section>
+		</section>
+	</body>
+</html>

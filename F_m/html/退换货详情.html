@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>申请退换货</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/return-detail.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="return-detail">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>申请退换货</h1>
+  </header>
+  <section class="detail-box">
+    <div class="clearfix order-each">
+      <p class="detail-text text01">尊敬的用户，我们已经收到您的申请<br />请耐心等待，我们会尽快为您处理</p>
+    </div>
+    <div class="clearfix order-each">
+      <ul>
+        <li class="clearfix"><span class="each-left">商品名称</span><span class="each-right">Jilme自美臻品 韩国微SPA美肤礼盒</span></li>
+        <li class="clearfix"><span class="each-left">商品金额</span><span class="each-right">￥14.90</span></li>
+        <li class="clearfix"><span class="each-left">订单编号</span><span class="each-right">1234568923747387</span></li>
+        <li class="clearfix"><span class="each-left">交易时间</span><span class="each-right">2015-08-14  14:32:23</span></li>
+      </ul>
+    </div>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

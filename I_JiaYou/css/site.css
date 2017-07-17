@@ -1,0 +1,767 @@
+/*******个人中心首页********/
+.sao{width:40px;height:40px;
+	background:url(../imgs/icon/Erweima.png) no-repeat center;
+	background-size:3em;
+	margin-top:5px;
+	}
+.tou_pic{width:65px;height:65px;margin:0 auto;border:3px solid #ee7d00;margin-top:10px;}
+.tou_pic img{width:100%;border-radius: 50%;}
+.mess{width:40px;height:40px;
+	background:url(../imgs/icon/message.png) no-repeat center;
+	background-size:2.2em;
+	margin-top:5px;
+	}
+.mess i{width:18px;height:18px;line-height:18px;border-radius:50%;text-align:center;background-color:#a70101;}
+.con02{border-radius:5px;height:75px;box-shadow:0px 1px 2px 0px rgba(4,0,0,0.1);}
+.con02 a{width:25%;height:100%;padding:5px 0;overflow:hidden;}
+.con02 dl{height:100%;width:100%;}
+.con02 dt{width:100%;height:70%; text-align: center; margin: 0 auto 1.5%;}
+.con02 dd{ text-align: center; vertical-align: bottom; }
+.one{background:url(../imgs/icon/icon01.png) no-repeat center;background-size:2.5em;}
+.two{background:url(../imgs/icon/icon02.png) no-repeat center;background-size:2.5em;}
+.three{background:url(../imgs/icon/icon03.png) no-repeat center;background-size:4em;}
+.four{background:url(../imgs/icon/icon04.png) no-repeat center;background-size:2.5em;}
+.example li{box-shadow:0px 1px 2px 0px rgba(4,0,0,0.1);background:url(../imgs/icon/left_arr.png) no-repeat 91% center;
+				background-size:1.2em;}
+.example li a{height:60px;padding:5px 0;}
+.example dl{width:50%;height:100%; text-align: center; }
+.example dt{width:100%;height:70%; text-align: center; }
+.example span{height:50px;line-height:50px;width:50%;border-right:1px solid #e0e0e0;}
+.example p{line-height:50px;width:100%;height:100%;}
+.example p em{margin-left:10%;}
+.example p i{width:15px;height:15px;margin-top:18px;margin-right:30%;background-color:#ff9c00;text-align:center;line-height:15px;}
+.icon05{background:url(../imgs/icon/icon05.png) no-repeat center;background-size:2.5em;}
+.icon06{background:url(../imgs/icon/icon06.png) no-repeat center;background-size:2em;}
+.icon07{background:url(../imgs/icon/icon07.png) no-repeat center;background-size:1.9em;}
+.sos{width:70%;height:45px;margin:25px auto;line-height:45px;border-radius:5px;padding-left:20%;}
+.sos i{width:45px;height:45px;background:url(../imgs/icon/icon08.png) no-repeat center;
+		background-size:2em;
+		}
+
+.inpic{width:70%;margin:30px auto;}
+.inpic img{width:100%;}
+
+/*********编辑发票抬头**********/
+.back{width:34px;height:45px;background:url(../imgs/icon/back.png) no-repeat 2px center;background-size:1em;}
+input{width:100%;padding:15px 0px;}
+.inputs{padding-left:15px;box-sizing: border-box;}
+.btn{margin:150px auto 0px;height:45px;line-height:45px;}
+.btn a{display:inline-block;}
+
+/**********新增常用发票抬头**********/
+.add_re{height:45px;line-height:45px;}
+.add_re a{width:100%;background:url(../imgs/icon/add_red.png) no-repeat 13px center;background-size:1.5em;}
+
+/************搜索加油站************/
+.sou a{display:inline-block;
+		width:40px;height:40px;
+		background:url(../imgs/icon/sou_hui.png) no-repeat center;
+		background-size:2.3em;
+		right:5%;top:0px;
+		}
+		
+/*********添加车辆**********/
+.input-car{width:50%;}
+.car_add{
+	background-image:url(../imgs/icon/left_arr.png);
+	background-repeat:no-repeat;
+	background-position:97% center;
+	background-size:0.8em;
+	}
+.car_add02 label{
+	background:url(../imgs/icon/add_car.png) no-repeat 75% center;
+	background-size:2.5em;
+}
+.btn01{margin:90px auto 0px;}
+.btn01 a{display:inline-block;}
+.btn02{margin:80px auto 0px;}
+.btn02 a{display:inline-block;}
+/********添加车辆已有车型*******/
+.car_add p{
+		display:inline-block;
+		width:100px;
+		height:45px;
+		background:url(../imgs/car_type01.png) no-repeat left center;
+		background-size:3em;
+		}
+.car_add i{color:#222;margin-right:15%;}
+
+/**********车辆管理完成后**********/
+.car_example{padding:10px 0px;
+			background-image:url(../imgs/icon/left_arr.png);
+			background-repeat:no-repeat;
+			background-position:96% center;
+			background-size:1.2em;
+			}
+.car_pic{width:43px;height:30px;margin-left:13px;}
+.car_pic img{width:100%;}
+.car_example span{line-height:30px;margin-left:20px;}
+
+/******我的资料-修改昵称********/
+.ch_name label{
+	float:left;
+	display:inline-block;
+	width:45px;
+	height:45px;
+	background:url(../imgs/icon/tou01.png) no-repeat 15px center;
+	background-size:1.5em;
+}
+.ch_name input{
+	box-sizing:border-box;
+	padding-left:15px;
+	display:inline-block;
+	float:left;
+	width:85%;
+}
+
+/********设置支付密码、修改密码*********/
+.site_pass{
+	padding-top:10px;
+}
+
+.site_pass input{
+	margin-top:10px;
+	border:1px solid #dcdddd;
+	width:86%;
+	padding:15px 0px 15px 50px;
+	box-sizing: border-box;
+	background:url(../imgs/icon/icon10.png) no-repeat 15px center;
+	background-size:1.1em;
+}
+.site_pass .input-look{
+	background:url(../imgs/icon/icon11.png) no-repeat 10px center;
+	background-size:1.7em;
+}
+.site_pass .input-look01{
+	background:url(../imgs/icon/icon12.png) no-repeat 10px center;
+	background-size:1.7em;
+}
+.btn03{margin:35px auto 0px;height:45px;line-height:45px;}
+.btn03 a{display:inline-block;}
+
+/********支付密码管理*********/
+.site_pass{border-radius:5px 5px 0px 0px;}
+.site_pass ul{display:inline-block;width:100%;border-bottom:1px solid #c4c7c8;margin-bottom:20px;}
+.guli_pass ul{display:inline-block;width:100%;border-bottom:1px solid #c4c7c8;margin-bottom:10px;}
+.site_pass ul li,.guli_pass li{float:left;width:50%;padding:10px 0px;}
+.site_pass ul li:first-child a,.guli_pass ul li:first-child a{box-sizing:border-box;border-right:1px solid #e0e0e0;}
+.site_pass ul li a,.guli_pass ul li a{font-size:1.6rem;display:inline-block;width:100%;text-align:center;}
+.site_pass ul .current,.guli_pass ul .current{border-bottom:3px solid #ff9c00;margin-bottom:-2px;}
+.guli_pass{padding-top:0px;}
+.jiayou{padding:0px;}
+
+/*********搜索加油站-结果***********/
+.cff{color:#ff8400;}
+.input-address{
+	padding-left:60px;
+	background:url(../imgs/icon/icon13.png) no-repeat 15px center;
+	background-size:1.7em;
+}
+
+.ding_address p{
+	padding:15px 0px 15px 60px;
+	background:url(../imgs/icon/icon14.png) no-repeat 15px center;
+	background-size:1.5em;
+}
+.jia_example{padding-top:13px;}
+.jia_pic{width:36px;height:39px;}
+.jia_pic img{width:100%;}
+.open{
+	width:36px;
+	height:27px;
+	background:url(../imgs/icon/icon15.png) no-repeat center;
+	background-size:2.3em;
+}
+.close{
+	width:36px;
+	height:27px;
+	background:url(../imgs/icon/icon16.png) no-repeat center;
+	background-size:2.3em;
+}
+.jia_example h2{
+	color:#3d4448;
+	margin-bottom:6px;
+	margin-top:-5px;
+}
+.jia_example a{
+	width:90px;
+	height:30px;
+	line-height:30px;
+	margin:10px 0px;
+}
+.time{
+	clear:both;
+	background-color:#4cbcf0;
+	padding:3px 0px;
+}
+
+/*******附近加油站列表*******/
+.jiayou_example{padding-top:10px;}
+.jiayou_example em{margin-top:5px;}
+.jiayou_example li{
+	width:20%;
+	float:left;
+	text-align:center;
+}
+.jiayou_example01 li{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.jiayou_example p{color:#999999;border-right:1px solid #ebebeb;margin-top:10px;}
+.jiayou_example span{color:#ff7e00;margin:10px 0px 5px;}
+.jiayou_example02 span{color:#ff7e00;margin:5px 0px 5px;}
+.jiayou_example ul { padding-bottom: 17px; }
+.jiayou_example li:last-child p{border:none;margin-top:25px;}
+.jiayou_example01 li:last-child p{border:none;margin-top:10px;padding-bottom:0px;}
+.jiayou_example02 li:last-child p{border:none;margin-top:10px;padding-bottom:0px;}
+.jiayou_example .dang{border-bottom:4px solid #00a0e9;}
+.jiayou_example .dang p,.jiayou_example .dang span{color:#00a0e9;}
+.jiayoupic{width:42px;height:35px;display:inline-block;margin-right:1em;}
+.jiayoupic img{width:100%;}
+.jiayou_example .jiayoupic{margin-top:0px;}
+
+/*******附近加油站详情页*********/
+.biao_pic{width:15px;height:40px;line-height:35px;text-align:center;margin:0 2em 0 1em;}
+.biao_pic img{width:100%;}
+.biao_pic01{width:17px;height:23px;line-height:23px;text-align:center;margin:0 2em 0 1em;}
+.x_pic a{display:inline-block;
+		width:30px;height:30px;
+			text-align:center;line-height:23px;
+			border:2px solid #ff7f00;border-radius:8px;
+			margin-right:4%;
+			}
+.x_pic a:last-child{margin-right:0;}
+.x_pic a img{width:80%;}
+.x_pic .three_pic img{width:60%;}
+.you{overflow:hidden;padding:10px 1em;}
+.you i{width:55px;height:25px;
+		display:inline-block;
+		float:left;margin-right:26%;
+		}
+.you i img{width:100%;}
+.you p{color:#cccccc;}
+
+/* *********领取红包**********/
+.bag_ling{
+	width:59%;
+	margin:19% auto 10%;
+	height:43%;
+	background:url(../imgs/hongbao_bg01.png) no-repeat center;
+	background-size:contain;
+	position:relative;
+	}
+.bag_ling p{
+	position:absolute;
+	width:150px;text-align:center;
+	color:#fff;
+	bottom:25%;
+	left:50%;
+	margin-left:-75px;
+	font-size:1.6rem;
+}	
+.bag_ling i{
+	position:absolute;
+	width:150px;text-align:center;
+	color:#fff;
+	bottom:15%;
+	left:50%;
+	margin-left:-75px;
+	font-size:1.6rem;
+}
+.fen{
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	position:absolute;
+	top:60%;
+}
+.fen .liji{
+	width:59%;
+}
+.fen h2{
+	margin:0 auto;
+	width:59%;
+	border-bottom:1px solid #999999;
+}
+.fen p{
+	margin-top:5px;
+	line-height:20px;
+}
+.btn04{
+	margin:0 auto 1em;
+}
+.btn04 a{display:inline-block;}
+/*@media only screen and (max-width:320px) and (max-height:480px){
+	.bag_ling{background-size:45%;
+	background-position:center 20px;}
+	.btn04{margin:0 auto 5px;}
+	.bag_ling i{top:38%;}
+	.bag_ling p{top:33%;}
+	.fs8{font-size:1.2rem;}
+	.fs3{font-size:1.2rem;}
+}
+@media only screen and (max-width:320px) and (min-height:480px) and (max-height:568px){
+	.bag_ling{background-size:63%;
+	background-position:center 25px;}
+	.fen{bottom:30px;}
+	.btn04{margin:0 auto 5px;}
+	.bag_ling i{top:40%;}
+	.bag_ling p{top:36%;}
+	.fs8{font-size:1.6rem;}
+	.fs3{font-size:1.6rem;}
+}
+@media only screen and (min-width:321px) and (max-width:359px) and (min-height:481px) and (max-height:568px) {
+	.bag_ling{background-size:63%;
+	background-position:center 50px;}
+	.fen{bottom:30px;}
+	.btn04{margin:0 auto 5px;}
+	.bag_ling i{top:42.6%;}
+	.bag_ling p{top:37.6%;}
+	.fs8{font-size:1.6rem;}
+}
+@media only screen and (min-width:321px) and (max-width:359px) {
+	.bag_ling{background-size:65%;}
+	.bag_ling i{top:15%;}
+	.fs8{font-size:1.6rem;}
+}
+@media only screen and (min-width:360px) and (max-width:390px) {
+	.bag_ling{background-size:55%;
+	background-position:center 13px;}
+	.fen{bottom:10px;}
+	.bag_ling p{top:40%;}
+	.bag_ling i{top:44%;}
+}
+@media only screen and (min-width:391px) and (max-width:460px) {
+	.bag_ling{background-size:60%;
+	background-position:center 63px;}
+	.fen{bottom:40px;}
+	.bag_ling p{top:44%;}
+	.bag_ling i{top:48%;}
+	.fs3{font-size:1.8rem;}
+	.fs8{font-size:1.8rem;}
+}*/
+
+/*********我的资料-车辆管理-添加车辆-车型************/
+.text{
+	margin-left:15px;
+	color:#999;
+	font-size:1.7rem;
+}
+.type_example li{
+	border-bottom:1px solid #c4c7c8;
+}
+.type_example li:last-child{
+	border:none;
+}
+.type_example a{
+	display:inline-block;
+	width:100%;
+	overflow:hidden;
+	padding:5px 0px;
+}
+.type_example em{
+	display:inline-block;
+	width:35px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	margin-left:15px;
+	}
+.type_example em img{
+	width:100%;
+}
+.type_example span{
+	height:35px;
+	line-height:35px;
+	margin-left:2em;
+}
+.right_zi{position:fixed;right:3%;}
+.right_zi a{
+	
+	display:block;
+	color:#333;
+	font-size:1rem;
+	line-height:18px;
+}
+
+/*******我的资料-车辆管理-添加车辆-车型-车系************/
+.text01{
+	margin:8px 0px;
+	padding-left:15px;
+	font-size:1.3rem;
+	line-height:15px;
+	color:#00a0e9;
+}
+.type_example01 em{
+	width:45px;
+	height:32px;
+	line-height:32px;
+}
+.type_example01 span{
+	height:32px;
+	line-height:32px;
+	margin-left:2em;
+}
+
+/*******支付订单********/
+.jiayou_example03 ul{width:75%;border-right:1px solid #dedede;}
+.jiayou_example03 ul li{width:33.3%;}
+.jiayou_example03 em{width:25%;margin-top:10px;}
+.jiayou_example03 p{color:#444;border-right:1px solid #ebebeb;margin-top:10px;}
+.jiayou_example03 span{color:#999999;margin:5px 0px 5px;}
+.jiayou_example03 li:last-child p{border:none;margin-top:10px;padding-bottom:0px;}
+.jiayou_example03 em span{color:#ea8400;}
+.jiayou_example03 li:first-child span{margin-top:5px;}
+.order_con01 ul{overflow:hidden;padding:10px 0px;}
+.order_con01 li{
+	width:33.3%;
+	padding:10px 0px;
+	border-right:1px solid #DEDEDE;
+	text-align:center;
+	float:left;
+}
+.order_con01 li:last-child{
+	border:none;
+}
+.check-input{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	margin-right:1em;
+	background:url(../imgs/icon/check.png);
+	background-size:100%;
+}
+.check-input_in{background:url(../imgs/icon/checkin.png);background-size:100%;}
+
+.order_con02 a{
+	width:100%;
+	display:inline-block;
+	padding:15px 0px;
+}
+.order_con02 em{
+	display:inline-block;
+	width:25px;
+	height:20px;
+	margin-right:1em;
+	text-align:center;
+	line-height:20px;
+}
+.order_con02 em img{
+	width:100%;
+}
+.order_con02 p{
+	color:#3D4448;
+}
+.bg{
+	display:none;
+	width:100%;height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:rgba(0,0,0,0.5);
+}
+.zhifu_close{
+	width:80%;
+	position:absolute;
+	left:50%;
+	margin-left:-40%;
+	top:50%;
+	margin-top:-85px;
+}
+.zhifu_close a{
+	margin-top:8px;
+	display:block;
+	background-color:#00A5EA;
+	height:45px;
+	line-height:45px;
+	border-radius:0 0 5px 5px;
+}
+.zhifu_close_pic{
+	width:80px;
+	margin:10px auto;
+}
+.zhifu_close_pic img{
+	width:100%;
+}
+.bg_no_password span{margin-top:7px;}
+/*.bg ul{
+	width:188px;
+	height:31px;
+	margin:7px auto;
+	overflow:hidden;border:1px solid #999999;
+}
+.bg li{
+	float:left;
+	width:31px;height:31px;
+	border-right:1px solid #999999;
+}
+.bg li:last-child{
+	border:none;
+}
+.bg li input{width:29px;height:29px;line-height:29px;padding:0px;text-align:center;font-size:1.6rem;}*/
+
+.c_box01 { background:url(../imgs/bg_input.png) no-repeat;
+	padding:0px 0px 0px 12px;
+	position: relative;
+	box-sizing:border-box;
+	width:185px;
+	height:31px;
+	line-height:31px;
+	border:1px solid #999999;
+	margin:7px auto;
+	}
+.bg input{
+	/*opacity: 0.01;*/
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	/*z-index: 2;*/
+	background: none;
+	padding: 0;
+	width: 100%;
+	font-size:1.6rem;
+	letter-spacing:21px;
+	height:30px;
+	line-height:30px;
+	box-sizing: content-box;
+}
+/*.c_box01 ul { 
+	position: absolute;
+	z-index: 1;
+	left: 0;top: 0;
+	width:100%;
+	height: 30px;
+	overflow: hidden;
+}
+.c_box01 ul li {
+	font-size: 32px;
+	line-height: 12px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-right:1px solid #999999;
+	margin-left: 1px;
+}*/
+
+.bg .false{
+	background-color:#7fdaf6;
+	border-radius:0 0 0 5px;
+}
+.bg .true{
+	border-radius:0 0 5px 0;
+}
+
+
+
+
+/***********i加油-微信页*************/
+.jy_clock{
+	border:1px solid #999;
+	box-shadow:0 0 2px 1px rgba(197,182,183,0.54);
+}
+.jy_clock h2{
+	border-bottom:1px solid #CCCCCC;
+	height:35px;
+	line-height:35px;
+}
+.jy_clock h3{margin:8px auto -8px;}
+.jy_clock p{
+	padding:1em;
+	width:100%;
+	background:url(../imgs/bg_jiayou.png) no-repeat 95% 75%;
+	background-size:8em;
+}
+.jy_clock em{letter-spacing:1.4px;}
+
+/*******代金券********/
+.daijin{
+	padding:3em 1em;
+	box-sizing:border-box;
+	width:100%;
+	background:url(../imgs/bg_daijin.png) no-repeat;
+	background-size:100% 100%;
+}
+.daijin h2{
+	line-height:30px;
+	font-size:1.8rem;
+}
+.daijin i{
+	font-size:4rem;
+	margin-left:5px;
+}
+.daijin_right{
+	margin-top:5px;
+	padding-left:1em;
+	box-sizing:border-box;
+} 
+.look_quan{margin-top:30px;}
+
+/******充值成功********/
+.success_chong{
+	width:100%;
+	background:url(../imgs/bg_success.png) no-repeat;
+	background-size:100% 100%;
+}
+
+/********支付成功**********/
+.success_zhi{
+	width:100%;
+	background:url(../imgs/bgzhi_success.png) no-repeat;
+	background-size:100% 100%;
+}
+.success_chong p{
+	position:absolute;
+	right:2%;
+	top:27%;
+	font-family:"黑体";
+	color:#3d4448;
+	transform: rotate(20deg);
+	-o-transform: rotate(20deg); 
+	-webkit-transform: rotate(20deg); 
+	-moz-transform: rotate(20deg);
+}
+
+/******领取代金券******/
+.bag_daijin_ling{
+	width:100%;
+	background:url(../imgs/bg_ling01.png) no-repeat;
+	background-size:100%;
+	padding-bottom:10%;
+}
+.daijin_pic{
+	width:40%;
+	margin:0 auto 5%;
+	padding-top:10%;
+}
+.daijin_pic img{
+	width:100%;
+}
+.daijin_con{
+	padding:10% 1%;
+	box-sizing:border-box;
+	width:85%;
+	margin:4% auto;
+	background:url(../imgs/bg_ling.png) no-repeat;
+	background-size:100% 100%;
+	color:#fff;
+}
+.daijin_text{
+	width:50%;
+	margin:4% auto;
+	border-bottom:1px solid #fff;
+}
+.daijin_right01{
+	letter-spacing:-0.5px;
+}
+@media only screen and (max-width:330px)and (min-width:320px) {
+	.daijin_right01{letter-spacing:-1.5px;padding-left:0em;}
+	.fs2{font-size:1rem;}
+	.daijin_con{margin:2% auto;}
+	.daijin_text{margin:2% auto;}
+}
+@media only screen and (max-width:390px) and (min-width:331px) {
+	.daijin_right01{padding-left:0em;}
+	.fs2{font-size:1.3rem;}
+	.daijin_con{margin:4% auto;}
+	.daijin_text{margin:4% auto;}
+}
+@media only screen and (min-width:391px) {
+	.fs2{font-size:1.3rem;}
+	.fs3{font-size:1.4rem;}
+	.fs4{font-size:1.7rem;}
+}
+/*******************交易记录*******************/
+.car_example_Record i { color: #f4a12d; }
+.car_example_Record { padding-right: 12%; }
+
+/*加油记录*/
+.Record_JY {  border: none; padding: 10px 0 ; }
+.Record_JY_BD { border-bottom: 1px solid #f0f1f2; }
+.Record_JY .Record_JY_box01 { padding:0 1em 0.5em; }
+.Record_JY_box01 i { background: #f49919; color: #FFF8F4; padding: 0 5px; margin-left: 5px; }
+.cf4 { color: #f49919; }
+.Record_JY_box02 { padding: 1em; line-height: 1.4em; }
+
+.arrow_btn {display: block; height: 2em; background:url(../imgs/arrow_T_c.png) no-repeat center bottom;  background-size:2em ; }
+
+.arrow_btn02 { background-image: url(../imgs/arrow_D_c.png); }
+
+/*******附近加油站弹出********/
+.jia_tan{
+	display:block;
+	width:253px;
+	height:80px;
+	padding:6px 0 0 6px;
+	background-color:#fff;
+	background:url(../imgs/jia_tanbg.png) no-repeat;
+	background-size:100% 100%;
+}
+.jia_tan_left{
+	width:50%;
+	line-height:26px;
+	text-align:left;
+}
+.jia_tan_left a{
+	 text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
+}
+.jia_tan span{
+	font-size:1rem;
+	color:#414040;
+}
+.youhui{
+	width:45px;
+	height:20px;
+	background:url(../imgs/youhuijuan.png) no-repeat;
+	background-size:100%;
+	margin-left:15%;
+	vertical-align: text-bottom;
+}
+.jia_tan_center{
+	width:30%;
+	line-height:10px;
+	border-right:1px solid #d4d4d4;
+	border-left:1px solid #d4d4d4;
+	padding:0px 6px;
+}
+.jia_tan_center em{
+	float:left;
+	line-height:10px;
+}
+.jia_tan_center b{
+	float:right;
+	line-height:14.5px;
+}
+.jia_tan_right{
+	margin-top:-6px;
+	width:20%;
+	height:100%;
+	background:url(../imgs/ding.png) no-repeat center;
+	background-size:3em;
+}
+.tan_div{
+	
+}
+.jia_tu{
+	margin-top:5px;
+	margin-left:40px;
+	width:50px;
+	height:50px;
+	border-radius:5px;
+	background-color:#fff;
+	padding-top:5px;
+}
+.jia_tu_pic{
+	display:block;
+	width:40px;
+	margin:0px auto;
+	height:40px;
+}
+.jia_tu_pic img{
+	width:100%;
+	height:100%;
+}
+
+

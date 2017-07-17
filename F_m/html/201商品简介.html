@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>首页（普通列表）</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/goods-profile.css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="goods-profile">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>烟台红富士大苹果</h1>
+  </header>
+  <section class="profile-box">
+    <ul>
+      <li class="profile-title">商品简介</li>
+      <li class="clearfix"><span class="profile-right">PBA柔肤多效BB霜</span><span class="profile-left">品名</span></li>
+      <li class="clearfix"><span class="profile-right">自然色、柔美色</span><span class="profile-left">颜色</span></li>
+      <li class="clearfix"><span class="profile-right">QB/T 1857</span><span class="profile-left">执行标准</span></li>
+      <li class="clearfix"><span class="profile-right">fida（2013）卫妆准字10-XK-043号</span><span class="profile-left">卫生许可证</span></li>
+      <li class="clearfix"><span class="profile-right">3年</span><span class="profile-left">保质期</span></li>
+      <li class="clearfix">
+        <span class="profile-right">质地轻薄细腻，易延展并服帖，净透遮瑕，清爽滋润不油腻，自然修饰。</span>
+        <span class="profile-left">产品特点</span>
+      </li>
+    </ul>
+  </section>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

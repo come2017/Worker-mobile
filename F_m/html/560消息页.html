@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>消息中心</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/message-center.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="message-center">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>消息中心</h1>
+  </header>
+  <section class="message-box">
+    <div class="message-list">
+      <a href="http://baidu.com">
+        <ul>
+          <li>
+            <span class="list-left">尊敬的客户，您的订单（12345671278138789123089）已经发货，请注意查收哦。</span></li>
+          <li>
+            <span class="list-left c99">2015-07-30</span>
+            <span class="list-right"><img src="../images/icons/arrow.png" /></span>
+          </li>
+        </ul>
+      </a>
+    </div>
+    <div class="message-list">
+      <a href="http://baidu.com">
+        <ul>
+          <li>
+            <span class="list-left">尊敬的客户，恭喜您获得新的优惠券一张，快去看看吧~</span></li>
+          <li>
+            <span class="list-left c99">2015-07-30</span>
+            <span class="list-right"><img src="../images/icons/arrow.png" /></span>
+          </li>
+        </ul>
+      </a>
+    </div>
+    <div class="message-list">
+      <a href="http://baidu.com">
+        <ul>
+          <li>
+            <span class="list-left">尊敬的客户，您的订单（12345671278138789123089）已经发货，请注意查收哦。</span></li>
+          <li>
+            <span class="list-left c99">2015-07-30</span>
+            <span class="list-right"><img src="../images/icons/arrow.png" /></span>
+          </li>
+        </ul>
+      </a>
+    </div>
+  </section>
+
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+</body>
+</html>

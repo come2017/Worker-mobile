@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>龙泉商城</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			$(function(){
+				var iH01 = $(window).height()-45-55;
+				$('#wrapper').height(iH01);
+			})
+		</script>-->
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="bgff2 w100 h_px45 lh_px45 tac oh fs7 plr3 bs cf oh">
+			<section class="Isearch bs fix fl">
+				<input class="search_In fl" type="text" name="" id="search_In" value="" placeholder="搜索产品名称"/>
+				<a class="search_Btn fl" href="102chanPin_list.html"></a>
+			</section>
+			<a href="javascript:;" class="Mess di fr cff2 fs1">
+				<span>1</span>
+			</a>
+		</header>
+		
+		<!--中间内容开始-->
+		<section id="wrapper" class="mt45">
+			<section id="scroller">
+				<!--轮播图-->
+				<div class="banner prv oh mt45">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="imgs/neiye/banner01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="imgs/neiye/banner01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="imgs/neiye/banner01.jpg" />
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<!--轮播图JS-->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						spaceBetween: 30,
+						centeredSlides: true,
+						autoplay: 3000,
+						autoplayDisableOnInteraction: false
+					});
+				</script>
+				<section class="w100 bgf Ixil bs">
+					<a href="javascript:;">
+						<dl>
+							<dt><img src="imgs/Icon01.png"/></dt>
+							<dd>洞藏系列</dd>
+						</dl>
+					</a>
+					<a href="javascript:;">
+						<dl>
+							<dt><img src="imgs/Icon02.png"/></dt>
+							<dd>龙抬头系列</dd>
+						</dl>
+					</a>
+					<a href="javascript:;">
+						<dl>
+							<dt><img src="imgs/Icon03.png"/></dt>
+							<dd>锁龙井系列</dd>
+						</dl>
+					</a>
+					<a href="javascript:;">
+						<dl>
+							<dt><img src="imgs/Icon04.png"/></dt>
+							<dd>其他系列</dd>
+						</dl>
+					</a>
+				</section>
+				<section class="Canpin mt15 bs bgf">
+					<a class="oh fs6 c3 Ititle bs db bbt" href="101chanPin_hot.html">
+						<i class="cf">产</i>
+						<i class="cf">品</i>
+						热卖
+						<span class="fs4 cb2 fr">更多商品等着您<i class="more"></i></span>
+					</a>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tac C_table01">
+						<tbody>
+							<tr>
+								<td width="38%" rowspan="2" class="T01_d01 brde"><a href="210chanin.html"><img src="imgs/Ipic01.png"/></a></td>
+								<td colspan="2" class="T01_d02 bbde"><a href="210chanin.html"><img src="imgs/Ipic02.png"/></a></td>
+							</tr>
+							<tr>
+								<td width="31%" class="T01_d03 brde"><a href="210chanin.html"><img src="imgs/Ipic03.png"/></a></td>
+								<td width="31%" class="T01_d04"><a href="210chanin.html"><img src="imgs/Ipic04.png"/></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section class="ITit01 fs5 cb2 tac oh plr3 bs">
+					<i class="lineL fl"></i>
+					<i class="lineR fr"></i>
+					洞藏系列
+				</section>
+				<table width="100%" border="0">
+					<tbody>
+						<tr>
+							<td width="50%" class="T01_d05"><a href="210chanin.html"><img src="imgs/Ipic05.png"/></a></td>
+							<td width="50%" class="T01_d06"><a href="210chanin.html"><img src="imgs/Ipic06.png"/></a></td>
+						</tr>
+						<tr>
+							<td class="T01_d07"><a href="210chanin.html"><img src="imgs/Ipic07.png"/></a></td>
+							<td class="T01_d08"><a href="210chanin.html"><img src="imgs/Ipic08.png"/></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="ITit01 fs5 cb2 tac oh plr3 bs">
+					<i class="lineL fl"></i>
+					<i class="lineR fr"></i>
+					龙抬头系列
+				</section>
+				<table width="100%" border="0">
+					<tbody>
+						<tr>
+							<td class="T01_d09 brde bbde" colspan="2"><a href="210chanin.html"><img src="imgs/Ipic09.png"/></a></td>
+							<td class="T01_d10 bbde"><a href="210chanin.html"><img src="imgs/Ipic10.png"/></a></td>
+						</tr>
+						<tr>
+							<td class="T01_d11 brde"><a href="210chanin.html"><img src="imgs/Ipic11.png"/></a></td>
+							<td class="T01_d12 brde"><a href="210chanin.html"><img src="imgs/Ipic12.png"/></a></td>
+							<td class="T01_d13"><a href="210chanin.html"><img src="imgs/Ipic13.png"/></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="ITit01 fs5 cb2 tac oh plr3 bs">
+					<i class="lineL fl"></i>
+					<i class="lineR fr"></i>
+					锁龙井系列
+				</section>
+				<table width="100%" border="0">
+					<tbody>
+						<tr>
+							<td class="T01_d09 brde bbde" colspan="2"><a href="210chanin.html"><img src="imgs/Ipic14.png"/></a></td>
+							<td class="T01_d10 bbde"><a href="210chanin.html"><img src="imgs/Ipic15.png"/></a></td>
+						</tr>
+						<tr>
+							<td class="T01_d11 brde"><a href="210chanin.html"><img src="imgs/Ipic16.png"/></a></td>
+							<td class="T01_d12 brde"><a href="210chanin.html"><img src="imgs/Ipic17.png"/></a></td>
+							<td class="T01_d13"><a href="210chanin.html"><img src="imgs/Ipic18.png"/></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="h_px50 mt20"></section>
+			</section>
+		</section>
+		<!--中间内容结束-->
+		<!--返回顶部-->
+		<!--<section class="toTop">
+			<img src="imgs/icon/toTop.png"/>
+		</section>-->
+		<!--尾部-->
+		<footer class="bgff2 con02">
+			<a class="di fl" href="100index.html">
+				<dl>
+					<dt class="one di one02"></dt>
+					<dd class="fs3 cf">首页</dd>
+				</dl>
+				
+			</a>
+			<a class="di fl" href="200chanPin.html">
+				<dl>
+					<dt class="two di"></dt>
+					<dd class="fs3 cffd">产品</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+			<a class="di fl" href="220car.html">
+				<dl>
+					<dt class="three di"></dt>
+					<dd class="fs3 cffd">购物车</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+			<a class="di fl" href="300geRen_center.html">
+				<dl>
+					<dt class="four di"></dt>
+					<dd class="fs3 cffd">我的</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+		</footer>
+	</body>
+</html>

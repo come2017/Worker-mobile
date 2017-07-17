@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>龙泉商城</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cui.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			$(function(){
+				var iH02 = $(window).height()-45;
+				$('#wrapper').height(iH02);
+			})
+		</script>-->
+		<script type="text/javascript">
+			$(function(){
+				//填写姓名
+				$('.gR_name').click(function(){
+					$('.gR_idx').hide();
+					$('.gR_name_in').show();
+				})
+				
+				//姓名确认跳转
+				$('.name_t').click(function(){
+					$('.gR_idx').show();
+					$('.gR_name_in').hide();
+					var name = $('.gR_name_in input').val();
+					$('.gR_name .fr').text(name);
+				})
+				
+				//性别选择
+				$('.sex_choose').click(function(){
+					$('.sex_c,.sex_Box').show();
+				})
+					//弹出样式
+				var win_height = $('html').height();
+				$('.sex_Box').height(win_height);
+				
+				$('.sex_list li').click(function(){
+					$(this).addClass('cut').siblings().removeClass('cut');
+				})
+					//关闭
+				$('.sex_close,.sex_Box').click(function(){
+					$('.sex_Box,.sex_c').hide();
+				})
+					//确认
+				$('.sex_true').click(function(){
+					var sex = $('.sex_list .cut').text();
+					$('.sex_Box,.sex_c').hide();
+					$('.sex_choose .fr').text(sex);
+				})
+			})
+		</script>
+		
+	</head>
+	<body>
+		<section class="gR_idx">
+			<header class="bgff2 w100 lh_px45 h_px45 tac cf oh fs7 ti_34 plr3 bs">
+				<a href="javascript:;" class="back fl di"></a>
+				个人中心
+			</header>
+			<!--中间内容开始-->
+			<section id="wrapper" class="mt45">
+				<section id="scroller">
+					<!--内容区-->
+					<!--头像-->
+					<a class="fix db w100 bgf Gr_a01 bbt gR_head_box">
+						<i class="fl fs6 c4c">头像</i>
+						<img class="fr" src="imgs/head_pic.png"/>
+					</a>
+					<input class="w100 gR_head_ipt" type="file" name="" id="" value="" />
+					<section class="w100 plr3 h_px50 lh_px50 bgf fix fs6 mt150">
+						<i class="fl c4c">账号</i>
+						<i class="fr c9 mr8">13302678968</i>
+					</section>
+					
+					<a class="gR_name fix db fs6 w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02 mt15 bbt" href="javascript:;">
+						<i class="fl c4c">真实姓名</i>
+						<i class="fr c6">张艾嘉</i>
+					</a>
+					<a href="javascript:;"  class="sex_choose fix fs6 db w100 plr3 bgf h_px50 lh_px50 bbt Gr_a02" >
+						<i class="fl c4c">性别</i>
+						<i class="fr c6">女</i>
+					</a>
+					<section id="form" class="Gr_a02 plr3 h_px50 lh_px50 bbt bgf fs6 prv">
+						<div class="lie oh c4c" >生日
+							<input type="text" name="USER_AGE" id="USER_AGE" readonly class="input fr tar" />
+							<i class="cff7 pa birthday fs4">生日有礼，填写后不可更改</i>
+						</div>
+					</section>
+					<a href="350zhang.html" class="fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02 bbt mt45" >
+						<i class="fl fs6 c4c">账号绑定</i>
+					</a>
+					<a href="302zhangHao.html" class="fix db w100 plr3 bgf h_px50 lh_px50 Gr_a02 mb70" >
+						<i class="fl fs6 c4c">账号安全</i>
+					</a>
+				</section>
+			</section>
+		</section>
+		<!--中间内容结束-->
+		
+		<!--生日日期选择插件-->
+		<script src="js/mobiscroll_date.js" charset="gb2312"></script> 
+		<script src="js/mobiscroll.js"></script> 
+		<script type="text/javascript">
+		$(function () {
+			var currYear = (new Date()).getFullYear();	
+			var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+			opt.default = {
+				theme: 'android-ics light', //皮肤样式
+				display: 'modal', //显示方式 
+				mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+				startYear: currYear - 50, //开始年份
+				endYear: currYear //结束年份
+			};
+		
+			$("#USER_AGE").mobiscroll($.extend(opt['date'], opt['default']));
+		
+		});
+		</script>
+		<section class="gR_name_in w100 dn">
+			<!--头部1-->
+			<header class="bgff2 w100 h_px45 lh_px45 tac oh fs7 plr5 bs cf">
+				<a href="301geRen_xinXi.html" class="back fl di"></a>
+				<a href="javascript:;" class="true di fr cf name_t">确认</a>
+				真实姓名
+			</header>
+			<input class="w94 ma mt45 bgf fs4" type="text" name="" id="" value="" placeholder="请输入您的真实姓名" />
+		</section>
+		<section class="sex_Box dn"></section>
+		<section class="w100 sex_c plr3 bgf dn">
+			<span class="fix fs4 bbt db">
+				<i class="sex_close fl cb2">关闭</i>
+				<i class="sex_true fr">确认</i>
+			</span>
+			<ul class="w100 sex_list fs4">
+				<li class="cut">男</li>
+				<li>女</li>
+			</ul>
+		</section>
+	</body>
+</html>

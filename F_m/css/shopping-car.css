@@ -1,0 +1,156 @@
+/*水果列表*/
+.fruits-empty p{
+  padding: 50% 0px;
+  text-align: center;
+}
+.fruits-list{
+  padding-bottom:68px;
+  padding:1rem;
+  padding-top:0;
+}
+.list-box{
+  padding:1.7rem 0;
+  border-bottom:1px #e4e4e4 solid;
+}
+.list-box .list-check{
+  width:10%;
+  float:left;
+  padding-top: 10%;
+}
+.list-box .list-left{
+  float:left;
+  width: 30%;
+  padding-right: 4%;
+}
+.list-box .list-left img{
+  width:100%;
+}
+.list-box .list-right{
+  float:left;
+  width:56%;
+}
+.list-box .list-right h2{
+  color:#343434;
+   
+  font-size:1.8rem;
+}
+.list-box .list-right h3{
+  color:#ed117f;
+  padding-top:6px;
+}
+.list-box .list-right h3 span{
+  display:inline-block;
+  color:#999;
+  font-weight:normal;
+}
+.list-box .list-right .select-box{
+  width:60%;
+  float:right;
+  padding:.6rem 0 0 .8rem;
+  text-align:center;
+}
+.list-box .list-right .select-box .fruits-discount{
+  text-align:right;
+  color:#ed117f;
+  font-size:1.6rem;
+  margin-right:10px;
+  padding-bottom:6px;
+}
+.list-box .list-right .select-box .fruits-select{
+      width: 68%;
+    float: right;
+    padding: 0 6%;
+}
+.list-box .list-right .select-box .fruits-select .reduction{
+  float:left;
+  display:none;
+}
+.list-box .list-right .select-box .fruits-select .reduction img{
+  width:25px;
+}
+.list-box .list-right .select-box .fruits-select .add{
+  display:inline-block;
+  float:right;
+}
+.list-box .list-right .select-box .fruits-select .add img{
+  width:25px;
+}
+.list-box .list-right .select-box .fruits-select .num{
+  display:inline-block;
+  font-size:1.6rem;
+  color:#333;
+  padding:0 .4rem;
+  display:none;
+}
+footer{
+  border-top:2px #c8c8c8 solid;
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:55px;
+}
+footer .footer-left{
+  float:left;
+  width:70%;
+  height:55px;
+  line-height:55px;
+  color:#333333;
+  font-size:1.6rem;
+   
+}
+footer .footer-left input{
+  margin: 22px 24px 0 14px;
+}
+footer .footer-left .select-all-money{
+  float:right;
+  padding-right:10px;
+  color:#ed117f;
+}
+footer .footer-right{
+  float:left;
+  width:30%;
+  height:55px;
+  line-height:55px;
+  background:#ed117f;
+  color:#fff;
+  text-align:center;
+  position:relative;
+}
+footer .gray{
+  background:#999;
+}
+footer .footer-right a{
+  color:#fff;
+}
+footer .footer-right img{
+  width:34px;
+  vertical-align:middle;
+}
+footer .footer-right .fruits-num{
+  position:absolute;
+  right:24%;
+  top:4px;
+  width:16px;
+  height:16px;
+  text-align:center;
+  line-height:16px;
+  background:#ed117f;
+  color:#fff;
+  font-size:1.2rem;
+  border-radius:50%;
+}
+
+
+
+
+
+/*2015-09-21*/
+.header .history-back{font-size:1.6rem;}
+.header h1{font-weight:normal;}
+.list-box .list-right h2{font-weight:normal;}
+.list-box .list-right h3{font-size:1.4rem;}
+.list-box .list-right .select-box .fruits-discount{font-weight:normal;}
+footer .footer-left{font-weight:normal; background:#fff;}
+footer .gray{font-size:1.4rem;}
+footer .footer-right{font-size:1.6rem;}

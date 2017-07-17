@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			var oHeight = $(window).height()-45;
+			$('html,body').css({'height':'100%'});
+			
+			$('#share').click(function(){
+				$('.Cshare').css('display','block');
+				$('.bg').css('display','block');
+			})
+			$('.bg, #C_qu').click(function(){
+				$('.Cshare').css('display','none');
+				$('.bg').css('display','none');
+			})
+		})
+
+	</script>
+	</head>
+	<body>
+		<header class="bg00 w100 tac h_px45 ti_p34 plr3">
+			<a class="back fl" href="javascript:;" target="_blank"></a>
+			<h1 class="cf lh_px45">领取红包</h1>
+		</header>
+		<section class="bag_ling">
+			<p class="fs3">恭喜您获得红包</p>
+			<i class="fs8">￥30元红包</i>
+		</section>
+		<section class="fen">
+			<section class="bg00 liji tac br5 h_px45 lh_px45 btn04">
+				<a id="share" class="w100 cf fs8" href="javascript:;" target="_blank">立即分享</a>
+			</section>
+			<h2 class="tac c6 fs4">红包使用规则</h2>
+			<p class="tac c9 fs2">商品订单金额满500元可以使用50元红包商品<br />订单金额满1000元可以使用<br />100元红包，评价<br />红包不能累加</p>
+		</section>
+		
+		<section class="bg"></section>
+		<section class="Cshare w100 tac">
+			<h3>分享到</h3>
+			<section class="oh Cshare_con">
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_qq.png"/></dt>
+						<dd>QQ</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_weixin.png"/></dt>
+						<dd>微信</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_kj.png"/></dt>
+						<dd>QQ空间</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_weibo.png"/></dt>
+						<dd>腾讯微博</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_quan.png"/></dt>
+						<dd>腾讯朋友圈</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_txwb.png"/></dt>
+						<dd>腾讯微博</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="imgs/icon/share_weixinquan.png"/></dt>
+						<dd>微信朋友圈</dd>
+					</a>
+				</dl>
+			</section>
+			<section class="Cshare-A bg00 w70 tac br5 h_px45 lh_px45 ma">
+				<a id="C_qu" class="w100 cf fs8 di" href="javascript:;">取消</a>
+			</section>
+		</section>
+	</body>
+</html>

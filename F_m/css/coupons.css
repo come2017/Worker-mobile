@@ -1,0 +1,19 @@
+#coupons .coupons-box{
+  padding:1.8rem;
+}
+#coupons .coupons-box ul{
+  margin-top:-0.4rem;
+}
+#coupons .coupons-box ul li{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1rem 0;
+}
+#coupons .coupons-box ul li .coupons-right{
+  float:right;
+}
+
+
+
+
+/*2015-09-21*/
+#coupons .coupons-box ul li{font-size:1.4rem;}

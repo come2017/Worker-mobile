@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/site.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var touchY = 0;
+				$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+				$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+				
+				var oWidth = $(window).width();
+				var oHeight = $(window).height(); 
+				
+				$('.near_C').css({'width':oWidth+'px','height':oHeight-45 + 'px'})
+				
+				var oHead_W = $('.near_head_W').width();
+				$('.near_head_W').height(oHead_W+'px');
+			})
+	
+		</script>
+	</head>
+	<body class="">
+		
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<h1 class="cf lh_px45">附近加油站</h1>
+		</header>
+		
+		<section class="mt_px45 near_C ">
+			<img src="imgs/map.jpg" class="w100 h100"/>
+		</section>
+		<section class="w_94 h_px45 ma pa near_search bgf bds">
+			<input class="fl fs4" type="text" placeholder="请输入您所在位置或附近标地物" name="" id="" value="" />
+			<a href="javascript:;" class="fr"></a>
+		</section>
+		<a href="javascript:;" class="near_head_W near_head pa"><img src="imgs/near_head.png"/></a>
+		<section href="javascript:;" class="near_head_W near_icon04 pa dn"><img src="imgs/near_icon04.png"/></section>
+		<section href="javascript:;" class="near_head_W near_icon01 pa"><img src="imgs/near_icon02.png"/></section>
+		<a href="javascript:;" class="near_head_W near_icon02 pa"><img src="imgs/near_icon03.png"/></a>
+		<script type="text/javascript">
+		//点击出现
+			$('.near_icon01').click(function(){
+				$('.near_icon01').hide();
+				$('.near_icon04').show();
+				$('.near_icon02').stop().animate({
+					right   : '30%',
+					bottom  : '10%',
+					opacity : '1'
+				});
+		//点击消失
+				$('.near_head ').stop().animate({
+					right   : '5%',
+					bottom  : '25%',
+					opacity : '1'
+				});
+			})
+			$('.near_icon04').click(function(){
+				$('.near_icon04').hide();
+				$('.near_icon01').show();
+				$('.near_icon02').stop().animate({
+					right   : '0%',
+					bottom  : '0%',
+					opacity : '0'
+				});
+				$('.near_head ').stop().animate({
+					right   : '0%',
+					bottom  : '0%',
+					opacity : '0'
+				});
+			})
+			
+		</script>
+		<div class="tan_div">
+			<div class="jia_tan bgff of">
+				<section class="fl jia_tan_left">
+					<a class="db fs1 c4" href="javascript:;">中石化<i class="c6">（小武基加油站）中石化中石化中石化中石化中石化中石化中石化中石化中石化</i></a>
+					<span>距离500M</span>
+					<a class="di youhui" href="javascript:;"></a>
+				</section>
+				<section class="fl fs1 jia_tan_center">
+					<em class="fs1"><i class="ceb">92</i><i class="fs08 vas ceb">#</i><br />
+						95<i class="fs08 vas">#</i><br />
+						97<i class="fs08 vas">#</i><br />
+						0<i class="fs08 vas">#</i>
+					</em>
+					<b><i class="ceb">5.95</i><br />
+						6.28<br />
+						7.33<br />
+						6.21
+					</b>
+				</section>
+				<a class="fl jia_tan_right" href="javascript:;"></a>
+			</div>
+			<div class="jia_tu bgff">
+				<a href="javascript:;" class="jia_tu_pic">
+					<img src="imgs/jia_pic01.png"/>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var oT = true;
+			$('.jia_tu').click(function(){
+				if(oT){
+					$('.jia_tan').css('display','block');
+					oT = false;
+				}else{
+					$('.jia_tan').css('display','none');
+					oT = true;
+				}
+			})
+		</script>
+	</body>
+</html>

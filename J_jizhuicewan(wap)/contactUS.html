@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>脊柱侧弯</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="w100 h_px45 lh_px45 tac oh fs7 plr3 bs bgf ti_34">
+			<a href="index.html" class="back fl di"></a>
+			联系我们
+		</header>
+		<!--内容区-->
+		<section class="Nbanner mt45">
+			<img src="imgs/neiye/bannerL.jpg"/>
+		</section>
+		<section class="cont_con fix w100 ma bgf">
+			<h2 class="c0 fs4">北京中医疑难病脊柱侧弯治疗和中心</h2>
+			<div class="fs1 c4c mt10">
+				<span class="db mb5">途径公交车：</span>			
+				<p>392路、398路、609路、490路、693路、355路公交坐到马家沟下车</p>
+			</div>
+			<ul class="fix bus_big mt25">
+				<li>
+					<div class="bus_img fl">
+						<img src="imgs/neiye/lianxi_01.png" />
+					</div>
+					<div class="fl bus_txt c4c fs1">
+						<span>地址</span>
+						<p>北京市海淀区学清路9号</p>
+					</div>
+				</li>
+				<li>
+					<div class="bus_img fl">
+						<img src="imgs/neiye/lianxi_02.png" />
+					</div>
+					<div class="fl bus_txt c4c fs1">
+						<span>电话</span>
+						<p>010-62533017　/　4006601865</p>
+					</div>
+				</li>
+				<li>
+					<div class="bus_img fl">
+						<img src="imgs/neiye/lianxi_03.png" />
+					</div>
+					<div class="fl bus_txt c4c fs1">
+						<span>E-mail</span>
+						<p>zhongyijzce@yahoo.cn</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<div class="contact-map ma plr3 bgf fix">
+			<style type="text/css">
+              #allmap {width: 100%;height:146px;overflow: hidden;margin:0 auto; background-color:#ffffff;margin-top:8px;}
+              #l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc;}
+              #r-result{height:100%;width:20%;float:left;}
+            </style>
+          	<script src="http://api.map.baidu.com/api?v=1.4" type="text/javascript"></script>
+          <!-------------地图坐标脚本结束-----------> 
+           	<div id="allmap"></div>
+          	<script type="text/javascript">
+                var map = new BMap.Map("allmap");            // 创建Map实例
+                map.addControl(new BMap.NavigationControl());               // 添加平移缩放控件
+                //map.addControl(new BMap.ScaleControl());                    // 添加比例尺控件
+                //map.addControl(new BMap.OverviewMapControl());              //添加缩略地图控件
+                map.enableScrollWheelZoom();                            //启用滚轮放大缩小
+                //map.addControl(new BMap.MapTypeControl());          //添加地图类型控件
+                //map.centerAndZoom("山东",15);                     // 初始化地图,设置中心点坐标和地图级别。
+                
+                //var myEl = this.document.getElementById("mappoint").value;
+                var myEl = "116.35789,40.025469";
+                var myA=myEl.split(",");
+                var point = new BMap.Point(myA[0], myA[1]);
+                //alert(myEl);
+                map.centerAndZoom(point, 15);
+                var marker = new BMap.Marker(point);  // 创建标注
+                map.addOverlay(marker);              // 将标注添加到地图中
+                marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+            </script>    
+            <!--地图-->
+		</div>
+		<!--触屏、电脑切换-->
+		<section class="tac bgf fs6 ptb_px20 mb10 mt10">
+			<a href="javascript:;" class="cff9 w47 di naoL">触屏版</a>
+			<i class="">|</i>
+			<a href="javascript:;" class="w47 di naoR">电脑版</a>
+			<p class="c9d fs2 pt10">地址:北京市海淀区学清路9号<br />联系电话:010-62533017 | E-mail:zhongyijzcw@yahoo.cn<br />北京中医疑难病脊柱侧弯治疗中心©2010版权所有</p>
+		</section>		
+		<!--间距-->
+		<section class="kong"></section>
+		<!--尾部-->
+		<footer class="bgf con02">
+			<a class="di fl" href="Javascipt:;">
+				<dl>
+					<dt class="one di one02"></dt>
+					<dd class="fs3 cff9">返回首页</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="two di"></dt>
+					<dd class="fs3 cb2">在线咨询</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="three di"></dt>
+					<dd class="fs3 cb2">拨打电话</dd>
+				</dl>
+			</a>
+			<a class="di fl" href="javascript:;">
+				<dl>
+					<dt class="four di"></dt>
+					<dd class="fs3 cb2">查看地址</dd>
+				</dl>
+			</a>
+		</footer>
+	</body>
+</html>

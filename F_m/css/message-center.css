@@ -1,0 +1,38 @@
+#message-center .message-box{
+  padding:1.5rem;
+}
+#message-center .message-list{
+  border-radius:5px;
+  box-shadow: 0px 0px 20px #999;
+  margin-bottom:1.4rem;
+}
+#message-center .message-list a{
+  display:block;
+  color:#333;
+}
+#message-center .message-list ul{
+  padding:0 1rem;
+}
+#message-center .message-list ul li{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1rem 0;
+}
+#message-center .message-list ul li:last-child{
+  border-bottom:0;
+}
+#message-center .message-list ul li .list-left{
+  word-break: break-all;
+} 
+#message-center .message-list ul li .list-right{
+  float:right;
+}
+#message-center .message-list ul li .list-right img{
+  width:10px;
+  vertical-align:middle;
+}
+
+
+
+/*2015-09-21*/
+#message-center .message-list ul li{font-size:1.6rem;color:#666;}
+#message-center .message-list ul .c99{color:#999;}

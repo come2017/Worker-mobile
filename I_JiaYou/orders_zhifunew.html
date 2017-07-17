@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jQuery.fontFlex.js" type="text/javascript" charset="utf-8"></script> <!--非IE浏览器下字体响应式js插件-->
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+			$('.order_con02 li').click(function(){
+				$(this).find('i').addClass('check-input_in');
+				$(this).siblings().find('i').removeClass('check-input_in');
+			});
+			$('.c_box01 input').fontFlex(16, 30, 14);
+		})
+
+	</script>
+	</head>
+	<body class="p3_20">
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="javascript:;" target="_blank"></a>
+			<h1 class="cf lh_px45">支付订单</h1>
+		</header>
+		<section class="jiayou_example bgf br5 jiayou_example01 mt_px55 jiayou_example03 of">
+			<a href="javascript:;" class="db bde0 pb_px10 pl_px2 fs5 mb_px10">订单详情</a>
+			<a href="javascript:;" class="db bde0 of pb_px10">
+				<section class="jia_pic fl ml1">
+					<img src="imgs/jia_pic01.png"/>
+				</section>
+				<h2 class="fl ml1 fs6">中石化燕府通加油站</h2>
+			</a>
+			<ul class="of fl">
+				<li>
+					<p class="fs6">油品<br />
+						<span class="fs3 db">92<i class="fs08 vas">#</i></span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">单价<br />
+						<span class="fs3 db">5.95</span>
+					</p>
+				</li>
+				<li>
+					<p class="fs5">油量<br />
+						<span class="fs3 db">40升</span>
+					</p>
+				</li>
+			</ul>
+			<em class="fs5 fl tac">金额<br />
+				<span class="fs3 db">￥：238</span>
+			</em>
+		</section>
+		<section class="bgf br5 bds order_con01 w100 mt_px10 fs3">
+			<ul>
+				<li class="c6">红包<span class="ceb">-5.00</span>元</li>
+				<li class="c6">油站劵<span class="ceb">-5.00</span>元</li>
+				<li class="c6">合计<span class="ceb">-10.00</span>元</li>
+			</ul>
+		</section>
+		<a class="bgf bds br5 h_px45 lh_px45 of db fs4 tac mt_px10">
+			<span class="fl c0 ml1">发票</span>
+			<em class="c9 ">北京中油房山燕宾油科销售有限公司<i class="check-input fr check-input_in mt_px15"></i></em>
+		</a>
+		<section class="bgf bds br5 mt_px10 order_con02">
+			<ul>
+				<li class="bdc4 of"><a href="javascript:;" class="of">
+					<span class="ml1 fs3 fl w30">
+						<em><img src="imgs/icon/icon34.png"/></em>
+						i 油卡
+					</span>
+					<p class="fs4 fr of w60">
+						i油卡 冲1000送100
+						<i class="check-input fr mt_px5"></i>
+					</p>
+				</a></li>
+				<li class="bdc4 of"><a href="javascript:;" class="of">
+					<span class="ml1 fs3 fl w30">
+						<em><img src="imgs/icon/icon35.png"/></em>
+						i 囤油
+					</span>
+					<p class="fs4 fr of w60">
+						锁价保值
+						<i class="check-input fr mt_px5"></i>
+					</p>
+				</a></li>
+				<li class="of"><a href="javascript:;" class="of">
+					<span class="ml1 fs3 fl w35">
+						<em><img src="imgs/icon/icon36.png"/></em>
+						微信支付
+					</span>
+					<p class="fs4 fr of w60">
+						i加油 97 折
+						<i class="check-input fr check-input_in mt_px5"></i>
+					</p>
+				</a></li>
+			</ul>
+		</section>
+		<section class="bgf bds br5 h_px45 lh_px45 of mt_px10">
+			<p class="ml1 c0 fs4">合计支付
+				<span class="ceb fr mr_em1 fs6">￥170元<em class="c9 ml1 fs3">省30元</em></span>
+			</p>
+		</section>
+		<section class="bg00 w70 tac br5 h_px45 lh_px45 btn03">
+			<a id="zhifu" class="w100 cf fs8 di" href="javascript:;">立即支付</a>
+		</section>
+		<!--弹出支付-->
+		<section class="bg bg_no_password">
+			<section class="zhifu_close bgf br5 tac">
+				<h3 class="bdc4 c6 fs6 h_px45 lh_px45">请输入支付密码</h3>
+				<span class="di ceb fs6"><em class="fs2">￥</em>230.00</span>
+				<div class="c_box01">
+					<input type="password" maxlength="6" name="" id="in01" value="" pattern="[0-9]*"/>
+					<!--<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>-->
+				</div>
+				<section class="of fs6">
+					<a href="javascript:;" id="zhifu_quxiao" class="fl w50 di h_px45 lh_px45 cf false">取消</a>
+					<a href="javascript:;" id="zhifu_no" class="fr w50 di h_px45 lh_px45 cf true">支付</a>
+				</section>
+			</section>
+		</section>
+		<!--未设置支付密码-->
+		<section class="bg bg_password">
+			<section class="zhifu_close bgf br5 tac">
+				<section class="zhifu_close_pic">
+					<img src="imgs/C_img2.png"/>
+				</section>
+				<p class="cblue fs4">对不起 您还未设置支付密码</p>
+				<a href="mine_password_guli_site.html" class="cf w100 tac fs6">设置支付密码</a>
+			</section>
+		</section>
+		<script>
+//		alert($('.c_box01 input').val().length)
+			$('#zhifu').click(function(){
+				$('.bg_no_password').css('display','block');
+			})
+			$('#zhifu_no').click(function(){
+				$('.bg_password').css('display','block');
+			})
+			$('#zhifu_quxiao').click(function(){
+				$('.bg_no_password').css('display','none');
+			})
+			$(".bg_no_password input").keyup(function(e){
+				
+				if(e.keyCode==8){
+					$(this).val("");
+					return;
+				};
+//				if((e.keyCode>=48&&e.keyCode<=57)||(e.keyCode>=96&&e.keyCode<=105)){
+					if($(this).val().length >= 6){
+						$(this).blur();
+						$(this).val($(this).val().substring(0,6));
+//					};
+				};
+//					else{
+//					$(this).val($(this).val().substring(0,$(this).val().length-1));
+//				};
+				
+			
+
+			});
+			var oLl = $('.c_box01 ul li')
+			var oPas = $('.c_box01 input').val().length;
+			oLl.eq(oPas-1).text('1');
+//			alert(oPas);
+		</script>
+	</body>
+</html>

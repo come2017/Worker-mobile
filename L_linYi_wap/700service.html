@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>临沂商城</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+			$('.BExample01 li:even').css('float','left');
+			$('.BExample01 li:odd').css('float','right');
+			$('.BExample02 li:even').css('float','left');
+			$('.BExample02 li:odd').css('float','right');
+			$('.BExample03 li:even').css('float','left');
+			$('.BExample03 li:odd').css('float','right');
+			$('.BExample04 li:even').css('float','left');
+			$('.BExample04 li:odd').css('float','right');
+			
+			$('.BImg img').height($('.BImg img').width());
+			
+			$('.BCnav li').click(function(){
+				var num = $(this).index();
+				$('.BCnav li').removeClass('cur')
+				$(this).addClass('cur');
+				$('.BExample').hide();
+				$('.BExample').eq(num).show();
+			})
+		})
+
+	</script>
+	</head>
+	<body>
+		<header class="bge8 w100 h_px45 lh_px45 tac of fs6 plr3 bs ti_p18">
+			<a href="javascript:;" class="back di cf fl">返回</a>
+			<a href="javascript:;" class="seach di fr h_px45"></a>
+			<h1 class="cf h_px45 lh_px45">便民服务</h1>
+		</header>
+		<!--轮播图-->
+		
+		<div class="banner prv of mt_px45">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/bm_banner01.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/bm_banner01.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/bm_banner01.jpg" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--轮播图JS-->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+		
+		<section class="mt_px10 Bnav bgf">
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img src="images/bm_nav01.png" width="50" height="50"/>
+						<span>美食</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/bm_nav02.png" width="50" height="50"/>
+						<span>旅游</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/bm_nav03.png" width="50" height="50"/>
+						<span>酒店</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/bm_nav04.png" width="50" height="50"/>
+						<span>娱乐</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/bm_nav05.png" width="50" height="50"/>
+						<span>出行</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="mt_px10 BCon bgf">
+			<ul class="BCnav">
+				<li class="cur"><a href="javascript:;">美食</a></li>
+				<li><a href="javascript:;">酒店</a></li>
+				<li><a href="javascript:;">出行</a></li>
+				<li><a href="javascript:;">旅游</a></li>
+			</ul>
+			<section class="plr3 bs">
+				<ul class="BExample fix BExample01">
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+				</ul>
+				<!--酒店-->
+				<ul class="BExample fix dn BExample02">
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+				</ul>
+				<!--出行-->
+				<ul class="BExample fix dn BExample03">
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店（高…</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+				</ul>
+				<!--旅游-->
+				<ul class="BExample fix dn BExample04">
+					<li>
+						<a href="javascript:;">
+							<section class="BImg">
+								<img src="images/bm_img01.png"/>
+							</section>
+							<section class="BETxt">
+								<p>临沂华美达酒店高临沂华美达酒店高</p>
+								<span>￥268<i>￥588</i></span>
+							</section>
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="BMbtn">查看更多</a>
+			</section>
+		</section>
+	</body>
+</html>

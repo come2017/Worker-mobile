@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="full-screen" content="yes">
+  <title>重新绑定</title> 
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/safe-test.css" />
+  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+		})
+	</script>
+</head>
+<body id="safe-test">
+  <header class="header">
+    <span class="history-back"><img src="../images/icons/back.png" />返回</span>
+    <h1>重新绑定</h1>
+  </header>
+  <section class="safe-box">
+    <div class="safe-text">
+      <p>请输入您要绑定的新号码</p>
+      <p class="clearfix">
+        <input type="text" name="mobile" placeholder="请输入手机号" />
+      </p>
+      <p class="clearfix">
+        <input class="text" name="modifycode" type="text" placeholder="验证码">
+        <input class="btn" type="button" data-selector="getmodifyCode" value="获取验证码">
+      </p>
+    </div>
+  </section>
+  <footer class="footer" data-selector="submit">
+    提交
+  </footer>
+<script src="../js/public/zepto.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/public/errorTip.js"></script>
+<script src="../js/safe-test.js"></script>
+</body>
+</html>

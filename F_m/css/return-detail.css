@@ -1,0 +1,45 @@
+#return-detail .detail-box{
+  padding:0 1.5rem;
+  margin-bottom:82px;
+}
+#return-detail .order-each{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1.4rem 0;
+}
+#return-detail .order-each .detail-text{
+	text-align:center;
+  padding:1.4rem 2rem;
+  color:#ed117f;
+   
+}
+#return-detail .order-each:last-child{
+  border-bottom:0;
+}
+#return-detail .order-each ul{
+  margin-top:1rem;
+}
+#return-detail .order-each ul li{
+  padding-bottom:1rem;
+}
+#return-detail .order-each ul .each-left{
+  width:30%;
+  color:#bcbcbc;
+}
+#return-detail .order-each ul .each-right{
+  width:60%;
+  text-align:right;
+  color:#666;
+}
+#return-detail .order-each .each-left{
+  float:left;
+}
+#return-detail .order-each .each-right{
+  float:right;
+  padding-right:.2rem;
+}
+
+
+
+/*2015-9-21*/
+#return-detail .detail-box{font-size:1.3rem;}
+#return-detail .text01{font-size:1.6rem;}

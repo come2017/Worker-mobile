@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>临沂商城</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload=function(){onDDjs();}
+		window.onresize=function(){onDDjs();}
+		function onDDjs(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+			$('.listexampleR').width($('.listexample li').width()-12-105-20);
+			
+			$('.listCon li a').css('width',($('.listCon ul').width()-35)/3+'px');
+//			$('.listCon li').css('margin-right',($('.listCon ul').width()-286)/2+'px');
+			$('.listCon li:nth-child(3n)').css('margin-right','0px');
+			
+			$('.listCon li').click(function(){
+				$(this).addClass('cur').siblings().removeClass('cur');
+			})
+		}
+
+	</script>
+	</head>
+	<body>
+		<header class="bge8 w100 h_px45 lh_px45 tac of fs6 plr3 bs ti_p18">
+			<a href="javascript:;" class="back di cf fl">返回</a>
+			<h1 class="cf h_px45 lh_px45 ti_p52">分类</h1>
+		</header>
+		<section class="mt_px45">
+			<section class="listCon plr3 bs mb_px10">
+				<ul>
+					<li><a href="javascript:;">电子科技</a></li>
+					<li><a href="javascript:;">服饰鞋帽</a></li>
+					<li><a href="javascript:;">家居家装</a></li>
+					<li><a href="javascript:;">农副产品</a></li>
+					<li><a href="javascript:;">汽车用品</a></li>
+					<li><a href="javascript:;">日用百货</a></li>
+					<li><a href="javascript:;">五金劳保</a></li>
+					<li><a href="javascript:;">建筑建材</a></li>
+					<li class="cur"><a href="javascript:;">全 部</a></li>
+				</ul>
+			</section>
+			<ul class="fix listexample plr3 bs">
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+				<li>
+					<a href="javascript:;" class="Img_a fl db">
+						<img src="images/listpic01.jpg"/>
+					</a>
+					<section class="listexampleR">
+						<a href="javascript:;" class="Title">鸿儒国际文化广场</a>
+						<p>
+							<span>产品</span>
+							<span>26</span>
+							<span>|</span>
+							<span>店铺</span>
+							<span>33</span>
+						</p>
+						<ol>
+							<li class="li1"><a href="javascript:;">园区电子导航</a></li>
+							<li class="li2"><a href="javascript:;">查看全景</a></li>
+						</ol>
+					</section>
+					<a href="javascript:;" class="arrL fl"></a>
+				</li>
+			</ul>
+		
+		</section>
+		<section class="NmapBL FenBR">
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img src="images/iocn/micon03.png"/>
+						<span>列表</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

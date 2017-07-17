@@ -1,0 +1,120 @@
+#wait-send .order-box{
+  padding:0 1.5rem;
+  margin-bottom:82px;
+}
+#wait-send .order-each{
+  border-bottom:1px #e7e6e6 solid;
+  padding:1.4rem 0;
+}
+#wait-send .order-each .mobile{
+  padding-left:3rem;
+}
+#wait-send .order-each .address{
+  padding-top:1.4rem;
+}
+#wait-send .goods-details{
+  padding-top:1.4rem;
+}
+#wait-send .goods-details dt{
+  float:left;
+  width:26%;
+}
+#wait-send .goods-details dt img{
+  width:100%;
+}
+#wait-send .goods-details dd{
+  float:left;
+  width:70%;
+  padding-left:4%;
+}
+#wait-send .goods-details dd h3{
+  border-bottom:2px #e8e7e7 solid;
+  padding:0 .8rem .6rem 0;
+}
+#wait-send .goods-details dd h3 .fruits-name{
+  float:left;
+  width:70%;
+  word-break: break-all;
+}
+#wait-send .goods-details dd h3 .fruits-price{
+  float:right;
+  width:30%;
+}
+#wait-send .goods-details dd p{
+  text-align:right;
+  padding:.6rem .8rem 1rem 0;
+}
+#wait-send .goods-details dd p .back-change{
+  color:#ed117f;
+  border:1px #fde7f2 solid;
+  padding:.6rem 1rem;
+  border-radius:5px;
+  margin-right:-0.8rem;
+}
+#wait-send .pay-kinds .each-left,
+#wait-send .order-num .each-left,
+#wait-send .order-each .each-left{
+  float:left;
+  width:60%;
+  word-break: break-all;
+}
+#wait-send .pay-kinds .each-right,
+#wait-send .order-num .each-right,
+#wait-send .order-each .each-right{
+  float:right;
+  width:40%;
+  text-align:right;
+}
+#wait-send .order-each .each-right img{
+  width:10px;
+}
+#wait-send .message .each-left{
+  clear:both;
+}
+#wait-send .message p{
+  display: block;
+  width: 90%;
+  height: 30px;
+  border: none;
+  color:#666;
+  margin-top: 1.4rem;
+}
+#wait-send .discount-kinds{
+  padding:1.2rem 0 2.5rem 0;
+}
+#wait-send .discount-kinds span{
+  float:right;
+}
+#wait-send .order-num{
+  padding:1rem 0;
+}
+#wait-send .order-box .order-pay{
+  font-size:1.6rem;
+}
+#wait-send .order-box .order-express img{
+  width:9px;
+  vertical-align:middle;
+}
+#wait-send .pay-kinds{
+  padding:1rem 0 2rem 0;
+  font-size:1.2rem;
+}
+#wait-send .footer{
+  width:100%;
+  text-align:center;
+  position:fixed;
+  left:0;
+  bottom:0;
+  background:#ed117f;
+  color:#fff;
+  padding:1.4rem 0;
+  font-size:1.6rem;
+}
+
+
+
+/*2015-09-21*/
+#wait-send .order-each{font-size:1.4rem;}
+#wait-send .pay-kinds .each-left, #wait-send .order-num .each-left, #wait-send .order-each .each-left{font-size:1.4rem;}
+#wait-send .order-num{font-size:1.3rem;}
+#wait-send .discount-kinds{font-size:1.4rem;}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>爱加油</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Cui.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			$('.youka-money ul li img').click(function(){
+				$('.youka-money ul li img').css('opacity','1');
+				$(this).css('opacity','0.5');
+			})
+		})
+
+	</script>
+	</head>
+	<body>
+		<header class="bg00 w100 tac h_px45 ti_p34">
+			<a class="back fl" href="javascript:;" target="_blank"></a>
+			<h1 class="cf lh_px45">i 油卡</h1>
+		</header>
+		<section class="lh_px45 bds w100 di mt_px55 bgf youka">
+			<span class="fl fs5 c444">您的账户余额</span>
+			<span class="fr c48 fs7">500</span>
+		</section>
+		<section class="bds w100 bgf mt_px5 youka-money">
+			<h1 class="fs5 c2f3">请选择您要充值的金额</h1>
+			<ul class="oh">
+				<li><a href="javascript:;"><img src="imgs/youka-100.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="imgs/youka-200.jpg"/></a></li>
+				<li class="last"><a href="javascript:;"><img src="imgs/youka-500.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="imgs/youka-1000.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="imgs/youka-2000.jpg"/></a></li>
+				<li class="last"><a href="javascript:;"><img src="imgs/youka-5000.jpg"/></a></li>
+			</ul>
+		</section>		
+		<section class="plr3 bgf fs5 ca1 bds oh youka-yuan lh_px45 br5">
+			<input type="text" name="" id="" placeholder="请输入100的整数倍的充值金额" class="fl inputs br5">
+			<span class="fr fs7">元</span>
+		</section>
+		<section class="youka-tan tec w100">
+			<p class="fs4">充五百送五十，按十分之一比例送</p>
+		</section>
+		<section class="bg00 w60 tac br5 youka-chongzhi h_px45 lh_px45">
+			<a class="w100 cf fs8" href="javascript:;" target="_blank" id="chongzhi">充值</a>
+		</section>
+		
+		<!--弹出支付-->
+		<section class="bg bg_no_password">	
+			<section class="zhifu_close youka_close bgf br5 tac">
+				<h3 class="c323 fs6">请您输入支付密码</h3>
+				<section class="bgf site_pass youka_pass tac">
+					<label for="password"></label>
+					<input type="password" name="password" id="password" placeholder="请您输入支付密码" class="br5 fs5 c9" />
+					<label for="password"></label>
+					<input type="password" name="password" id="password" placeholder="请您再次输入支付密码" class="br5 fs5 c9" />
+				</section>
+				
+				<section class="bg00 w86 tac br5 youka-chongzhi h_px45 lh_px45 oh youka-sure">
+					<a class="w100 cf fs8" href="javascript:;" target="_blank" id="chongzhi">确定</a>
+				</section>
+				<section class="youka-guanbi">
+					<a class="w100 cf fs8" href="javascript:;" target="_blank" id="guanbi">×</a>
+				</section>
+			</section>
+		</section>
+		<script>
+			$('#chongzhi').click(function(){
+				$('.bg_no_password').css('display','block');
+			})
+			$('#guanbi').click(function(){
+				$('.bg_no_password').css('display','none');
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+#integral-buy .buy-box{
+  padding:0 1.4rem;
+}
+#integral-buy .buy-box dl{
+  width:100%;
+  padding:1rem 0;
+  border-bottom:1px #e7e6e6 solid;
+}
+#integral-buy .buy-box dl dt{
+  width:24%;
+  float:left;
+}
+#integral-buy .buy-box dl dt img{
+  width:100%;
+}
+#integral-buy .buy-box dl dd{
+  width:64%;
+  float:right;
+  text-align:right;
+}
+#integral-buy .buy-box dl dd .buy-info{
+  display:inline-block;
+  text-align:left;
+}
+#integral-buy .buy-box dl dd .buy-sum{
+  padding:.9rem 0;
+  font-size:1.2rem;
+  color:#666;
+}
+#integral-buy .buy-box dl dd .buy-sum span{
+  color:#ed117f;
+}
+#integral-buy .buy-box dl dd .buy-btn a{
+  display:inline-block;
+  color:#fff;
+  background:#ed117f;
+  padding:.6rem 1.6rem;
+  border-radius:5px;
+}
+
+
+
+/*2015-09-21*/
+#integral-buy .buy-box dl dd .buy-info{font-size:1.4rem;}

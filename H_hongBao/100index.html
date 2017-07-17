@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>抢红包</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 
+		<meta name="full-screen" content="yes">-->
+		<!-- QQ强制全屏 
+		<meta name="x5-fullscreen" content="true">-->
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="nightmode" content="enable/disable">
+		<meta name="imagemode" content="force">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部1-->
+		<header class="bgff2 w100 h_px45 lh_px45 oh plr5 bs">
+			<a href="javascript:;" class="fa cf di fl fs7">
+				<img src="imgs/font_pic.png" width="59" height="20" class="index-img"/>
+			</a>
+			<a href="500message.html" class="Mess di fr cff2 fs1">
+				<span>1</span>
+			</a>
+		</header>
+		<section class="big-main">
+		<!--轮播图-->
+			<div class="banner prv oh mt45">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="imgs/banner01.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="imgs/banner01.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="imgs/banner01.jpg" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<!--轮播图JS-->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 30,
+					centeredSlides: true,
+					autoplay: 3000,
+					autoplayDisableOnInteraction: false
+				});
+			</script>
+		<!--首页导航-->
+		<section class="w100 bgf nav_con mt15">
+			<ul>
+				<li><a class="in01 tac" href="200red-list-s.html">抢红包</a></li>
+				<li><a class="in02 tac" href="300puTong.html">发红包</a></li>
+				<li><a class="in03 tac" href="javascript:;">红包商城</a></li>
+				<li><a class="in04 tac" href="javascript:;">签到</a></li>
+			</ul>
+		</section>
+		<!--分享抢红包-->
+		<section class="index-fen mt15 w100">
+			<a href="javascript:;">
+				<img src="imgs/banner02.jpg" />
+			</a>
+		</section>
+		
+		<section class="index-tou mt15 w100">
+			<a href="javascript:;">
+				<img src="imgs/banner03.jpg" />
+			</a>
+		</section>
+		</section>
+		<!--弹出层-->
+		<section class="idx_layer pa dn">
+			<img src="imgs/Qd_pic.png"/>
+			<span class="tac">
+				<i class="fs24 cf">+<em class="cf">999</em></i><br />
+				<i class="cf fs2">签到成功</i>
+			</span>
+		</section>
+		<section class="Sq_layer02"></section>
+			<script type="text/javascript">
+				//获取屏幕高度
+				var oH = $(window).height()+'px';
+				$('.Sq_layer02').height(oH);
+				//弹出层
+				$('.in04').click(function(){
+					$('.Sq_layer02,.idx_layer').show();
+					var oLayer = $('.idx_layer span').width()/2+'px';
+					$('.idx_layer span').css('margin-left','-'+oLayer);
+				})
+				$('.Sq_layer02,.idx_layer').click(function(){
+					$('.Sq_layer02,.idx_layer').hide();
+				})
+			
+			</script>
+		<!--尾部-->
+		<footer class="bgff2 con02 mt15">
+			<a class="di fl" href="100index.html">
+				<dl>
+					<dt class="one di one02"></dt>
+					<dd class="fs3 cf">首页</dd>
+				</dl>
+				<i class="bgf"></i>
+			</a>
+			<a class="di fl" href="200red-list-s.html">
+				<dl>
+					<dt class="two di"></dt>
+					<dd class="fs3 cffd">抢红包</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+			<a class="di fl" href="500faXian.html">
+				<dl>
+					<dt class="three di"></dt>
+					<dd class="fs3 cffd">发现</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+			<a class="di fl" href="410geRen.html">
+				<dl>
+					<dt class="four di"></dt>
+					<dd class="fs3 cffd">我的</dd>
+				</dl>
+				<i class="bgff2"></i>
+			</a>
+		</footer>
+	</body>
+</html>

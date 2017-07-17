@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>临沂商城</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">-->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<meta name="nightmode" content="enable/disable">
+	<meta name="imagemode" content="force">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload=function(){onLdjs();}
+		window.onresize=function(){onLdjs();}
+		function onLdjs(){
+			var touchY = 0;
+			$(document).on('touchstart',function(){touchY = event.touches['0'].clientY;});
+			$(document).on('touchmove',function(){if($(document).scrollTop()==0 && event.touches['0'].clientY - touchY > 0)event.preventDefault();});
+			
+			
+			$('.feilist li').width(($('.feilist').width()-20)/3);
+			$('.feilist li').height(($('.feilist').width()-20)/3);
+			$('.feilist li:nth-child(3n)').css('margin-right','0px');
+		}
+		
+	</script>
+	</head>
+	<body>
+		<header class="bge8 w100 h_px45 lh_px45 tac of fs6 plr3 bs ti_p18">
+			<a href="mine_center.html" class="back di cf fl">返回</a>
+			<a href="javascript:;" class="list di fr h_px45"></a>
+			<h1 class="cf h_px45 lh_px45">分类</h1>
+		</header>
+		<section class="mt_px55">
+			<ul class="feilist fix plr3 bs">
+				<li class="libg1">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon01.png"/>
+						<span>服饰鞋帽</span>
+					</a>
+				</li>
+				<li class="libg2">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon02.png"/>
+						<span>家居家装</span>
+					</a>
+				</li>
+				<li class="libg3">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon03.png"/>
+						<span>农副产品</span>
+					</a>
+				</li>
+				<li class="libg4">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon04.png"/>
+						<span>汽车用品</span>
+					</a>
+				</li>
+				<li class="libg5">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon05.png"/>
+						<span>电子科技</span>
+					</a>
+				</li>
+				<li class="libg6">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon06.png"/>
+						<span>日用百货</span>
+					</a>
+				</li>
+				<li class="libg7">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon07.png"/>
+						<span>五金劳保</span>
+					</a>
+				</li>
+				<li class="libg8">
+					<a href="fenleiin.html">
+						<img src="images/iocn/licon08.png"/>
+						<span>建筑建材</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

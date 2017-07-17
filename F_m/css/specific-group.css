@@ -1,0 +1,174 @@
+#specific-group .header{
+  border-bottom:none;
+}
+#specific-group .group-fruits-details{
+  width:90%;
+  margin:0 auto;
+  border-radius:5px;
+  box-shadow: -1px 2px 11px #999;
+}
+#specific-group .group-fruits-details dl{
+  padding:2rem 1rem;
+  padding-bottom: 0;
+}
+#specific-group .group-fruits-details dl dt{
+  float:right;
+  width:40%;
+}
+#specific-group .group-fruits-details dl dt img{
+  width:100%;
+}
+#specific-group .group-fruits-details dl dd{
+  float:left;
+  width:56%;
+  padding-right:4%;
+}
+#specific-group .group-fruits-details dl dd h3{
+  color:#666;
+  line-height:24px;
+}
+#specific-group .group-fruits-details dl dd p{
+  background:#ffaa24;
+  color:#333;
+   
+  font-size:1.4rem;
+  height:31px;
+  line-height:31px;
+  text-align:center;
+  margin:1rem -1rem 0 -1rem;
+  position:relative;
+}
+#specific-group .group-fruits-details dl dd p::before{
+  content:"";
+  display:inline-block;
+  background:url(../images/icons/angle.png) no-repeat;
+  position:absolute;
+  top:0;
+  left:-7px;
+  width:7px;
+  height:35px;
+  background-size:100% 100%;
+}
+#specific-group .group-fruits-details .discount-time{
+  padding:1rem 2rem;
+  font-size:1.2rem;
+}
+#specific-group .group-fruits-details .discount-time .discount{
+  padding-bottom:1rem;
+}
+#specific-group .group-fruits-details .discount-time .discount a{
+  text-decoration:line-through;
+  color:#666;
+}
+
+#specific-group .head-discount{
+  border-bottom:1px #e7e6e6 solid;
+  width:90%;
+  margin:2.4rem auto;
+  margin-bottom:0;
+}
+#specific-group .head-discount .discount-title{
+  color:#ed117f;
+   
+  padding:.7rem 0;
+  font-size:2rem;
+  text-align:center;
+}
+#specific-group .head-discount .discount-text{
+  color:#666;
+  text-align:center;
+  line-height:24px;
+  font-size:1.4rem;
+  padding-bottom:1.4rem;
+}
+#specific-group .start-group-discount{
+  color:#ed117f;
+  width:90%;
+  margin:0 auto;
+  padding:1.6rem 0;
+}
+#specific-group .no-full{
+  padding-bottom:0;
+}
+#specific-group .start-group-discount p{
+  text-align:center;
+}
+#specific-group .start-group-discount .discount-money{
+  font-size:3.2rem;
+   
+  padding:2.5rem 0 1.2rem 0;
+}
+#specific-group .start-group-discount .apply-discount{
+  color:#999;
+}
+#specific-group .group-btn{
+  padding-top:1rem;
+  padding-bottom:3rem;
+}
+#specific-group .group-btn p{
+  width:70%;
+  background:#ed117f;
+  margin:0 auto;
+  padding:1rem 0;
+  text-align:center;
+  color:#fff;
+  margin-bottom:1rem;
+  border-radius:5px;
+  position:relative;
+  font-size: 1.4rem;
+}
+#specific-group .group-btn p a{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #bd1a6b;
+  padding: 1.4rem .6rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#specific-group .group-btn .group-disbale{
+  background:#999999;
+}
+
+/*好友参团后*/
+#specific-group .group-num{
+  width:90%;
+  margin:0 auto;
+}
+#specific-group .group-num h3{
+  padding:2.4rem 0;
+}
+#specific-group .group-num ul{
+  border-bottom:1px #e6e5e5 solid;
+  margin-right:-1rem;
+}
+#specific-group .group-num ul li{
+  float:left;
+  padding:0 1rem 1.3rem 0;
+}
+#specific-group .group-num ul li img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+#specific-group .group-num ul li p{
+  text-align:center;
+  font-size:1.2rem;
+  padding-top:.4rem;
+  color:#666666;
+}
+
+
+/*2015-09-21*/
+#specific-group .group-fruits-details dl dd h3{font-size:1.4rem;}
+.ml10{margin-left:10px;}
+#specific-group .group-fruits-details dl dd p{font-size:1.6rem;margin-top:25px;}
+.fontwe{font-weight:bold;}
+.start-group-discount h6{font-size:1.3rem;}
+#specific-group .start-group-discount p{font-size:1.6rem;}
+#specific-group .group-btn p{font-size:1.6rem;}
+#specific-group .group-num h3{font-size:1.5rem;}
+#specific-group .group-btn p a{font-size:0.9rem;}

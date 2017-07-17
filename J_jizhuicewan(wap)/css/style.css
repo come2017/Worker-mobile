@@ -1,0 +1,236 @@
+.cffa{color:#ffa200;}
+/******特色技术*******/
+.Te_Title{
+	margin-top:46px;
+	border-bottom:1px solid #e7e7e7;
+	padding-top:19px;
+}
+.Te_Title span{
+	color:#9a9a9a;
+	margin:13px 0px 8px;
+}
+.Te_Title h2{
+	color:#000;
+}
+.Te_Txt{
+	color:#666;
+	line-height:26px;
+	padding:18px 5% 30px;
+}
+.Te_img{
+	width:240px;
+	margin:21px auto;
+}
+.Te_img span{
+	display:block;
+	width:109px;
+	height:155px;
+}
+.Te_img img{
+	width:100%;
+}
+.Nbanner{
+	width:100%;
+}
+.Nbanner img{
+	width:100%;
+}
+.Kexample{
+	padding:10px 5%;
+	box-sizing:border-box;
+	background-color:#fff;
+	margin-top:11px;
+}
+.KexampleImg{
+	width:80px;
+}
+.KexampleT p,.ZexampleT p{
+	margin:7px 0px 5px;
+}
+.KexampleT i{
+	display:inline-block;
+	margin-right:5px;
+	width:9px;
+	height:9px;
+	background:url(../imgs/icon/Clock.png) no-repeat center;
+	background-size:contain;
+	vertical-align:baseline;
+}
+.Kexamplein{
+	padding:0px 5%;
+	background-color:#fff;
+}
+.Kexamplein a{
+	display:block;
+	height:53px;
+	line-height:53px;
+	color:#444;
+	font-size:1.2rem;
+	border-bottom:1px solid #efefef;
+}
+/*******治疗优势******/
+.Zexample-ul{
+	padding:20px 0px;
+	background-color:#fff;
+}
+.Zexample{
+	padding:0 5%;
+	box-sizing:border-box;
+	background-color:#fff;
+}
+.Zexample a{
+	padding:12px 0;
+	border-bottom:1px solid #f0f0f0;
+}
+.ZexampleImg{
+	width:100px;
+}
+.Z_title{
+	color:#abafb1;
+	height:25px;
+	line-height:25px;
+}
+.Z_title i{
+	background:url(../imgs/icon/hair-cross.png) no-repeat center;
+	display:inline-block;
+	margin-right:5px;
+	width:11px;
+	height:11px;
+	background-size:contain;
+	vertical-align:middle;
+}
+/*****资质荣誉*****/
+.Y-nav{
+	border-bottom:1px solid #e6e5e5;
+	background-color:#fff;
+}
+.Y-nav li{
+	float:left;
+	width:33.3%;
+	padding:16px 0px 10px;
+}
+.Y-nav li a{
+	text-align:center;
+	border-right:1px solid #e0e0e0;
+	font-size:1.5rem;
+	color:#666;
+}
+.Y-nav .cut{
+	border-bottom:1px solid #209ed6;
+}
+.Y-nav .cut a{
+	color:#209ed6;
+}
+.Rexample{
+	padding:0px 3%;
+	box-sizing:border-box;
+	background-color:#fff;
+	text-align:center;
+	margin-top:13px;
+}
+.Rexample span{
+	height:40px;
+	line-height:40px;
+}
+/*****专家团队*****/
+.Z-nav li{
+	width:50%;
+}
+.Texample{
+	padding:0px 5%;
+	box-sizing:border-box;
+	background-color:#e8edf1;
+	margin-top:10px;
+}
+.TexampleImg{
+	width:75px;
+}
+.Texample h2{
+	margin-top:18px;
+}
+.Texample p{
+	margin:4px 0px 5px;
+	color:#555;
+}
+.Texample i{
+	display:inline-block;
+	margin-right:5px;
+	width:9px;
+	height:9px;
+	background:url(../imgs/icon/pencil.png) no-repeat center;
+	background-size:contain;
+	vertical-align:baseline;
+}
+/*******医院环境*****/
+.EnvImg li{
+	float:left;
+	margin-top:5px;
+	margin-right:5px;
+}
+.EnvImg li img{
+	width:100%;
+}
+.num i{
+	margin-right:13px;
+}
+.bg{
+	background-color:#000;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.tan{
+	position:absolute;
+	top:50%;
+}
+/*************在线咨询******************/
+.Tw_ipt input,.Tw_ipt textarea{
+	padding: 13px 30px;
+	box-sizing: border-box;
+	font-size: 1.4rem;
+	width:100%;
+	margin-top: 15px;
+	background: #FFFFFF;
+}
+.Tw_btn{
+	width: 90%;
+	background: #5bcdff;
+	margin: 15px auto;
+	height: 45px;
+	line-height: 45px;
+}
+
+/**************提问**************/
+.sex_Box{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.sex_c{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+}
+.sex_c .sex_true{
+	color: #4d4d4d;
+}
+.sex_c span{
+	padding: 10px 0;
+}
+.sex_list li{
+	width: 100%;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+}
+.sex_list li:first-child{
+	border-bottom: 1px solid #DEDEDE;
+}
+.sex_list .cut{
+	background: #F2F2F2;
+}
